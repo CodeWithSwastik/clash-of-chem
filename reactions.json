@@ -12,8 +12,8 @@
     "Br / uv": "2-bromopropane"
   },
   "chloromethane": {
-    "NaOH (aq.)": "methanol",
-    "KOH (aq.)": "methanol",
+    "aq. NaOH": "methanol",
+    "aq. KOH": "methanol",
     "AgCN": "isocyanomethane",
     "KCN": "acetonitrile",
     "AgNO2": "nitromethane",
@@ -23,8 +23,8 @@
     "AgF": "fluromethane"
   },
   "bromomethane": {
-    "NaOH (aq.)": "methanol",
-    "KOH (aq.)": "methanol",
+    "aq. NaOH": "methanol",
+    "aq. KOH": "methanol",
     "AgCN": "isocyanomethane",
     "KCN": "acetonitrile",
     "AgNO2": "nitromethane",
@@ -34,9 +34,9 @@
     "AgF": "fluromethane"
   },
   "chloroethane": {
-    "NaOH (aq.)": "ethanol",
-    "KOH (aq.)": "ethanol",
-    "KOH (alc.)": "ethene",
+    "aq. NaOH": "ethanol",
+    "aq. KOH": "ethanol",
+    "alc. KOH": "ethene",
     "AgCN": "isocyanoethane",
     "KCN": "propanenitrile",
     "AgNO2": "nitroethane",
@@ -46,9 +46,9 @@
     "AgF": "fluromethane"
   },
   "bromoethane": {
-    "NaOH (aq.)": "ethanol",
-    "KOH (aq.)": "ethanol",
-    "KOH (alc.)": "ethene",
+    "aq. NaOH": "ethanol",
+    "aq. KOH": "ethanol",
+    "alc. KOH": "ethene",
     "AgCN": "isocyanoethane",
     "KCN": "propanenitrile",
     "AgNO2": "nitroethane",
