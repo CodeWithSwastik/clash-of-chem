@@ -18,7 +18,9 @@
     "KCN": "acetonitrile",
     "AgNO2": "nitromethane",
     "KNO2": "methyl nitrite",
-    "Na/dry ether": "ethane"
+    "Na/dry ether": "ethane",
+    "NaI": "iodomethane",
+    "AgF": "fluromethane"
   },
   "bromomethane": {
     "NaOH (aq.)": "methanol",
@@ -28,22 +30,19 @@
     "AgNO2": "nitromethane",
     "KNO2": "methyl nitrite",
     "Na/dry ether": "ethane"
-  },
-  "chloroethane": {
-    "NaOH (aq.)": "ethanol",
-    "KOH (aq.)": "ethanol",
-    "AgCN": "isocyanoethane",
-    "KCN": "propanenitrile",
-    "AgNO2": "nitroethane",
-    "KNO2": "ethyl nitrite",
-    "Na/dry ether": "butane"
+    "NaI": "iodomethane",
+    "AgF": "fluromethane"
   },
   "methanol": {
     "Na": "sodium methoxide",
-    "SOCl2": "chloromethane"
+    "SOCl2": "chloromethane",
+    "PCl5": "chloromethane",
+    "ZnCl2/ HCl": "chloromethane"
   },
   "ethanol": {
     "Na": "sodium ethoxide",
-    "SOCl2": "chloroethane"
+    "SOCl2": "chloroethane",
+    "PCl5": "chloroethane",
+    "ZnCl2/ HCl": "chloroethane"
   }
 }
