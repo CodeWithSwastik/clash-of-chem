@@ -16,8 +16,18 @@
     "KOH (aq.)": "methanol",
     "AgCN": "isocyanomethane",
     "KCN": "acetonitrile",
+    "AgNO2": "nitromethane",
+    "KNO2": "methyl nitrite",
+    "Na/dry ether": "ethane"
+  },
+  "chloroethane": {
+    "NaOH (aq.)": "ethanol",
+    "KOH (aq.)": "ethanol",
+    "AgCN": "isocyanoethane",
+    "KCN": "propanenitrile",
     "AgNO2": "nitroethane",
-    "KNO2": "ethyl nitrite"
+    "KNO2": "ethyl nitrite",
+    "Na/dry ether": "butane"
   },
   "methanol": {
     "Na": "sodium methoxide",

@@ -14,5 +14,4 @@ def convert(from_compound, to_compound):
                     if c:
                         return c + x
 
-print(convert("methanol", "isocyanomethane"))
-    
+print(convert("methane", "butane"))
