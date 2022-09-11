@@ -3,14 +3,14 @@
     "Cl / uv": "chloromethane",
     "Br / uv": "bromomethane",
     "O2": "carbon dioxide",
-    "O2 / Cu / 523K / 100 atm": "methanol",
+    "O2 / Cu (523K , 100 atm)": "methanol",
     "O2 / Mo2O3": "methanal"
   },
   "ethane": {
     "Cl / uv": "chloroethane",
     "Br / uv": "bromoethane",
     "O2": "carbon dioxide",
-    "O2 / Cu / 523K / 100 atm": "ethanol",
+    "O2 / Cu (523K , 100 atm)": "ethanol",
     "O2 / Mo2O3": "ethanal"
   },
   "propane": {
