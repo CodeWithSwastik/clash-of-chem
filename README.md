@@ -5,7 +5,7 @@ It's Clash of Code, but Organic Chemistry.
 If you'd like to add a reaction to reactions.json please follow the following format:
 ```json
 {
-  "substrate 1": 
+  "reactant 1": 
       {
          "reageant 1": "product 1",
          "reageant 2": "product 2",
