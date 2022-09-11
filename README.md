@@ -1,6 +1,9 @@
 # Clash of Chemists
 It's Clash of Code, but Organic Chemistry.
 
+## Concept UI
+![image](https://user-images.githubusercontent.com/61446939/189540221-0d1309c9-caf4-4c10-823e-56eafaf33fe2.png)
+
 ## Contribution to reactions.json
 If you'd like to add a reaction to reactions.json please follow the following format:
 ```json
