@@ -67,7 +67,8 @@
     "Na": "sodium ethoxide",
     "SOCl2": "chloroethane",
     "PCl5": "chloroethane",
-    "ZnCl2/ HCl": "chloroethane"
+    "ZnCl2/ HCl": "chloroethane",
+    "conc. H2SO4": "ethene"
   },
   "ethene": {
     "HCl": "chloroethane",
