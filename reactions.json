@@ -16,7 +16,11 @@
     "KOH (aq.)": "methanol",
     "AgCN": "isocyanomethane",
     "KCN": "acetonitrile",
-    "AgNO₂": "nitroethane",
-    "KNO₂": "ethyl nitrite"
+    "AgNO2": "nitroethane",
+    "KNO2": "ethyl nitrite"
+  },
+  "methanol": {
+    "Na": "sodium methoxide",
+    "SOCl2": "chloromethane"
   }
 }
