@@ -1,5 +1,6 @@
 {
   "methane": {
-    "cl/uv": "1-chloromethane"
+    "Cl/uv": "1-chloromethane",
+    "Br/uv": "1-bromomethane"
   }
 }
