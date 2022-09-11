@@ -2,5 +2,13 @@
   "methane": {
     "Cl/uv": "1-chloromethane",
     "Br/uv": "1-bromomethane"
+  },
+  "ethane": {
+    "Cl/uv": "1-chloroethane",
+    "Br/uv": "1-bromoethane"
+  },
+  "propane": {
+    "Cl/uv": "2-chloropropane",
+    "Br/uv": "2-bromopropane"
   }
 }
