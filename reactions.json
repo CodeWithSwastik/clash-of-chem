@@ -1,14 +1,22 @@
 {
-  "methane": {
-    "Cl/uv": "1-chloromethane",
-    "Br/uv": "1-bromomethane"
+  "Methane": {
+    "Cl/uv": "Chloromethane",
+    "Br/uv": "Bromomethane"
   },
-  "ethane": {
-    "Cl/uv": "1-chloroethane",
-    "Br/uv": "1-bromoethane"
+  "Ethane": {
+    "Cl/uv": "Chloroethane",
+    "Br/uv": "Bromoethane"
   },
-  "propane": {
-    "Cl/uv": "2-chloropropane",
-    "Br/uv": "2-bromopropane"
+  "Propane": {
+    "Cl/uv": "2-Chloropropane",
+    "Br/uv": "2-Bromopropane"
+  },
+  "Chloromethane": {
+      "NaOH (aq.)": "Methanol",
+      "KOH (aq.)": "Methanol",
+      "AgCN": "Methyl carbylamine",
+      "KCN": "Ethanenitrile",
+      "AgNO₂": "Nitroethane",
+      "KNO“₂": "Ethyl nitrite"
   }
 }
