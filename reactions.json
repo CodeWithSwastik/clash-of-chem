@@ -1,15 +1,15 @@
 {
   "methane": {
-    "Cl/uv": "chloromethane",
-    "Br/uv": "bromomethane"
+    "Cl / uv": "chloromethane",
+    "Br / uv": "bromomethane"
   },
   "ethane": {
-    "Cl/uv": "chloroethane",
-    "Br/uv": "bromoethane"
+    "Cl / uv": "chloroethane",
+    "Br / uv": "bromoethane"
   },
   "propane": {
-    "Cl/uv": "2-chloropropane",
-    "Br/uv": "2-bromopropane"
+    "Cl / uv": "2-chloropropane",
+    "Br / uv": "2-bromopropane"
   },
   "chloromethane": {
     "NaOH (aq.)": "methanol",
@@ -18,7 +18,7 @@
     "KCN": "acetonitrile",
     "AgNO2": "nitromethane",
     "KNO2": "methyl nitrite",
-    "Na/dry ether": "ethane"
+    "Na / dry ether": "ethane"
   },
   "bromomethane": {
     "NaOH (aq.)": "methanol",
@@ -27,7 +27,7 @@
     "KCN": "acetonitrile",
     "AgNO2": "nitromethane",
     "KNO2": "methyl nitrite",
-    "Na/dry ether": "ethane"
+    "Na / dry ether": "ethane"
   },
   "chloroethane": {
     "NaOH (aq.)": "ethanol",
@@ -36,7 +36,7 @@
     "KCN": "propanenitrile",
     "AgNO2": "nitroethane",
     "KNO2": "ethyl nitrite",
-    "Na/dry ether": "butane"
+    "Na / dry ether": "butane"
   },
   "methanol": {
     "Na": "sodium methoxide",
@@ -45,5 +45,15 @@
   "ethanol": {
     "Na": "sodium ethoxide",
     "SOCl2": "chloroethane"
+  },
+  "ethene": {
+    "HCl": "chloroethane",
+    "HBr": "bromoethane",
+    "H2O / dil H2SO4": "ethanol"
+  },
+  "propene": {
+    "HCl": "2-chloropropane",
+    "HBr": "2-bromopropane",
+    "H2O / dil H2SO4": "propan-2-ol"
   }
 }
