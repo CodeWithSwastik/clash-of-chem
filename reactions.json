@@ -36,6 +36,7 @@
   "chloroethane": {
     "NaOH (aq.)": "ethanol",
     "KOH (aq.)": "ethanol",
+    "KOH (alc.)": "ethene",
     "AgCN": "isocyanoethane",
     "KCN": "propanenitrile",
     "AgNO2": "nitroethane",
@@ -47,6 +48,7 @@
   "bromoethane": {
     "NaOH (aq.)": "ethanol",
     "KOH (aq.)": "ethanol",
+    "KOH (alc.)": "ethene",
     "AgCN": "isocyanoethane",
     "KCN": "propanenitrile",
     "AgNO2": "nitroethane",
@@ -75,6 +77,7 @@
   "propene": {
     "HCl": "2-chloropropane",
     "HBr": "2-bromopropane",
+    "HBr / Peroxide": "1-bromopropane",
     "H2O / dil H2SO4": "propan-2-ol"
   }
 }

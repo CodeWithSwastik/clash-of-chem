@@ -22,4 +22,4 @@ def convert(from_compound: str, to_compound: str, avoid: list | None = None):
                     if c:
                         return c + x
 
-print(convert("methane", "chloroethane"))
+print(convert("ethene", "ethene"))
