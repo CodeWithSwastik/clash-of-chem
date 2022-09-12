@@ -26,7 +26,8 @@
     "KNO2": "methyl nitrite",
     "Na / dry ether": "ethane",
     "NaI": "iodomethane",
-    "AgF": "fluromethane"
+    "AgF": "fluromethane",
+    "CH3ONa": "methoxymethane"
   },
   "bromomethane": {
     "aq. NaOH": "methanol",
@@ -37,7 +38,8 @@
     "KNO2": "methyl nitrite",
     "Na / dry ether": "ethane",
     "NaI": "iodomethane",
-    "AgF": "fluromethane"
+    "AgF": "fluromethane",
+    "CH3ONa": "methoxymethane"
   },
   "chloroethane": {
     "aq. NaOH": "ethanol",
@@ -49,7 +51,8 @@
     "KNO2": "ethyl nitrite",
     "Na / dry ether": "butane",
     "NaI": "iodomethane",
-    "AgF": "fluromethane"
+    "AgF": "fluromethane",
+    "CH3ONa": "methoxyethane"
   },
   "bromoethane": {
     "aq. NaOH": "ethanol",
@@ -61,7 +64,8 @@
     "KNO2": "ethyl nitrite",
     "Na/dry ether": "butane",
     "NaI": "iodomethane",
-    "AgF": "fluromethane"
+    "AgF": "fluromethane",
+    "CH3ONa": "methoxyethane"
   },
   "methanol": {
     "Na": "sodium methoxide",
