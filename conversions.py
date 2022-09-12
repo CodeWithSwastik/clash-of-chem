@@ -18,7 +18,7 @@ def convert(from_compound: str, to_compound: str, avoid: Optional[list] = None):
     for sub in reactions:        
         for reag, prod in reactions[sub].items():
             if prod == to_compound and sub not in avoid:
-                x = f" + {reag} --> {prod}"
+                x = f" + {reag} → {prod}"
                 avoid.append(sub)
                 if sub == from_compound:
                     return sub + x
@@ -54,10 +54,3 @@ def generate_conversion_problem(start: Optional[str] = None, length: int = 3):
         length -= 1
 
     return start,end
-
-
-print("\n\nClash of Chemists CLI")
-s, e = generate_conversion_problem()
-print(f"Q. Convert {s} to {e}")
-input("Press enter to see 1 possible solution.")
-print(convert(s,e))
