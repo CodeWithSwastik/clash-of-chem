@@ -41,7 +41,7 @@
     "AgF": "fluromethane",
     "CH3ONa": "methoxymethane"
   },
-  "1-chloroethane": {
+  "chloroethane": {
     "aq. NaOH": "ethanol",
     "aq. KOH": "ethanol",
     "alc. KOH": "ethene",
@@ -97,10 +97,10 @@
     "Na": "sodium methoxide",
     "SOCl2": "chloromethane",
     "PCl5": "chloromethane",
-    "PCl3": "chloroethane",
+    "PCl3": "chloromethane",
     "ZnCl2 / HCl": "chloromethane",
     "HCOOH": "methyl methanoate",
-    "Cu / 573K": "methanal",
+    "Cu (573K)": "methanal",
     "KMnO4": "methanoic acid",
     "HCl": "chloromethane",
     "HBr": "bromomethane",
@@ -129,5 +129,5 @@
     "HBr": "2-bromopropane",
     "HBr / Peroxide": "1-bromopropane",
     "H2O / dil H2SO4": "propan-2-ol"
-  },
+  }
 }
