@@ -112,8 +112,8 @@
     "PCl5": "chloroethane",
     "PCl3": "chloroethane",
     "ZnCl2 / HCl": "chloroethane",
-    "conc. H2SO4 / 443K": "ethene",
-    "Al2O3 / 663K": "ethene",
+    "conc. H2SO4 (443K)": "ethene",
+    "Al2O3 (663K)": "ethene",
     "HCl": "chloroethane",
     "HBr": "bromoethane",
     "HI": "iodoethane"
