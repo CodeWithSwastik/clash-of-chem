@@ -1,8 +1,15 @@
 import json
 from re import L
 from typing import Optional
+import os
 
-with open("reactions.json","r") as f:
+
+__all__ = (
+    "convert",
+    "generate_conversion_problem",
+)
+
+with open(os.path.join(os.path.dirname(__file__), "data/reactions.json"), "r") as f:
     reactions = json.load(f)
 
 def convert(from_compound: str, to_compound: str, avoid: Optional[list] = None):

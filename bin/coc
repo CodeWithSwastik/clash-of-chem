@@ -1,4 +1,5 @@
-from conversions import generate_conversion_problem, convert
+#!/usr/bin/env python3
+from clash_of_chem import generate_conversion_problem, convert
 
 RED = "\033[1;31m"
 GREEN = "\033[1;32m"
