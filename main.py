@@ -1,9 +1,9 @@
 from conversions import generate_conversion_problem, convert
 
-RED = "\033[1;31;40m"
-GREEN = "\033[1;32;40m"
-YELLOW = "\033[1;33;40m"
-WHITE = "\033[1;37;40m"
+RED = "\033[1;31m"
+GREEN = "\033[1;32m"
+YELLOW = "\033[1;33m"
+WHITE = "\033[1;37m"
 ENDC = "\033[0m"
 
 print(RED + "\n\nClash of Chemists CLI\n\n" + ENDC)
@@ -18,5 +18,8 @@ for i,x in enumerate(cs):
         print(GREEN + x + ENDC, end = ' ')
     else:
         print(YELLOW + x + ENDC, end = ' ')
+
+    if x == e:
+        break # temp fix
 
 print("\n\n")
