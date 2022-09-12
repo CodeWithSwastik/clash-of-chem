@@ -17,7 +17,7 @@
     "Cl / uv": "2-chloropropane",
     "Br / uv": "2-bromopropane"
   },
-  "1-chloromethane": {
+  "chloromethane": {
     "aq. NaOH": "methanol",
     "aq. KOH": "methanol",
     "AgCN": "isocyanomethane",
@@ -29,7 +29,7 @@
     "AgF": "fluromethane",
     "CH3ONa": "methoxymethane"
   },
-  "1-bromomethane": {
+  "bromomethane": {
     "aq. NaOH": "methanol",
     "aq. KOH": "methanol",
     "AgCN": "isocyanomethane",
@@ -54,7 +54,7 @@
     "AgF": "fluroethane",
     "CH3ONa": "methoxyethane"
   },
-  "1-bromoethane": {
+  "bromoethane": {
     "aq. NaOH": "ethanol",
     "aq. KOH": "ethanol",
     "alc. KOH": "ethene",
@@ -67,7 +67,7 @@
     "AgF": "fluroethane",
     "CH3ONa": "methoxyethane"
   },
-  "1-bromopropane": {
+  "bromopropane": {
     "aq. NaOH": "propan-1-ol",
     "aq. KOH": "propan-1-ol",
     "alc. KOH": "propene",
