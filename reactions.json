@@ -50,8 +50,8 @@
     "AgNO2": "nitroethane",
     "KNO2": "ethyl nitrite",
     "Na / dry ether": "butane",
-    "NaI": "iodomethane",
-    "AgF": "fluromethane",
+    "NaI": "iodoethane",
+    "AgF": "fluroethane",
     "CH3ONa": "methoxyethane"
   },
   "1-bromoethane": {
@@ -63,9 +63,35 @@
     "AgNO2": "nitroethane",
     "KNO2": "ethyl nitrite",
     "Na / dry ether": "butane",
-    "NaI": "iodomethane",
-    "AgF": "fluromethane",
+    "NaI": "iodoethane",
+    "AgF": "fluroethane",
     "CH3ONa": "methoxyethane"
+  },
+  "1-bromopropane": {
+    "aq. NaOH": "propan-1-ol",
+    "aq. KOH": "propan-1-ol",
+    "alc. KOH": "propene",
+    "AgCN": "1-isocyanopropane",
+    "KCN": "1-butanenitrile",
+    "AgNO2": "1-nitropropane",
+    "KNO2": "1-propyl nitrite",
+    "Na/dry ether": "hexane",
+    "NaI": "1-iodopropane",
+    "AgF": "1-fluropropane",
+    "CH3ONa": "1-methoxypropane"
+  },
+  "2-bromopropane": {
+    "aq. NaOH": "propan-2-ol",
+    "aq. KOH": "propan-2-ol",
+    "alc. KOH": "propene",
+    "AgCN": "2-isocyanopropane",
+    "KCN": "2-butanenitrile",
+    "AgNO2": "2-nitropropane",
+    "KNO2": "2-propyl nitrite",
+    "Na/dry ether": "2,3-dimethylbutane",
+    "NaI": "2-iodopropane",
+    "AgF": "2-fluropropane",
+    "CH3ONa": "2-methoxypropane"
   },
   "methanol": {
     "Na": "sodium methoxide",
@@ -96,7 +122,7 @@
     "HCl": "chloroethane",
     "HBr": "bromoethane",
     "H2O / dil H2SO4": "ethanol",
-    "O3": "trioxidan-1-id-3-yl"
+    "O3 / Zn dust / H2O": "methanal"
   },
   "propene": {
     "HCl": "2-chloropropane",
@@ -104,7 +130,4 @@
     "HBr / Peroxide": "1-bromopropane",
     "H2O / dil H2SO4": "propan-2-ol"
   },
-  "trioxidan-1-id-3-yl": {
-    "Zn dust/ H2O": "methanal"
-  }
 }
