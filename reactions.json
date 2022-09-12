@@ -17,7 +17,7 @@
     "Cl / uv": "2-chloropropane",
     "Br / uv": "2-bromopropane"
   },
-  "chloromethane": {
+  "1-chloromethane": {
     "aq. NaOH": "methanol",
     "aq. KOH": "methanol",
     "AgCN": "isocyanomethane",
@@ -26,9 +26,10 @@
     "KNO2": "methyl nitrite",
     "Na / dry ether": "ethane",
     "NaI": "iodomethane",
-    "AgF": "fluromethane"
+    "AgF": "fluromethane",
+    "CH3ONa": "methoxymethane"
   },
-  "bromomethane": {
+  "1-bromomethane": {
     "aq. NaOH": "methanol",
     "aq. KOH": "methanol",
     "AgCN": "isocyanomethane",
@@ -37,9 +38,10 @@
     "KNO2": "methyl nitrite",
     "Na / dry ether": "ethane",
     "NaI": "iodomethane",
-    "AgF": "fluromethane"
+    "AgF": "fluromethane",
+    "CH3ONa": "methoxymethane"
   },
-  "chloroethane": {
+  "1-chloroethane": {
     "aq. NaOH": "ethanol",
     "aq. KOH": "ethanol",
     "alc. KOH": "ethene",
@@ -49,9 +51,10 @@
     "KNO2": "ethyl nitrite",
     "Na / dry ether": "butane",
     "NaI": "iodomethane",
-    "AgF": "fluromethane"
+    "AgF": "fluromethane",
+    "CH3ONa": "methoxyethane"
   },
-  "bromoethane": {
+  "1-bromoethane": {
     "aq. NaOH": "ethanol",
     "aq. KOH": "ethanol",
     "alc. KOH": "ethene",
@@ -61,7 +64,8 @@
     "KNO2": "ethyl nitrite",
     "Na / dry ether": "butane",
     "NaI": "iodomethane",
-    "AgF": "fluromethane"
+    "AgF": "fluromethane",
+    "CH3ONa": "methoxyethane"
   },
   "methanol": {
     "Na": "sodium methoxide",
