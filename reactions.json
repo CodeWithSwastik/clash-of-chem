@@ -67,18 +67,18 @@
     "AgF": "fluroethane",
     "CH3ONa": "methoxyethane"
   },
-  "1-bromopropane": {
-    "aq. NaOH": "propan-1-ol",
-    "aq. KOH": "propan-1-ol",
+  "bromopropane": {
+    "aq. NaOH": "propanol",
+    "aq. KOH": "propanol",
     "alc. KOH": "propene",
-    "AgCN": "1-isocyanopropane",
-    "KCN": "1-butanenitrile",
-    "AgNO2": "1-nitropropane",
-    "KNO2": "1-propyl nitrite",
+    "AgCN": "isocyanopropane",
+    "KCN": "butanenitrile",
+    "AgNO2": "nitropropane",
+    "KNO2": "propyl nitrite",
     "Na/dry ether": "hexane",
-    "NaI": "1-iodopropane",
-    "AgF": "1-fluropropane",
-    "CH3ONa": "1-methoxypropane"
+    "NaI": "iodopropane",
+    "AgF": "fluropropane",
+    "CH3ONa": "methoxypropane"
   },
   "2-bromopropane": {
     "aq. NaOH": "propan-2-ol",
@@ -127,7 +127,7 @@
   "propene": {
     "HCl": "2-chloropropane",
     "HBr": "2-bromopropane",
-    "HBr / Peroxide": "1-bromopropane",
+    "HBr / Peroxide": "bromopropane",
     "H2O / dil H2SO4": "propan-2-ol"
   }
 }
