@@ -68,8 +68,8 @@
     "CH3ONa": "methoxyethane"
   },
   "1-bromopropane": {
-    "aq. NaOH": "propanol",
-    "aq. KOH": "propanol",
+    "aq. NaOH": "propan-1-ol",
+    "aq. KOH": "propan-1-ol",
     "alc. KOH": "propene",
     "AgCN": "1-isocyanopropane",
     "KCN": "1-butanenitrile",
@@ -130,6 +130,6 @@
     "HBr": "2-bromopropane",
     "HBr / Peroxide": "1-bromopropane",
     "H2O / dil H2SO4": "propan-2-ol",
-    "B2H6": "propanol"
+    "B2H6": "propan-1-ol"
   }
 }
