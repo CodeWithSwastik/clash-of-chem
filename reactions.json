@@ -21,24 +21,24 @@
     "aq. NaOH": "methanol",
     "aq. KOH": "methanol",
     "AgCN": "isocyanomethane",
-    "KCN": "acetonitrile",
+    "KCN": "ethanenitrile",
     "AgNO2": "nitromethane",
     "KNO2": "methyl nitrite",
     "Na / dry ether": "ethane",
     "NaI": "iodomethane",
-    "AgF": "fluromethane",
+    "AgF": "fluoromethane",
     "CH3ONa": "methoxymethane"
   },
   "bromomethane": {
     "aq. NaOH": "methanol",
     "aq. KOH": "methanol",
     "AgCN": "isocyanomethane",
-    "KCN": "acetonitrile",
+    "KCN": "ethanenitrile",
     "AgNO2": "nitromethane",
     "KNO2": "methyl nitrite",
     "Na / dry ether": "ethane",
     "NaI": "iodomethane",
-    "AgF": "fluromethane",
+    "AgF": "fluoromethane",
     "CH3ONa": "methoxymethane"
   },
   "chloroethane": {
@@ -51,7 +51,7 @@
     "KNO2": "ethyl nitrite",
     "Na / dry ether": "butane",
     "NaI": "iodoethane",
-    "AgF": "fluroethane",
+    "AgF": "fluoroethane",
     "CH3ONa": "methoxyethane"
   },
   "bromoethane": {
@@ -64,7 +64,7 @@
     "KNO2": "ethyl nitrite",
     "Na / dry ether": "butane",
     "NaI": "iodoethane",
-    "AgF": "fluroethane",
+    "AgF": "fluoroethane",
     "CH3ONa": "methoxyethane"
   },
   "1-bromopropane": {
@@ -77,7 +77,7 @@
     "KNO2": "1-propyl nitrite",
     "Na/dry ether": "hexane",
     "NaI": "1-iodopropane",
-    "AgF": "1-fluropropane",
+    "AgF": "1-fluoropropane",
     "CH3ONa": "1-methoxypropane"
   },
   "2-bromopropane": {
@@ -90,7 +90,7 @@
     "KNO2": "2-propyl nitrite",
     "Na/dry ether": "2,3-dimethylbutane",
     "NaI": "2-iodopropane",
-    "AgF": "2-fluropropane",
+    "AgF": "2-fluoropropane",
     "CH3ONa": "2-methoxypropane"
   },
   "methanol": {
