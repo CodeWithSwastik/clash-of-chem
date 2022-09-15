@@ -1,0 +1,31 @@
+{
+    "CH4":{
+        "isomers": {}
+    },
+
+    "C2H6":{
+        "isomers": {}
+    },
+
+    "C3H8":{
+        "isomers": {}
+    },
+
+    "C4H10": {
+        "isomers":{
+            "chain-isomers": {
+                "count": 2,
+                "names": ["butane","2-methylpropane"]
+            }
+        }
+    },
+
+    "C5H10":{
+        "isomers": {
+            "chain-isomers": {
+                "count": 3,
+                "chain-isomers": ["pentane","2-methylbutane","2,2-dimethylbutane"]
+            }
+        }
+    }
+}
