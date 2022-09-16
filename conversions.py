@@ -45,7 +45,7 @@ def generate_conversion_problem(start: Optional[str] = None, length: int = 3):
         end = random.choice(list(reactions[prev].values()))
         
         if c == 10000:
-            break
+        	break
 
         if length > 0 and end not in reactions:
             c += 1
@@ -54,3 +54,20 @@ def generate_conversion_problem(start: Optional[str] = None, length: int = 3):
         length -= 1
 
     return start,end
+
+def generate_problem():
+	'''
+	Generate a problem set
+	Problem set contains start substrate,end substrate, solution, solution set
+	Returns a tuple
+	'''
+	from random import choice
+	start = choice(list(reactions))
+	solution = choice(list(reactions[start]))
+	solutions = [solution]
+	for i in range(2):
+		buffer = choice(list(reactions[choice(list(reactions))]))
+		if buffer not in solutions:
+			solutions.append(buffer)
+	end = reactions[start][solution]
+	return start,end,solution,solutions
