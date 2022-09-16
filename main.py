@@ -10,16 +10,16 @@ print(RED + "\n\nClash of Chemists CLI\n\n" + ENDC)
 s, e = generate_conversion_problem()
 print(f"Q. Convert {GREEN + s + ENDC} to {GREEN + e + ENDC}")
 input("Press enter to see 1 possible solution.")
-cs = convert(s,e).split(" ")
-for i,x in enumerate(cs):
+cs = convert(s, e).split(" ")
+for i, x in enumerate(cs):
     if x in "+→":
-        print(WHITE + x + ENDC, end = ' ')
-    elif x in (s,e) or cs[i-1]=="→":
-        print(GREEN + x + ENDC, end = ' ')
+        print(WHITE + x + ENDC, end=" ")
+    elif x in (s, e) or cs[i - 1] == "→":
+        print(GREEN + x + ENDC, end=" ")
     else:
-        print(YELLOW + x + ENDC, end = ' ')
+        print(YELLOW + x + ENDC, end=" ")
 
     if x == e:
-        break # temp fix
+        break  # temp fix
 
 print("\n\n")

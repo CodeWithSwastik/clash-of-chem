@@ -2,8 +2,9 @@ import json
 from re import L
 from typing import Optional
 
-with open("reactions.json","r") as f:
+with open("reactions.json", "r") as f:
     reactions = json.load(f)
+
 
 def convert(from_compound: str, to_compound: str, avoid: Optional[list] = None):
     """
@@ -14,8 +15,8 @@ def convert(from_compound: str, to_compound: str, avoid: Optional[list] = None):
     """
     if avoid is None:
         avoid = []
-    
-    for sub in reactions:        
+
+    for sub in reactions:
         for reag, prod in reactions[sub].items():
             if prod == to_compound and sub not in avoid:
                 x = f" + {reag} → {prod}"
@@ -43,9 +44,9 @@ def generate_conversion_problem(start: Optional[str] = None, length: int = 3):
     while length:
         prev = end
         end = random.choice(list(reactions[prev].values()))
-        
+
         if c == 10000:
-        	break
+            break
 
         if length > 0 and end not in reactions:
             c += 1
@@ -53,21 +54,23 @@ def generate_conversion_problem(start: Optional[str] = None, length: int = 3):
             continue
         length -= 1
 
-    return start,end
+    return start, end
+
 
 def generate_problem():
-	'''
-	Generate a problem set
-	Problem set contains start substrate,end substrate, solution, solution set
-	Returns a tuple
-	'''
-	from random import choice
-	start = choice(list(reactions))
-	solution = choice(list(reactions[start]))
-	solutions = [solution]
-	for i in range(2):
-		buffer = choice(list(reactions[choice(list(reactions))]))
-		if buffer not in solutions:
-			solutions.append(buffer)
-	end = reactions[start][solution]
-	return start,end,solution,solutions
+    """
+    Generate a problem set
+    Problem set contains start substrate,end substrate, solution, solution set
+    Returns a tuple
+    """
+    from random import choice
+
+    start = choice(list(reactions))
+    solution = choice(list(reactions[start]))
+    solutions = [solution]
+    for i in range(2):
+        buffer = choice(list(reactions[choice(list(reactions))]))
+        if buffer not in solutions:
+            solutions.append(buffer)
+    end = reactions[start][solution]
+    return start, end, solution, solutions
