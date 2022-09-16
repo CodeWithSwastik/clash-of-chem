@@ -56,6 +56,11 @@ def generate_conversion_problem(start: Optional[str] = None, length: int = 3):
     return start,end
 
 def generate_problem():
+	'''
+	Generate a problem set
+	Problem set contains start substrate,end substrate, solution, solution set
+	Returns a tuple
+	'''
 	from random import choice
 	start = choice(list(reactions))
 	solution = choice(list(reactions[start]))
