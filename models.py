@@ -6,5 +6,12 @@ class ProblemSet(BaseModel):
     end_substrate: str
     start_substrate_image_url: HttpUrl
     end_substrate_image_url: HttpUrl
-    solution: str
+    svk: int
     solution_set: list
+
+class ValidationSet(BaseModel):
+	svk: int
+	solution : str
+
+class ValidationResult(BaseModel):
+	result : bool
