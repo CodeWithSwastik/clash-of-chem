@@ -1,9 +1,12 @@
 import conversions as conv
 from fastapi import FastAPI , HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 import models
 import random
 
 api = FastAPI(title="Clash of Chemists Backend Api")
+api.add_middleware(CORSMiddleware,allow_origins=['*'])
+
 # Globals
 SvkMap = {}
 
@@ -35,17 +38,17 @@ def generate_problem_set():
     )
     return result
 
-@api.post('/api/problem/validate', response_model= models.ValidationResult,tags=['Problem'])
-def validate_solution(validationSet : models.ValidationSet):
+@api.post('/api/problem/validate',response_model = models.ValidationResult,tags=['Problem'])
+def validate_solution(solution : str,svk : int):
 	'''
 	Validate a solution against a problem using a svk(Solution Validation Key).
 	'''
 	try:
-		if SvkMap[validationSet.svk] == validationSet.solution:
-			del SvkMap[validationSet.svk]
+		if SvkMap[svk] == solution:
 			return models.ValidationResult(result=True)
 		else:
 			return models.ValidationResult(result=False)
+		del SvkMap[svk]
 	except KeyError:
 		raise HTTPException(status_code=404,detail="svk doesn't exist")
 	

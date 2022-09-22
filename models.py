@@ -9,9 +9,5 @@ class ProblemSet(BaseModel):
     svk: int
     solution_set: list
 
-class ValidationSet(BaseModel):
-	svk: int
-	solution : str
-
 class ValidationResult(BaseModel):
 	result : bool
