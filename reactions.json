@@ -142,5 +142,12 @@
   },
   "phenol": {
     "Zn": "benzene"
+  },
+  "aniline": {
+    "NaNO2 / HCl (0°C-5°C)": "benzenediazonium chloride"
+  },
+  "benzenediazonium chloride": {
+    "NaOH / H20": "phenol",
+    "HCl, Cu": "chlorobenzene"
   }
 }
