@@ -28,7 +28,6 @@ def convert(from_compound: str, to_compound: str, avoid: Optional[list] = None):
                     if c:
                         return c + x
 
-
 def generate_conversion_problem(start: Optional[str] = None, length: int = 3):
     """
     Generates a conversion problem that can be solved in upto `length` steps.
