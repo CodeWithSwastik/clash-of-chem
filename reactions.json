@@ -132,5 +132,15 @@
     "HBr / Peroxide": "1-bromopropane",
     "H2O / dil H2SO4": "propan-2-ol",
     "B2H6": "propan-1-ol"
+  },
+  "ethyne": {
+    "Fe Tube / 873 K": "benzene"
+  },
+  "benzene": {
+    "Cl2 / Fe": "chlorobenzene",
+    "NaOH / HCl (300 atm, 623K)": "phenol"
+  },
+  "phenol": {
+    "Zn": "benzene"
   }
 }
