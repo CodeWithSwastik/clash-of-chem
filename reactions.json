@@ -137,7 +137,9 @@
     "Red Hot Fe Tube (873 K)": "benzene"
   },
   "benzene": {
-    "Cl2 / Fe": "chlorobenzene",
+    "Cl2 / Fe": "chlorobenzene"
+  },
+  "chlorobenzene": {
     "NaOH / HCl (300 atm, 623K)": "phenol"
   },
   "phenol": {
