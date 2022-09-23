@@ -141,7 +141,8 @@
     "NaOH / HCl (300 atm, 623K)": "phenol"
   },
   "phenol": {
-    "Zn": "benzene"
+    "Zn": "benzene",
+    "NH3 / anhyd. ZnCl2": "aniline"
   },
   "aniline": {
     "NaNO2 / HCl (0°C-5°C)": "benzenediazonium chloride"
