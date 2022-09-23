@@ -15,7 +15,7 @@ for qno in range(1, int(input("How many questions?:"))+1):
     for i, x in enumerate(cs):
         if x in "+→":
             print(WHITE + x + ENDC, end=" ")
-        elif x in (s, e) or cs[i - 1] == "→":
+        elif i == 0 or i == len(cs)-1 or cs[i - 1] == "→" or cs[i + 1] == "+":
             print(GREEN + x + ENDC, end=" ")
         else:
             print(YELLOW + x + ENDC, end=" ")

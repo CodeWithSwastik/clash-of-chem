@@ -126,6 +126,9 @@
     "B2H6": "ethanol",
     "Br2 / CCl4": "1,2-dibromoethane"
   },
+  "1,2-dibromoethane": {
+    "alc. KOH": "ethyne"
+  },
   "propene": {
     "HCl": "2-chloropropane",
     "HBr": "2-bromopropane",
@@ -144,13 +147,18 @@
   },
   "phenol": {
     "Zn": "benzene",
-    "NH3 / anhyd. ZnCl2": "aniline"
+    "NH3 / anhyd. ZnCl2": "aniline",
+    "conc. HNO3": "2,4,6-trinitrophenol",
+    "CO2 / NaOH / H+ (423K, 3-7 atm)": "2-hydroxybenzoic acid"
+  },
+  "2-hydroxybenzoic acid": {
+    "(CH3CO)2O": "aspirin"
   },
   "aniline": {
-    "NaNO2 / HCl (0°C-5°C)": "benzenediazonium chloride"
+    "NaNO2 / HCl (0-5 deg C)": "benzenediazonium chloride"
   },
   "benzenediazonium chloride": {
     "NaOH / H20": "phenol",
-    "HCl, Cu": "chlorobenzene"
+    "HCl / Cu": "chlorobenzene"
   }
 }
