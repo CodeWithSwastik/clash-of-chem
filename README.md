@@ -1,4 +1,4 @@
-# Clash of Chemists
+# Clash of Chem
 It's Clash of Code, but Organic Chemistry.
 
 ## Concept UI
