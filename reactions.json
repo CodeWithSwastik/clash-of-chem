@@ -127,7 +127,7 @@
     "Br2 / CCl4": "1,2-dibromoethane"
   },
   "1,2-dibromoethane": {
-    "alc. KOH": "ethyne"
+    "alc. KOH / NaNH2": "ethyne"
   },
   "propene": {
     "HCl": "2-chloropropane",
