@@ -167,7 +167,7 @@
     "H2SO4/ (373K)": "4-hydroxysulphonic acid"
   },
   "2-hydroxybenzoic acid": {
-    "(CH3CO)2O": "2-Acetoxybenzoic acid"
+    "(CH3CO)2O": "aspirin"
   },
   "aniline": {
     "NaNO2 / HCl (0-5 deg C)": "benzenediazonium chloride"
@@ -180,6 +180,6 @@
     "CuBr": "bromobenzene",
     "CuCN": "benzenenitrile",
     "KI": "iodobenzene",
-    "HBF4/ (Heat)": "flurobenzene"
+    "HBF4/ (Heat)": "fluorobenzene"
   }
 }
