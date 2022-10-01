@@ -150,7 +150,9 @@
   "benzene": {
     "Cl2 / Fe": "chlorobenzene",
     "conc HNO3 / conc H2SO4": "nitrobenzene",
-    "conc H2SO4": "benzenesulphonic acid"
+    "conc H2SO4": "benzenesulphonic acid",
+    "H2 / Ni (473 K)": "cyclohexane",
+    "O3 / Zn (Heat)": "ethanedial"
   },
   "chlorobenzene": {
     "NaOH / HCl (300 atm, 623K)": "phenol",
@@ -181,5 +183,9 @@
     "CuCN": "benzonitrile",
     "KI": "iodobenzene",
     "HBF4 / (Heat)": "fluorobenzene"
+  },
+  "toluene":{
+    "H2 / Ni (473 K)": "1-methylcyclohexene",
+    "conc HNO3 / conc H2SO4": "2,4,6-trinitrotoluene"
   }
 }
