@@ -79,7 +79,7 @@
     "KCN": "1-butanenitrile",
     "AgNO2": "1-nitropropane",
     "KNO2": "1-propyl nitrite",
-    "Na/dry ether": "hexane",
+    "Na / dry ether": "hexane",
     "NaI": "1-iodopropane",
     "AgF": "1-fluoropropane",
     "CH3ONa": "1-methoxypropane"
@@ -92,7 +92,7 @@
     "KCN": "2-butanenitrile",
     "AgNO2": "2-nitropropane",
     "KNO2": "2-propyl nitrite",
-    "Na/dry ether": "2,3-dimethylbutane",
+    "Na / dry ether": "2,3-dimethylbutane",
     "NaI": "2-iodopropane",
     "AgF": "2-fluoropropane",
     "CH3ONa": "2-methoxypropane"
@@ -109,8 +109,8 @@
     "HCl": "chloromethane",
     "HBr": "bromomethane",
     "HI": "iodomethane",
-    "Red P/ HI": "methane",
-    "Red P/HBr": "methane"
+    "Red P / HI": "methane",
+    "Red P / HBr": "methane"
   },
   "ethanol": {
     "Na": "sodium ethoxide",
@@ -123,8 +123,8 @@
     "HCl": "chloroethane",
     "HBr": "bromoethane",
     "HI": "iodoethane",
-    "Red P/ HI": "ethane",
-    "Red P/HBr": "ethane"
+    "Red P / HI": "ethane",
+    "Red P / HBr": "ethane"
   },
   "ethene": {
     "HCl": "chloroethane",
@@ -149,7 +149,7 @@
   },
   "benzene": {
     "Cl2 / Fe": "chlorobenzene",
-    "conc HNO3/ conc H2SO4": "nitrobenzene",
+    "conc HNO3 / conc H2SO4": "nitrobenzene",
     "conc H2SO4": "benzenesulphonic acid"
   },
   "chlorobenzene": {
@@ -159,9 +159,9 @@
   "phenol": {
     "Zn": "benzene",
     "NH3 / anhyd. ZnCl2": "aniline",
-    "Br2/ H2O": "2,4,6-tribromophenol",
-    "Br2/ CS2": "4-bromophenol",
-    "Br2/ CCl4": "4-bromophenol",
+    "Br2 / H2O": "2,4,6-tribromophenol",
+    "Br2 / CS2": "4-bromophenol",
+    "Br2 / CCl4": "4-bromophenol",
     "conc. HNO3": "2,4,6-trinitrophenol",
     "CO2 / NaOH / H+ (423K, 3-7 atm)": "2-hydroxybenzoic acid",
     "H2SO4/ (373K)": "4-hydroxysulphonic acid"
@@ -175,11 +175,11 @@
   "benzenediazonium chloride": {
     "NaOH / H20": "phenol",
     "HCl / Cu": "chlorobenzene",
-    "HBr/ Cu": "bromobenzene",
+    "HBr / Cu": "bromobenzene",
     "CuCl": "chlorobenzene",
     "CuBr": "bromobenzene",
     "CuCN": "benzenenitrile",
     "KI": "iodobenzene",
-    "HBF4/ (Heat)": "fluorobenzene"
+    "HBF4 / (Heat)": "fluorobenzene"
   }
 }
