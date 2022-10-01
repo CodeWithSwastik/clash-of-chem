@@ -162,6 +162,14 @@
   "propyne": {
     "HgSO4 / H2SO4": "propanone"
   },
+  "methanal": {
+    "HCN": "formaldehyde cyanohydrin",
+    "NaHSO3": "formaldehyde sodium bisulphite"
+  },
+  "ethanal": {
+    "HCN": "acetaldehyde cyanohydrin",
+    "NaHSO3": "acetaldehyde sodium bisulphite"
+  },
   "benzene": {
     "Cl2 / Fe": "chlorobenzene",
     "conc HNO3 / conc H2SO4": "nitrobenzene",
