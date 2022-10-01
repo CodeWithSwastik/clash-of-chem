@@ -27,7 +27,8 @@
     "Na / dry ether": "ethane",
     "NaI": "iodomethane",
     "AgF": "fluoromethane",
-    "CH3ONa": "methoxymethane"
+    "CH3ONa": "methoxymethane",
+    "NH3 excess": "methylamine"
   },
   "bromomethane": {
     "aq. NaOH": "methanol",
@@ -39,7 +40,8 @@
     "Na / dry ether": "ethane",
     "NaI": "iodomethane",
     "AgF": "fluoromethane",
-    "CH3ONa": "methoxymethane"
+    "CH3ONa": "methoxymethane",
+    "NH3 excess": "methylamine"
   },
   "chloroethane": {
     "aq. NaOH": "ethanol",
@@ -52,7 +54,8 @@
     "Na / dry ether": "butane",
     "NaI": "iodoethane",
     "AgF": "fluoroethane",
-    "CH3ONa": "methoxyethane"
+    "CH3ONa": "methoxyethane",
+    "NH3 excess": "ethylamine"
   },
   "bromoethane": {
     "aq. NaOH": "ethanol",
@@ -65,7 +68,8 @@
     "Na / dry ether": "butane",
     "NaI": "iodoethane",
     "AgF": "fluoroethane",
-    "CH3ONa": "methoxyethane"
+    "CH3ONa": "methoxyethane",
+    "NH3 excess": "ethylamine"
   },
   "1-bromopropane": {
     "aq. NaOH": "propan-1-ol",
@@ -104,7 +108,9 @@
     "KMnO4": "methanoic acid",
     "HCl": "chloromethane",
     "HBr": "bromomethane",
-    "HI": "iodomethane"
+    "HI": "iodomethane",
+    "Red P/ HI": "methane",
+    "Red P/HBr": "methane"
   },
   "ethanol": {
     "Na": "sodium ethoxide",
@@ -116,7 +122,9 @@
     "Al2O3 (663K)": "ethene",
     "HCl": "chloroethane",
     "HBr": "bromoethane",
-    "HI": "iodoethane"
+    "HI": "iodoethane",
+    "Red P/ HI": "ethane",
+    "Red P/HBr": "ethane"
   },
   "ethene": {
     "HCl": "chloroethane",
@@ -140,16 +148,23 @@
     "Red Hot Fe Tube (873 K)": "benzene"
   },
   "benzene": {
-    "Cl2 / Fe": "chlorobenzene"
+    "Cl2 / Fe": "chlorobenzene",
+    "conc HNO3/ conc H2SO4": "nitrobenzene",
+    "conc H2SO4": "benzenesulphonic acid"
   },
   "chlorobenzene": {
-    "NaOH / HCl (300 atm, 623K)": "phenol"
+    "NaOH / HCl (300 atm, 623K)": "phenol",
+    "conc H2SO4": "4-chlorobenzenesulphonic acid"
   },
   "phenol": {
     "Zn": "benzene",
     "NH3 / anhyd. ZnCl2": "aniline",
+    "Br2/ H2O": "2,4,6-tribromophenol",
+    "Br2/ CS2": "4-bromophenol",
+    "Br2/ CCl4": "4-bromophenol",
     "conc. HNO3": "2,4,6-trinitrophenol",
-    "CO2 / NaOH / H+ (423K, 3-7 atm)": "2-hydroxybenzoic acid"
+    "CO2 / NaOH / H+ (423K, 3-7 atm)": "2-hydroxybenzoic acid",
+    "H2SO4/ (373K)": "4-hydroxysulphonic acid"
   },
   "2-hydroxybenzoic acid": {
     "(CH3CO)2O": "aspirin"
@@ -159,6 +174,12 @@
   },
   "benzenediazonium chloride": {
     "NaOH / H20": "phenol",
-    "HCl / Cu": "chlorobenzene"
+    "HCl / Cu": "chlorobenzene",
+    "HBr/ Cu": "bromobenzene",
+    "CuCl": "chlorobenzene",
+    "CuBr": "bromobenzene",
+    "CuCN": "benzenenitrile",
+    "KI": "iodobenzene",
+    "HBF4/ (Heat)": "fluorobenzene"
   }
 }
