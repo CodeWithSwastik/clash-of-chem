@@ -151,11 +151,16 @@
     "HCl": "2-chloropropane",
     "HBr": "2-bromopropane",
     "HBr / Peroxide": "1-bromopropane",
+    "O3 / Zn dust / H2O": "ethanal",
     "H2O / dil H2SO4": "propan-2-ol",
     "B2H6": "propan-1-ol"
   },
   "ethyne": {
-    "Red Hot Fe Tube (873 K)": "benzene"
+    "Red Hot Fe Tube (873 K)": "benzene",
+    "HgSO4 / H2SO4": "ethanal"
+  },
+  "propyne": {
+    "HgSO4 / H2SO4": "propanone"
   },
   "benzene": {
     "Cl2 / Fe": "chlorobenzene",
