@@ -30,6 +30,11 @@
     "CH3ONa": "methoxymethane",
     "NH3 excess": "methylamine"
   },
+  "ethanenitrile": {
+    "SnCl2 / HCl / H2O": "ethanal",
+    "DIBAL-H": "ethanal",
+    "CH3MgBr / H+": "propanone"
+  },
   "bromomethane": {
     "aq. NaOH": "methanol",
     "aq. KOH": "methanol",
@@ -56,6 +61,11 @@
     "AgF": "fluoroethane",
     "CH3ONa": "methoxyethane",
     "NH3 excess": "ethylamine"
+  },
+  "propanenitrile": {
+    "SnCl2 / HCl / H2O": "propanal",
+    "DIBAL-H": "propanal",
+    "CH3MgBr / H+": "butanone"
   },
   "bromoethane": {
     "aq. NaOH": "ethanol",
@@ -184,7 +194,7 @@
     "KI": "iodobenzene",
     "HBF4 / (Heat)": "fluorobenzene"
   },
-  "toluene":{
+  "toluene": {
     "H2 / Ni (473 K)": "1-methylcyclohexene",
     "conc HNO3 / conc H2SO4": "2,4,6-trinitrotoluene"
   }
