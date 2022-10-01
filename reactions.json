@@ -167,7 +167,8 @@
     "conc HNO3 / conc H2SO4": "nitrobenzene",
     "conc H2SO4": "benzenesulphonic acid",
     "H2 / Ni (473 K)": "cyclohexane",
-    "O3 / Zn (Heat)": "ethanedial"
+    "O3 / Zn (Heat)": "ethanedial",
+    "CO / anhyd. AlCl3 / HCl / CuCl": "benzaldehyde"
   },
   "chlorobenzene": {
     "NaOH / HCl (300 atm, 623K)": "phenol",
@@ -201,6 +202,7 @@
   },
   "toluene": {
     "H2 / Ni (473 K)": "1-methylcyclohexene",
-    "conc HNO3 / conc H2SO4": "2,4,6-trinitrotoluene"
+    "conc HNO3 / conc H2SO4": "2,4,6-trinitrotoluene",
+    "CrO2Cl2 / CS2 / H+": "benzaldehyde"
   }
 }
