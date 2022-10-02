@@ -226,8 +226,8 @@
     "HBF4 / (Heat)": "fluorobenzene"
   },
   "nitrobenzene":{
-    "Zn / HCl": "Aniline",
-    "Sn / HCl": "Aniline"
+    "Zn / HCl": "aniline",
+    "Sn / HCl": "aniline"
   },
   "toluene": {
     "H2 / Ni (473 K)": "1-methylcyclohexene",
