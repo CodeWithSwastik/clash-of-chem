@@ -33,7 +33,8 @@
   "ethanenitrile": {
     "SnCl2 / HCl / H2O": "ethanal",
     "DIBAL-H": "ethanal",
-    "CH3MgBr / H+": "propanone"
+    "CH3MgBr / H+": "propanone",
+    "H2 / Pd": "ethylamine"
   },
   "bromomethane": {
     "aq. NaOH": "methanol",
