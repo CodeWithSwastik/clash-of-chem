@@ -163,19 +163,21 @@
     "HgSO4 / H2SO4": "propanone"
   },
   "methanal": {
-    "HCN": "formaldehyde cyanohydrin",
-    "NaHSO3": "formaldehyde sodium bisulphite",
+    "HCN": "hydroxyethanenitrile",
+    "NaHSO3": "hydroxymethanesulfonic acid",
     "Red P / HI": "methane",
     "Red P / HBr": "methane",
     "KMnO4": "methanoic acid",
+    "K2Cr2O7 / H2SO4": "methanoic acid",
     "LiAlH4": "methanol"
   },
   "ethanal": {
-    "HCN": "acetaldehyde cyanohydrin",
-    "NaHSO3": "acetaldehyde sodium bisulphite",
+    "HCN": "hydroxypropionitrile",
+    "NaHSO3": "hydroxyethanesulfonic acid",
     "Red P / HI": "ethane",
     "Red P / HBr": "ethane",
     "KMnO4": "ethanoic acid",
+    "K2Cr2O7 / H2SO4": "ethanoic acid",
     "LiAlH4": "ethanol"
   },
   "benzene": {
