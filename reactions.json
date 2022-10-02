@@ -210,9 +210,9 @@
   },
   "but-2-ene": {
     "H2O / dil H2SO4": "butan-2-ol",
-    "PCC": "butanone"
+    "PCC": "butan-2-one"
   },
-  "acetone": {
+  "propan-2-one": {
     "H2O / LiAlH4": "propan-2-ol",
     "conc H2SO4 (443K)": "propene",
     "O3 / Zn dust / H2O": "ethanal",
@@ -231,7 +231,7 @@
     "alc. KOH": "but-2-ynal"
   },
   "benzoic acid": {
-    "LiAlH4": "phenylmethanol",
+    "LiAlH4": "propanone",
     "PCl5": "benzyl chloride",
     "Mg / Dry ether": "benzylmagnesium chloride",
     "CO2 / H2O": "phenylethanoic acid"
