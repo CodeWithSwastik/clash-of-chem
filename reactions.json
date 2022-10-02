@@ -167,7 +167,7 @@
   },
   "methanal": {
     "HCN": "hydroxyethanenitrile",
-    "NaHSO3": "hydroxymethanesulfonic acid",
+    "_NaHSO3": "hydroxymethanesulfonic acid",
     "Red P / HI": "methane",
     "Red P / HBr": "methane",
     "KMnO4": "methanoic acid",
@@ -176,7 +176,7 @@
   },
   "ethanal": {
     "HCN": "hydroxypropionitrile",
-    "NaHSO3": "hydroxyethanesulfonic acid",
+    "_NaHSO3": "sodium hydroxyethanesulfonic acid",
     "Red P / HI": "ethane",
     "Red P / HBr": "ethane",
     "KMnO4": "ethanoic acid",
@@ -204,8 +204,7 @@
     "conc. HNO3": "2,4,6-trinitrophenol",
     "CO2 / NaOH / H+ (423K, 3-7 atm)": "2-hydroxybenzoic acid",
     "H2SO4/ (373K)": "4-hydroxysulphonic acid",
-    "NaOH / CO2 / H+": "2-hydroxybenzoic acid",
-    "CHCl3 / aq KOH": "2-hydroxybenzaldehyde"
+    "CHCl3 / aq. KOH": "2-hydroxybenzaldehyde"
   },
   "2-hydroxybenzoic acid": {
     "(CH3CO)2O": "aspirin"
