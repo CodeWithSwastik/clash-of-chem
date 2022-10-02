@@ -30,6 +30,11 @@
     "CH3ONa": "methoxymethane",
     "NH3 excess": "methylamine"
   },
+  "ethanenitrile": {
+    "SnCl2 / HCl / H2O": "ethanal",
+    "DIBAL-H": "ethanal",
+    "CH3MgBr / H+": "propanone"
+  },
   "bromomethane": {
     "aq. NaOH": "methanol",
     "aq. KOH": "methanol",
@@ -56,6 +61,11 @@
     "AgF": "fluoroethane",
     "CH3ONa": "methoxyethane",
     "NH3 excess": "ethylamine"
+  },
+  "propanenitrile": {
+    "SnCl2 / HCl / H2O": "propanal",
+    "DIBAL-H": "propanal",
+    "CH3MgBr / H+": "butanone"
   },
   "bromoethane": {
     "aq. NaOH": "ethanol",
@@ -141,16 +151,32 @@
     "HCl": "2-chloropropane",
     "HBr": "2-bromopropane",
     "HBr / Peroxide": "1-bromopropane",
+    "O3 / Zn dust / H2O": "ethanal",
     "H2O / dil H2SO4": "propan-2-ol",
     "B2H6": "propan-1-ol"
   },
   "ethyne": {
-    "Red Hot Fe Tube (873 K)": "benzene"
+    "Red Hot Fe Tube (873 K)": "benzene",
+    "HgSO4 / H2SO4": "ethanal"
+  },
+  "propyne": {
+    "HgSO4 / H2SO4": "propanone"
+  },
+  "methanal": {
+    "HCN": "formaldehyde cyanohydrin",
+    "NaHSO3": "formaldehyde sodium bisulphite"
+  },
+  "ethanal": {
+    "HCN": "acetaldehyde cyanohydrin",
+    "NaHSO3": "acetaldehyde sodium bisulphite"
   },
   "benzene": {
     "Cl2 / Fe": "chlorobenzene",
     "conc HNO3 / conc H2SO4": "nitrobenzene",
-    "conc H2SO4": "benzenesulphonic acid"
+    "conc H2SO4": "benzenesulphonic acid",
+    "H2 / Ni (473 K)": "cyclohexane",
+    "O3 / Zn (Heat)": "ethanedial",
+    "CO / anhyd. AlCl3 / HCl / CuCl": "benzaldehyde"
   },
   "chlorobenzene": {
     "NaOH / HCl (300 atm, 623K)": "phenol",
@@ -204,11 +230,15 @@
     "Br2 / CCl4": "2,3-dibromobutanal",
     "alc. KOH": "but-2-ynal"
   },
-  "toluene": {
-    "H+ / KMnO4": "benzoic acid",
+  "benzoic acid": {
     "LiAlH4": "phenylmethanol",
     "PCl5": "benzyl chloride",
     "Mg / Dry ether": "benzylmagnesium chloride",
     "CO2 / H2O": "phenylethanoic acid"
+  },
+  "toluene": {
+    "H2 / Ni (473 K)": "1-methylcyclohexene",
+    "conc HNO3 / conc H2SO4": "2,4,6-trinitrotoluene",
+    "CrO2Cl2 / CS2 / H+": "benzaldehyde"
   }
 }
