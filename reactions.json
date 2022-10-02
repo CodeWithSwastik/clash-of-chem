@@ -196,8 +196,10 @@
     "(CH3CO)2O": "aspirin"
   },
   "aniline": {
-    "NaNO2 / HCl (0-5 deg C)": "benzenediazonium chloride"
-  },
+    "NaNO2 / HCl (0-5 deg C)": "benzenediazonium chloride",
+    "Br / H20": "2,4,6-tribromoaniline",
+    "conc. HNO3 / conc. H2SO4": "4-nitroaniline"
+  }, 
   "benzenediazonium chloride": {
     "NaOH / H20": "phenol",
     "HCl / Cu": "chlorobenzene",
