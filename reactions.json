@@ -135,6 +135,8 @@
     "HI": "iodoethane",
     "Red P / HI": "ethane",
     "Red P / HBr": "ethane"
+    "Cu (573K)": "ethanal",
+    "KMnO4": "ethanoic acid",
   },
   "ethene": {
     "HCl": "chloroethane",
