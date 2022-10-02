@@ -164,11 +164,15 @@
   },
   "methanal": {
     "HCN": "formaldehyde cyanohydrin",
-    "NaHSO3": "formaldehyde sodium bisulphite"
+    "NaHSO3": "formaldehyde sodium bisulphite",
+    "Red P / HI": "methane",
+    "Red P / HBr": "methane"
   },
   "ethanal": {
     "HCN": "acetaldehyde cyanohydrin",
-    "NaHSO3": "acetaldehyde sodium bisulphite"
+    "NaHSO3": "acetaldehyde sodium bisulphite",
+    "Red P / HI": "ethane",
+    "Red P / HBr": "ethane"
   },
   "benzene": {
     "Cl2 / Fe": "chlorobenzene",
@@ -210,6 +214,10 @@
     "KI": "iodobenzene",
     "HBF4 / (Heat)": "fluorobenzene"
   },
+  "nitrobenzene":{
+    "Zn / HCl": "Aniline",
+    "Sn / HCl": "Aniline"
+  }
   "toluene": {
     "H2 / Ni (473 K)": "1-methylcyclohexene",
     "conc HNO3 / conc H2SO4": "2,4,6-trinitrotoluene",
