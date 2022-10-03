@@ -28,7 +28,8 @@
     "NaI": "iodomethane",
     "AgF": "fluoromethane",
     "CH3ONa": "methoxymethane",
-    "NH3 excess": "methylamine"
+    "NH3 excess": "methylamine",
+    "Red P/ HI": "methane"
   },
   "ethanenitrile": {
     "SnCl2 / HCl / H2O": "ethanal",
@@ -47,7 +48,8 @@
     "NaI": "iodomethane",
     "AgF": "fluoromethane",
     "CH3ONa": "methoxymethane",
-    "NH3 excess": "methylamine"
+    "NH3 excess": "methylamine",
+    "Red P/ HI": "methane"
   },
   "chloroethane": {
     "aq. NaOH": "ethanol",
@@ -61,7 +63,8 @@
     "NaI": "iodoethane",
     "AgF": "fluoroethane",
     "CH3ONa": "methoxyethane",
-    "NH3 excess": "ethylamine"
+    "NH3 excess": "ethylamine",
+    "Red P/ HI": "ethane"
   },
   "propanenitrile": {
     "SnCl2 / HCl / H2O": "propanal",
@@ -80,7 +83,8 @@
     "NaI": "iodoethane",
     "AgF": "fluoroethane",
     "CH3ONa": "methoxyethane",
-    "NH3 excess": "ethylamine"
+    "NH3 excess": "ethylamine",
+    "Red P/ HI": "ethane"
   },
   "1-bromopropane": {
     "aq. NaOH": "propan-1-ol",
@@ -183,6 +187,24 @@
     "K2Cr2O7 / H2SO4": "ethanoic acid",
     "LiAlH4": "ethanol",
     "NaOH": "3-hydroxybutanal"
+  },
+  "methanoic acid":{
+    "LiAlH4": "methanol",
+    "PCl5": "methanoyl chloride",
+    "PCl3": "methanoyl chloride",
+    "SOCl2": "methanoyl chloride",
+    "Na": "sodium methanoate",
+    "NH3 / H2O / (Heat)": "methanmide",
+    "Red P/ HI": "methane"
+  },
+  "ethanoic acid":{
+    "LiAlH4": "ethanol",
+    "PCl5": "ethanoyl chloride",
+    "PCl3": "ethanoyl chloride",
+    "SOCl2": "ethanoyl chloride",
+    "Na": "sodium ethanoate",
+    "NH3 / H2O / (Heat)": "ethanmide",
+    "Red P/ HI": "ethane"
   },
   "benzene": {
     "Cl2 / Fe": "chlorobenzene",
