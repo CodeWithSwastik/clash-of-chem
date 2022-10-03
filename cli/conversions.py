@@ -1,8 +1,9 @@
 import json
-from re import L
+import os
 from typing import Optional
 
-with open("reactions.json", "r") as f:
+reactions_filepath = os.path.join(os.path.dirname( __file__ ), '..', "reactions.json")
+with open(reactions_filepath, "r") as f:
     reactions = json.load(f)
 
 
