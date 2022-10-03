@@ -28,13 +28,9 @@
     "NaI": "iodomethane",
     "AgF": "fluoromethane",
     "CH3ONa": "methoxymethane",
-    "NH3 excess": "methylamine"
-  },
-  "ethanenitrile": {
-    "SnCl2 / HCl / H2O": "ethanal",
-    "DIBAL-H": "ethanal",
-    "CH3MgBr / H+": "propanone",
-    "H2 / Pd": "ethylamine"
+    "NH3 excess": "methylamine",
+    "Red P / HI": "methane",
+    "Red P / HBr": "methane"
   },
   "bromomethane": {
     "aq. NaOH": "methanol",
@@ -47,7 +43,9 @@
     "NaI": "iodomethane",
     "AgF": "fluoromethane",
     "CH3ONa": "methoxymethane",
-    "NH3 excess": "methylamine"
+    "NH3 excess": "methylamine",
+    "Red P / HI": "methane",
+    "Red P / HBr": "methane"
   },
   "chloroethane": {
     "aq. NaOH": "ethanol",
@@ -61,12 +59,9 @@
     "NaI": "iodoethane",
     "AgF": "fluoroethane",
     "CH3ONa": "methoxyethane",
-    "NH3 excess": "ethylamine"
-  },
-  "propanenitrile": {
-    "SnCl2 / HCl / H2O": "propanal",
-    "DIBAL-H": "propanal",
-    "CH3MgBr / H+": "butanone"
+    "NH3 excess": "ethylamine",
+    "Red P/ HI": "ethane",
+    "Red P/ HBr": "ethane"
   },
   "bromoethane": {
     "aq. NaOH": "ethanol",
@@ -80,7 +75,9 @@
     "NaI": "iodoethane",
     "AgF": "fluoroethane",
     "CH3ONa": "methoxyethane",
-    "NH3 excess": "ethylamine"
+    "NH3 excess": "ethylamine",
+    "Red P / HI": "ethane",
+    "Red P / HBr": "ethane"
   },
   "1-bromopropane": {
     "aq. NaOH": "propan-1-ol",
@@ -93,7 +90,9 @@
     "Na / dry ether": "hexane",
     "NaI": "1-iodopropane",
     "AgF": "1-fluoropropane",
-    "CH3ONa": "1-methoxypropane"
+    "CH3ONa": "1-methoxypropane",
+    "Red P / HI": "propane",
+    "Red P / HBr": "propane"
   },
   "2-bromopropane": {
     "aq. NaOH": "propan-2-ol",
@@ -107,6 +106,17 @@
     "NaI": "2-iodopropane",
     "AgF": "2-fluoropropane",
     "CH3ONa": "2-methoxypropane"
+  },
+  "ethanenitrile": {
+    "SnCl2 / HCl / H2O": "ethanal",
+    "DIBAL-H": "ethanal",
+    "CH3MgBr / H+": "propanone",
+    "H2 / Pd": "ethylamine"
+  },
+  "propanenitrile": {
+    "SnCl2 / HCl / H2O": "propanal",
+    "DIBAL-H": "propanal",
+    "CH3MgBr / H+": "butanone"
   },
   "methanol": {
     "Na": "sodium methoxide",
@@ -183,6 +193,24 @@
     "K2Cr2O7 / H2SO4": "ethanoic acid",
     "LiAlH4": "ethanol",
     "NaOH": "3-hydroxybutanal"
+  },
+  "methanoic acid":{
+    "LiAlH4": "methanol",
+    "PCl5": "methanoyl chloride",
+    "PCl3": "methanoyl chloride",
+    "SOCl2": "methanoyl chloride",
+    "Na": "sodium methanoate",
+    "NH3 / H2O / (Heat)": "methanmide",
+    "Red P/ HI": "methane"
+  },
+  "ethanoic acid":{
+    "LiAlH4": "ethanol",
+    "PCl5": "ethanoyl chloride",
+    "PCl3": "ethanoyl chloride",
+    "SOCl2": "ethanoyl chloride",
+    "Na": "sodium ethanoate",
+    "NH3 / H2O / (Heat)": "ethanmide",
+    "Red P/ HI": "ethane"
   },
   "benzene": {
     "Cl2 / Fe": "chlorobenzene",
