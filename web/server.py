@@ -1,4 +1,4 @@
-import conversions as conv
+from ..cli import conversions as conv
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 import models
