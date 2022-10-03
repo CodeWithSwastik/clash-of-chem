@@ -181,7 +181,8 @@
     "Red P / HBr": "ethane",
     "KMnO4": "ethanoic acid",
     "K2Cr2O7 / H2SO4": "ethanoic acid",
-    "LiAlH4": "ethanol"
+    "LiAlH4": "ethanol",
+    "NaOH": "3-hydroxybutanal"
   },
   "benzene": {
     "Cl2 / Fe": "chlorobenzene",
@@ -222,7 +223,26 @@
     "CuBr": "bromobenzene",
     "CuCN": "benzonitrile",
     "KI": "iodobenzene",
-    "HBF4 / (Heat)": "fluorobenzene"
+    "HBF4 / (Heat)": "fluorobenzene",
+    "H3PO2 / Cu": "benzene"
+  },
+  "but-2-ene": {
+    "H2O / dil H2SO4": "butan-2-ol",
+    "Br2 / CCl4": "2,3-dibromobutane"
+  },
+  "propanone": {
+    "H2O / LiAlH4": "propan-2-ol",
+    "I2": "iodopropanone"
+  },
+  "propan-1-ol": {
+    "PCl5": "1-chloropropane",
+    "H+ / KMnO4": "propanoic acid",
+    "PCC": "propanal",
+    "conc H2SO4": "propene"
+  },
+  "benzoic acid": {
+    "LiAlH4": "phenylmethanol",
+    "PCl5": "benzoyl chloride"
   },
   "nitrobenzene":{
     "Zn / HCl": "aniline",
@@ -230,7 +250,8 @@
   },
   "toluene": {
     "H2 / Ni (473 K)": "1-methylcyclohexene",
-    "conc HNO3 / conc H2SO4": "4-nitrotoluene",
-    "CrO2Cl2 / CS2 / H+": "benzaldehyde"
+    "conc HNO3 / conc H2SO4": "2,4,6-trinitrotoluene",
+    "CrO2Cl2 / CS2 / H+": "benzaldehyde",
+    "H+ / KMnO4": "benzoic acid"
   }
 }
