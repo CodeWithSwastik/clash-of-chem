@@ -284,7 +284,8 @@
     "KI": "iodobenzene",
     "HBF4 / (Heat)": "fluorobenzene",
     "HBF4 / Cu / NaNO2 / (Heat)": "nitrobenzene",
-    "H3PO2 / Cu": "benzene"
+    "H3PO2 / Cu": "benzene",
+    "CuCN / H3O+": "benzoic acid"
   },
   "nitrobenzene":{
     "Zn / HCl": "aniline",
