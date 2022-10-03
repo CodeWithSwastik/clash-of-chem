@@ -167,7 +167,7 @@
   },
   "methanal": {
     "HCN": "hydroxyethanenitrile",
-    "_NaHSO3": "hydroxymethanesulfonic acid",
+    "NaHSO3": "sodium 1-hydroxymethanesulphonate",
     "Red P / HI": "methane",
     "Red P / HBr": "methane",
     "KMnO4": "methanoic acid",
@@ -176,7 +176,7 @@
   },
   "ethanal": {
     "HCN": "hydroxypropionitrile",
-    "_NaHSO3": "sodium hydroxyethanesulfonic acid",
+    "NaHSO3": "sodium 1-hydroxyethanesulphonate",
     "Red P / HI": "ethane",
     "Red P / HBr": "ethane",
     "KMnO4": "ethanoic acid",
