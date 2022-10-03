@@ -33,7 +33,8 @@
   "ethanenitrile": {
     "SnCl2 / HCl / H2O": "ethanal",
     "DIBAL-H": "ethanal",
-    "CH3MgBr / H+": "propanone"
+    "CH3MgBr / H+": "propanone",
+    "H2 / Pd": "ethylamine"
   },
   "bromomethane": {
     "aq. NaOH": "methanol",
@@ -134,7 +135,9 @@
     "HBr": "bromoethane",
     "HI": "iodoethane",
     "Red P / HI": "ethane",
-    "Red P / HBr": "ethane"
+    "Red P / HBr": "ethane",
+    "Cu (573K)": "ethanal",
+    "KMnO4": "ethanoic acid"
   },
   "ethene": {
     "HCl": "chloroethane",
@@ -163,12 +166,22 @@
     "HgSO4 / H2SO4": "propanone"
   },
   "methanal": {
-    "HCN": "formaldehyde cyanohydrin",
-    "NaHSO3": "formaldehyde sodium bisulphite"
+    "HCN": "hydroxyethanenitrile",
+    "NaHSO3": "sodium 1-hydroxymethanesulphonate",
+    "Red P / HI": "methane",
+    "Red P / HBr": "methane",
+    "KMnO4": "methanoic acid",
+    "K2Cr2O7 / H2SO4": "methanoic acid",
+    "LiAlH4": "methanol"
   },
   "ethanal": {
-    "HCN": "acetaldehyde cyanohydrin",
-    "NaHSO3": "acetaldehyde sodium bisulphite",
+    "HCN": "hydroxypropionitrile",
+    "NaHSO3": "sodium 1-hydroxyethanesulphonate",
+    "Red P / HI": "ethane",
+    "Red P / HBr": "ethane",
+    "KMnO4": "ethanoic acid",
+    "K2Cr2O7 / H2SO4": "ethanoic acid",
+    "LiAlH4": "ethanol",
     "NaOH": "3-hydroxybutanal"
   },
   "benzene": {
@@ -191,14 +204,17 @@
     "Br2 / CCl4": "4-bromophenol",
     "conc. HNO3": "2,4,6-trinitrophenol",
     "CO2 / NaOH / H+ (423K, 3-7 atm)": "2-hydroxybenzoic acid",
-    "H2SO4/ (373K)": "4-hydroxysulphonic acid"
+    "H2SO4/ (373K)": "4-hydroxysulphonic acid",
+    "CHCl3 / aq. KOH": "2-hydroxybenzaldehyde"
   },
   "2-hydroxybenzoic acid": {
     "(CH3CO)2O": "aspirin"
   },
   "aniline": {
-    "NaNO2 / HCl (0-5 deg C)": "benzenediazonium chloride"
-  },
+    "NaNO2 / HCl (0-5 deg C)": "benzenediazonium chloride",
+    "Br / H20": "2,4,6-tribromoaniline",
+    "conc. HNO3 / conc. H2SO4": "4-nitroaniline"
+  }, 
   "benzenediazonium chloride": {
     "NaOH / H20": "phenol",
     "HCl / Cu": "chlorobenzene",
@@ -227,6 +243,10 @@
   "benzoic acid": {
     "LiAlH4": "phenylmethanol",
     "PCl5": "benzoyl chloride"
+  },
+  "nitrobenzene":{
+    "Zn / HCl": "aniline",
+    "Sn / HCl": "aniline"
   },
   "toluene": {
     "H2 / Ni (473 K)": "1-methylcyclohexene",
