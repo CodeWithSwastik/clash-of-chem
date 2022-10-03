@@ -29,7 +29,8 @@
     "AgF": "fluoromethane",
     "CH3ONa": "methoxymethane",
     "NH3 excess": "methylamine",
-    "Red P/ HI": "methane"
+    "Red P / HI": "methane",
+    "Red P / HBr": "methane"
   },
   "ethanenitrile": {
     "SnCl2 / HCl / H2O": "ethanal",
@@ -49,7 +50,8 @@
     "AgF": "fluoromethane",
     "CH3ONa": "methoxymethane",
     "NH3 excess": "methylamine",
-    "Red P/ HI": "methane"
+    "Red P / HI": "methane",
+    "Red P / HBr": "methane"
   },
   "chloroethane": {
     "aq. NaOH": "ethanol",
@@ -64,7 +66,8 @@
     "AgF": "fluoroethane",
     "CH3ONa": "methoxyethane",
     "NH3 excess": "ethylamine",
-    "Red P/ HI": "ethane"
+    "Red P/ HI": "ethane",
+    "Red P/ HBr": "ethane"
   },
   "propanenitrile": {
     "SnCl2 / HCl / H2O": "propanal",
@@ -84,7 +87,8 @@
     "AgF": "fluoroethane",
     "CH3ONa": "methoxyethane",
     "NH3 excess": "ethylamine",
-    "Red P/ HI": "ethane"
+    "Red P / HI": "ethane",
+    "Red P / HBr": "ethane"
   },
   "1-bromopropane": {
     "aq. NaOH": "propan-1-ol",
@@ -97,7 +101,9 @@
     "Na / dry ether": "hexane",
     "NaI": "1-iodopropane",
     "AgF": "1-fluoropropane",
-    "CH3ONa": "1-methoxypropane"
+    "CH3ONa": "1-methoxypropane",
+    "Red P / HI": "propane",
+    "Red P / HBr": "propane"
   },
   "2-bromopropane": {
     "aq. NaOH": "propan-2-ol",
