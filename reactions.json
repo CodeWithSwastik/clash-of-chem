@@ -228,6 +228,12 @@
     "Red P/ HI": "ethane",
     "HN3 / conc. H2SO4": "ethanamine"
   },
+  "methanamide":{
+    "Br2 / aq. NaOH": "ammonia"
+  },
+  "ethanamide":{
+    "Br2 / aq. NaOH": "methanamine"
+  },
   "benzene": {
     "Cl2 / Fe": "chlorobenzene",
     "conc HNO3 / conc H2SO4": "nitrobenzene",
