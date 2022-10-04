@@ -22,9 +22,9 @@
 					type="text"
 					bind:value={username}
 					placeholder="Enter your name"
-					class="p-2 mr-2 rounded w-full"
+					class="p-2 mr-2 rounded flex-grow"
 				/>
-				<button on:click={start} class="bg-green-300 py-2 px-3 font-bold">Create Lobby</button>
+				<button on:click={start} class="bg-green-300 hover:bg-green-400 py-2 px-3 font-bold rounded">Create Lobby</button>
 			</div>
 			<div>
 				<div class="my-10 text-2xl">Instructions to play</div>

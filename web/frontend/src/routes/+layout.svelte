@@ -2,10 +2,7 @@
 	import '../app.css';
 </script>
 
-<div class="app bg-dark">
-	<nav class="flex p-2 absolute">
-		<a href="/" class="px-3 py-1 bg-gray-200 rounded-full">Home</a>
-	</nav>
+<div class="app">
 	<main>
 		<slot />
 	</main>
