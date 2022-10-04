@@ -47,8 +47,8 @@
   "chloromethane": {
     "aq. NaOH": "methanol",
     "aq. KOH": "methanol",
-    "AgCN": "isocyanomethane",
-    "KCN": "ethanenitrile",
+    "alc. AgCN": "isocyanomethane",
+    "alc. KCN": "ethanenitrile",
     "AgNO2": "nitromethane",
     "KNO2": "methyl nitrite",
     "Na / dry ether": "ethane",
@@ -62,8 +62,8 @@
   "bromomethane": {
     "aq. NaOH": "methanol",
     "aq. KOH": "methanol",
-    "AgCN": "isocyanomethane",
-    "KCN": "ethanenitrile",
+    "alc. AgCN": "isocyanomethane",
+    "alc. KCN": "ethanenitrile",
     "AgNO2": "nitromethane",
     "KNO2": "methyl nitrite",
     "Na / dry ether": "ethane",
@@ -78,8 +78,8 @@
     "aq. NaOH": "ethanol",
     "aq. KOH": "ethanol",
     "alc. KOH": "ethene",
-    "AgCN": "isocyanoethane",
-    "KCN": "propanenitrile",
+    "alc. AgCN": "isocyanoethane",
+    "alc. KCN": "propanenitrile",
     "AgNO2": "nitroethane",
     "KNO2": "ethyl nitrite",
     "Na / dry ether": "butane",
@@ -94,8 +94,8 @@
     "aq. NaOH": "ethanol",
     "aq. KOH": "ethanol",
     "alc. KOH": "ethene",
-    "AgCN": "isocyanoethane",
-    "KCN": "propanenitrile",
+    "alc. AgCN": "isocyanoethane",
+    "alc. KCN": "propanenitrile",
     "AgNO2": "nitroethane",
     "KNO2": "ethyl nitrite",
     "Na / dry ether": "butane",
@@ -110,8 +110,8 @@
     "aq. NaOH": "propan-1-ol",
     "aq. KOH": "propan-1-ol",
     "alc. KOH": "propene",
-    "AgCN": "1-isocyanopropane",
-    "KCN": "1-butanenitrile",
+    "alc. AgCN": "1-isocyanopropane",
+    "alc. KCN": "1-butanenitrile",
     "AgNO2": "1-nitropropane",
     "KNO2": "1-propyl nitrite",
     "Na / dry ether": "hexane",
@@ -125,8 +125,8 @@
     "aq. NaOH": "propan-2-ol",
     "aq. KOH": "propan-2-ol",
     "alc. KOH": "propene",
-    "AgCN": "2-isocyanopropane",
-    "KCN": "2-butanenitrile",
+    "alc. AgCN": "2-isocyanopropane",
+    "alc. KCN": "2-butanenitrile",
     "AgNO2": "2-nitropropane",
     "KNO2": "2-propyl nitrite",
     "Na / dry ether": "2,3-dimethylbutane",
@@ -274,6 +274,9 @@
   "aniline": {
     "NaNO2 / HCl (0-5 deg C)": "benzenediazonium chloride",
     "Br / H20": "2,4,6-tribromoaniline",
+    "Br2 / CS2": "4-bromoaniline",
+    "Na2CrO7 / H2SO4": "p-benzoquinone",
+    "Ni-H2": "cyclohexylamine",
     "conc. HNO3 / conc. H2SO4": "4-nitroaniline",
     "conc. H2SO4": "sulphanilic acid"
   }, 
@@ -296,6 +299,9 @@
     "LiAlH4": "azobenzene",
     "Zn dust / aq. NaOH": "hydrazobenzene",
     "Zn / NH4Cl / 50% C2H5OH / (Heat)": "phenylhydroxyamine"
+  },
+  "benzamide":{
+    "Br2 / KOH": "aniline"
   },
   "2-hydroxybenzoic acid": {
     "(CH3CO)2O": "aspirin"
