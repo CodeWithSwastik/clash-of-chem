@@ -4,16 +4,11 @@
 </svelte:head>
 
 <div class="text-white bg-gray-900 rounded block m-auto max-w-4xl p-8 mt-6">
-	<h1 class="text-6xl text-bold pb-8 pr-8">
-		About Clash of Chem
-	</h1>
+	<h1 class="text-6xl text-bold pb-8 pr-8">About Clash of Chem</h1>
 
-
-	<p>
-		This is a game about Organic Chemistry
-	</p>
+	<p>This is a game about Organic Chemistry</p>
 </div>
 
 <footer class="flex justify-center absolute inset-x-0 bottom-0 p-8 bg-gray-900 text-white">
-	<p>Made with <span class="heart">❤</span> by Swas.py </p>	
+	<p>Made with <span class="heart">❤</span> by Swas.py</p>
 </footer>
