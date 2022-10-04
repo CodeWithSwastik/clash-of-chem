@@ -17,6 +17,33 @@
     "Cl / uv": "2-chloropropane",
     "Br / uv": "2-bromopropane"
   },
+  "ethene": {
+    "HCl": "chloroethane",
+    "HBr": "bromoethane",
+    "H2O / dil H2SO4": "ethanol",
+    "O3 / Zn dust / H2O": "methanal",
+    "B2H6": "ethanol",
+    "Br2 / CCl4": "1,2-dibromoethane"
+  },
+  "propene": {
+    "HCl": "2-chloropropane",
+    "HBr": "2-bromopropane",
+    "HBr / Peroxide": "1-bromopropane",
+    "O3 / Zn dust / H2O": "ethanal",
+    "H2O / dil H2SO4": "propan-2-ol",
+    "B2H6": "propan-1-ol"
+  },
+  "but-2-ene": {
+    "H2O / dil H2SO4": "butan-2-ol",
+    "Br2 / CCl4": "2,3-dibromobutane"
+  },
+  "ethyne": {
+    "Red Hot Fe Tube (873 K)": "benzene",
+    "HgSO4 / H2SO4": "ethanal"
+  },
+  "propyne": {
+    "HgSO4 / H2SO4": "propanone"
+  },
   "chloromethane": {
     "aq. NaOH": "methanol",
     "aq. KOH": "methanol",
@@ -149,31 +176,14 @@
     "Cu (573K)": "ethanal",
     "KMnO4": "ethanoic acid"
   },
-  "ethene": {
-    "HCl": "chloroethane",
-    "HBr": "bromoethane",
-    "H2O / dil H2SO4": "ethanol",
-    "O3 / Zn dust / H2O": "methanal",
-    "B2H6": "ethanol",
-    "Br2 / CCl4": "1,2-dibromoethane"
+  "propan-1-ol": {
+    "PCl5": "1-chloropropane",
+    "H+ / KMnO4": "propanoic acid",
+    "PCC": "propanal",
+    "conc H2SO4": "propene"
   },
   "1,2-dibromoethane": {
     "alc. KOH / NaNH2": "ethyne"
-  },
-  "propene": {
-    "HCl": "2-chloropropane",
-    "HBr": "2-bromopropane",
-    "HBr / Peroxide": "1-bromopropane",
-    "O3 / Zn dust / H2O": "ethanal",
-    "H2O / dil H2SO4": "propan-2-ol",
-    "B2H6": "propan-1-ol"
-  },
-  "ethyne": {
-    "Red Hot Fe Tube (873 K)": "benzene",
-    "HgSO4 / H2SO4": "ethanal"
-  },
-  "propyne": {
-    "HgSO4 / H2SO4": "propanone"
   },
   "methanal": {
     "HCN": "hydroxyethanenitrile",
@@ -194,6 +204,10 @@
     "LiAlH4": "ethanol",
     "NaOH": "3-hydroxybutanal"
   },
+  "propanone": {
+    "H2O / LiAlH4": "propan-2-ol",
+    "I2": "iodopropanone"
+  },
   "methanoic acid":{
     "LiAlH4": "methanol",
     "PCl5": "methanoyl chloride",
@@ -201,7 +215,8 @@
     "SOCl2": "methanoyl chloride",
     "Na": "sodium methanoate",
     "NH3 / H2O / (Heat)": "methanmide",
-    "Red P/ HI": "methane"
+    "Red P/ HI": "methane",
+    "HN3 / conc. H2SO4": "methanamine"
   },
   "ethanoic acid":{
     "LiAlH4": "ethanol",
@@ -210,7 +225,8 @@
     "SOCl2": "ethanoyl chloride",
     "Na": "sodium ethanoate",
     "NH3 / H2O / (Heat)": "ethanmide",
-    "Red P/ HI": "ethane"
+    "Red P/ HI": "ethane",
+    "HN3 / conc. H2SO4": "ethanamine"
   },
   "benzene": {
     "Cl2 / Fe": "chlorobenzene",
@@ -220,28 +236,43 @@
     "O3 / Zn (Heat)": "ethanedial",
     "CO / anhyd. AlCl3 / HCl / CuCl": "benzaldehyde"
   },
+  "toluene": {
+    "H2 / Ni (473 K)": "1-methylcyclohexene",
+    "conc HNO3 / conc H2SO4": "2,4,6-trinitrotoluene",
+    "CrO2Cl2 / CS2 / H+": "benzaldehyde",
+    "H+ / KMnO4": "benzoic acid"
+  },
   "chlorobenzene": {
     "NaOH / HCl (300 atm, 623K)": "phenol",
-    "conc H2SO4": "4-chlorobenzenesulphonic acid"
+    "conc H2SO4": "4-chlorobenzenesulphonic acid",
+    "Br2 / FeBr3": "4-bromochlorobenzene",
+    "Cl2 / FeCl3": "1,4-dichlorobenzene",
+    "conc. HNO3 / conc. H2SO4": "4-nitrochlorobenzene",
+    "NH3 / Cu2O catalyst / (60 atm, 523-773K)": "aniline"
   },
   "phenol": {
     "Zn": "benzene",
-    "NH3 / anhyd. ZnCl2": "aniline",
     "Br2 / H2O": "2,4,6-tribromophenol",
     "Br2 / CS2": "4-bromophenol",
     "Br2 / CCl4": "4-bromophenol",
     "conc. HNO3": "2,4,6-trinitrophenol",
     "CO2 / NaOH / H+ (423K, 3-7 atm)": "2-hydroxybenzoic acid",
     "H2SO4/ (373K)": "4-hydroxysulphonic acid",
-    "CHCl3 / aq. KOH": "2-hydroxybenzaldehyde"
+    "CHCl3 / aq. KOH": "2-hydroxybenzaldehyde",
+    "NH3 / anhyd. ZnCl2 catalyst / (573K)": "aniline"
   },
   "2-hydroxybenzoic acid": {
     "(CH3CO)2O": "aspirin"
   },
+  "benzoic acid": {
+    "LiAlH4": "phenylmethanol",
+    "PCl5": "benzoyl chloride"
+  },
   "aniline": {
     "NaNO2 / HCl (0-5 deg C)": "benzenediazonium chloride",
     "Br / H20": "2,4,6-tribromoaniline",
-    "conc. HNO3 / conc. H2SO4": "4-nitroaniline"
+    "conc. HNO3 / conc. H2SO4": "4-nitroaniline",
+    "conc. H2SO4": "sulphanilic acid"
   }, 
   "benzenediazonium chloride": {
     "NaOH / H20": "phenol",
@@ -252,34 +283,15 @@
     "CuCN": "benzonitrile",
     "KI": "iodobenzene",
     "HBF4 / (Heat)": "fluorobenzene",
-    "H3PO2 / Cu": "benzene"
-  },
-  "but-2-ene": {
-    "H2O / dil H2SO4": "butan-2-ol",
-    "Br2 / CCl4": "2,3-dibromobutane"
-  },
-  "propanone": {
-    "H2O / LiAlH4": "propan-2-ol",
-    "I2": "iodopropanone"
-  },
-  "propan-1-ol": {
-    "PCl5": "1-chloropropane",
-    "H+ / KMnO4": "propanoic acid",
-    "PCC": "propanal",
-    "conc H2SO4": "propene"
-  },
-  "benzoic acid": {
-    "LiAlH4": "phenylmethanol",
-    "PCl5": "benzoyl chloride"
+    "HBF4 / Cu / NaNO2 / (Heat)": "nitrobenzene",
+    "H3PO2 / Cu": "benzene",
+    "CuCN / H3O+": "benzoic acid"
   },
   "nitrobenzene":{
     "Zn / HCl": "aniline",
-    "Sn / HCl": "aniline"
-  },
-  "toluene": {
-    "H2 / Ni (473 K)": "1-methylcyclohexene",
-    "conc HNO3 / conc H2SO4": "2,4,6-trinitrotoluene",
-    "CrO2Cl2 / CS2 / H+": "benzaldehyde",
-    "H+ / KMnO4": "benzoic acid"
+    "Sn / HCl": "aniline",
+    "LiAlH4": "azobenzene",
+    "Zn dust / aq. NaOH": "hydrazobenzene",
+    "Zn / NH4Cl / 50% C2H5OH / (Heat)": "phenylhydroxyamine"
   }
 }
