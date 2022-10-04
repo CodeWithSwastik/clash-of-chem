@@ -247,7 +247,7 @@
     "conc H2SO4": "4-chlorobenzenesulphonic acid",
     "Br2 / FeBr3": "4-bromochlorobenzene",
     "Cl2 / FeCl3": "1,4-dichlorobenzene",
-    "conc. HNO3 / conc. H2SO4": "4-nitrochlorobrnzene",
+    "conc. HNO3 / conc. H2SO4": "4-nitrochlorobenzene",
     "NH3 / Cu2O catalyst / (60 atm, 523-773K)": "aniline"
   },
   "phenol": {
@@ -259,7 +259,7 @@
     "CO2 / NaOH / H+ (423K, 3-7 atm)": "2-hydroxybenzoic acid",
     "H2SO4/ (373K)": "4-hydroxysulphonic acid",
     "CHCl3 / aq. KOH": "2-hydroxybenzaldehyde",
-    "NH3 / anhd ZnCl2 catalyst / (573K)": "aniline"
+    "NH3 / anhyd. ZnCl2 catalyst / (573K)": "aniline"
   },
   "2-hydroxybenzoic acid": {
     "(CH3CO)2O": "aspirin"
