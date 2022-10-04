@@ -228,6 +228,12 @@
     "Red P/ HI": "ethane",
     "HN3 / conc. H2SO4": "ethanamine"
   },
+  "methanamide":{
+    "Br2 / aq. NaOH": "ammonia"
+  },
+  "ethanamide":{
+    "Br2 / aq. NaOH": "methanamine"
+  },
   "benzene": {
     "Cl2 / Fe": "chlorobenzene",
     "conc HNO3 / conc H2SO4": "nitrobenzene",
@@ -261,9 +267,6 @@
     "CHCl3 / aq. KOH": "2-hydroxybenzaldehyde",
     "NH3 / anhyd. ZnCl2 catalyst / (573K)": "aniline"
   },
-  "2-hydroxybenzoic acid": {
-    "(CH3CO)2O": "aspirin"
-  },
   "benzoic acid": {
     "LiAlH4": "phenylmethanol",
     "PCl5": "benzoyl chloride"
@@ -293,5 +296,8 @@
     "LiAlH4": "azobenzene",
     "Zn dust / aq. NaOH": "hydrazobenzene",
     "Zn / NH4Cl / 50% C2H5OH / (Heat)": "phenylhydroxyamine"
+  },
+  "2-hydroxybenzoic acid": {
+    "(CH3CO)2O": "aspirin"
   }
 }
