@@ -1,5 +1,10 @@
 <script lang="ts">
-	let text = '';
+	let username: string;
+
+	function start() {
+
+	}
+
 </script>
 
 <svelte:head>
@@ -7,18 +12,24 @@
 	<meta name="description" content="Clash of Chem" />
 </svelte:head>
 
-<div class="text-white bg-gray-900 rounded block m-auto max-w-lg p-8 mt-6">
-	<h1 class="text-6xl text-bold pl-6 pb-8 pr-8">Clash of Chem</h1>
+<section>
+	<div class="flex items-center justify-center h-screen">
+		<div class="bg-gray-400 h-[50%] w-[50%] rounded shadow-xl p-10">
+			<div class="flex">
+				<input type="text" bind:value={username} placeholder="Enter your name" class="p-2 mr-2 rounded w-full">
+				<button on:click={start} class="bg-green-300 py-2 px-3 font-bold">Start</button>
+			</div>
+			<div>
+				<div class="my-10 text-2xl">Instructions to play</div>
+				<div>
+					<ul class="list-disc">
+						<li class="my-2">Lorem  amet consectetur adipisicing elit. Similique Dignissimos, nesciunt?</li>
+						<li class="my-2">Lorem  amet consectetur adipisicing elit. Similique Dignissimos, nesciunt?</li>
+						<li class="my-2">Lorem  amet consectetur adipisicing elit. Similique Dignissimos, nesciunt?</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	  </div>
+</section>
 
-	<div>
-		<input
-			bind:value={text}
-			class="bg-gray-700 rounded p-2 w-full mb-4"
-			placeholder="Enter your name"
-		/>
-		<button
-			class="text-white bg-blue-700 mr-2 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
-			>Create Lobby</button
-		>
-	</div>
-</div>
