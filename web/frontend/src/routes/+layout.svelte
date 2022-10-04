@@ -2,8 +2,8 @@
 	import '../app.css';
 </script>
 
-<div class="app bg-dark">
-	<nav class="flex p-2 absolute">
+<div class="app">
+	<nav class="flex p-2 sticky top-0">
 		<a href="/" class="px-3 py-1 bg-gray-200 rounded-full">Home</a>
 	</nav>
 	<main>
