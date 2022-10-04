@@ -4,6 +4,7 @@
 	let username: string;
 
 	let start = () => {
+		localStorage.setItem('username', username);
 		goto('/clash');
 	};
 </script>
