@@ -1,5 +1,5 @@
 <script>
-  	import "../app.css";
+	import '../app.css';
 </script>
 
 <div class="app bg-dark">
@@ -10,6 +10,3 @@
 		<slot />
 	</main>
 </div>
-
-<style>
-</style>

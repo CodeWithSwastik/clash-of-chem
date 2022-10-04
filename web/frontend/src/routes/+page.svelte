@@ -4,6 +4,7 @@
 	function start() {
 
 	}
+
 </script>
 
 <svelte:head>
@@ -31,3 +32,4 @@
 		</div>
 	  </div>
 </section>
+
