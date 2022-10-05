@@ -5,10 +5,10 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				'dark': "#191816",
-				'fg-dark': "#22231f",
+				dark: '#191816',
+				'fg-dark': '#22231f'
 			}
 		}
 	},
-	plugins: []
+	plugins: [require('@catppuccin/tailwindcss')]
 };
