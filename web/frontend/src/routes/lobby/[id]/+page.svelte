@@ -6,7 +6,9 @@
 
     export let data: {lobby: Lobby};
 
-    let start: Function, leave: Function;
+    type ClickCallback = () => void;
+
+    let start: ClickCallback, leave: ClickCallback;
     let isOwner: boolean = true;
 
     $:players = [];
@@ -67,7 +69,7 @@
     </div>
     <div id="players" class="flex flex-wrap py-10 px-20 justify-around">
         {#each players as player}
-        <div class="my-5 mx-3">
+        <div class="my-3 mx-3">
             <SmallCard username={player} />
         </div>
         {/each}

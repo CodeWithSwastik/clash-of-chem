@@ -1,7 +1,12 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
+	import { onMount } from 'svelte';
 
-	let username: string;
+	let username: string = "";
+
+	onMount(() => {
+		username = localStorage.getItem('username') ?? '';
+	})
 
 	let start = () => {
 		localStorage.setItem('username', username);
