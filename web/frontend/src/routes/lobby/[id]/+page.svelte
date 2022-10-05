@@ -30,8 +30,12 @@
 
         socket.on("user_join", (d) => {
             if (d.data != username) {
-                players = [...players, d.data];
+                players = [...players, d.data]; // TODO: fix this type error ;-;
             }
+        });
+
+        socket.on("user_leave", (d) => {
+            players = d.data.players;
         });
 
         start = () => {
@@ -63,9 +67,9 @@
 </script>
 
 <section>
-    <div id="countdown" class="text-7xl text-gray-300 text-center my-5">{minutesLeft}:{secondsLeft<10?'0'+secondsLeft.toString():secondsLeft}</div>
+    <div id="countdown" class="text-7xl text-text text-center my-5">{minutesLeft}:{secondsLeft<10?'0'+secondsLeft.toString():secondsLeft}</div>
     <div class="flex justify-around my-5">
-        <button on:click={isOwner? start : leave} class="p-2 bg-green-400 hover:bg-green-500 rounded">{isOwner? "Start": "Leave"} Clash</button>
+        <button on:click={isOwner? start : leave} class="p-2 bg-green hover:bg-red rounded">{isOwner? "Start": "Leave"} Clash</button>
     </div>
     <div id="players" class="flex flex-wrap py-10 px-20 justify-center">
         {#each players as player}
