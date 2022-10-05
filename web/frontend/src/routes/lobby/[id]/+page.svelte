@@ -5,6 +5,8 @@
 
     export let data: {lobby: Lobby};
 
+    $:players = [];
+
     onMount(() => {
         console.log(data);
         const socket = io("http://127.0.0.1:8000", {
@@ -14,6 +16,10 @@
             }
         });
         socket.on("connect", () => console.log("connected"));
+        socket.on("room_details", (d) => {players = d.data});
+
+        socket.on("user_join", (d) => {players = [...players, d.data]});
+
     });
 
     interface Lobby {
@@ -43,9 +49,9 @@
         <button on:click={start} class="p-2 bg-green-400 hover:bg-green-500 rounded">Start Clash</button>
     </div>
     <div id="players" class="flex flex-wrap py-10 px-20 justify-around">
-        {#each Array(11) as _, i}
+        {#each players as player}
         <div class="my-5 mx-3">
-            <SmallCard username={"midnight"} />
+            <SmallCard username={player} />
         </div>
         {/each}
     </div>
