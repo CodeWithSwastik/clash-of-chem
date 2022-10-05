@@ -5,7 +5,7 @@
 
 	let start = () => {
 		localStorage.setItem('username', username);
-		goto('/clash');
+		goto('/lobby/test');
 	};
 </script>
 
