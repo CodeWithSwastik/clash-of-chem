@@ -1,11 +1,25 @@
 <script lang="ts">
     import SmallCard from '$lib/components/SmallCard.svelte';
+	import { onMount } from 'svelte';
+    import io from "socket.io-client";
+
+    export let data: {lobby: Lobby};
+
+    onMount(() => {
+        console.log(data);
+        const socket = io("http://127.0.0.1:8000", {
+            auth: {
+                username: localStorage.getItem("username"),
+                room: data.lobby.id
+            }
+        });
+        socket.on("connect", () => console.log("connected"));
+    });
 
     interface Lobby {
         id: string,
     }
 
-    export let data: {lobby: Lobby};
 
     let countdownSeconds = 300;
     $:minutesLeft = Math.floor(countdownSeconds/60);
