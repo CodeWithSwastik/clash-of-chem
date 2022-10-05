@@ -9,16 +9,21 @@
 
     onMount(() => {
         console.log(data);
+        let username = localStorage.getItem("username");
         const socket = io("http://127.0.0.1:8000", {
             auth: {
-                username: localStorage.getItem("username"),
+                username: username,
                 room: data.lobby.id
             }
         });
         socket.on("connect", () => console.log("connected"));
         socket.on("room_details", (d) => {players = d.data});
 
-        socket.on("user_join", (d) => {players = [...players, d.data]});
+        socket.on("user_join", (d) => {
+            if (d.data != username) {
+                players = [...players, d.data];
+            }
+        });
 
     });
 
