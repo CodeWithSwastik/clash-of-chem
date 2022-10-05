@@ -11,7 +11,7 @@
     let start: ClickCallback, leave: ClickCallback;
     let isOwner: boolean = true;
 
-    let players = [];
+    let players: any[] = [];
 
     onMount(() => {
         console.log(data);
