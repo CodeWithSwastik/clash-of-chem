@@ -11,7 +11,7 @@
     let start: ClickCallback, leave: ClickCallback;
     let isOwner: boolean = true;
 
-    $:players = [];
+    let players = [];
 
     onMount(() => {
         console.log(data);
