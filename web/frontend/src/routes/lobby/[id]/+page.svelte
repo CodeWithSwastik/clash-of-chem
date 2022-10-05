@@ -6,7 +6,9 @@
 
     export let data: {lobby: Lobby};
 
-    let start: Function, leave: Function;
+    type ClickCallback = () => void;
+
+    let start: ClickCallback, leave: ClickCallback;
     let isOwner: boolean = true;
 
     $:players = [];
@@ -30,6 +32,10 @@
             if (d.data != username) {
                 players = [...players, d.data];
             }
+        });
+
+        socket.on("user_leave", (d) => {
+            players = d.data.players;
         });
 
         start = () => {

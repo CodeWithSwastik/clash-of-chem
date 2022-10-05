@@ -22,5 +22,8 @@ async def connect(sid, environ, auth):
 @sio.event
 async def disconnect(sid):
     print(sid, "disconnected")
-    sio.leave_room(sid, users[sid]['room'])
-    await sio.emit('user_leave', {'data': users[sid]['username']}, room=users[sid]['room'])
+    room = users[sid]['room']
+    username = users[sid]['username']
+    sio.leave_room(sid, room)
+    rooms[room]["players"] = [x for x in rooms[room]["players"] if x != username] 
+    await sio.emit('user_leave', {'data': {"players": rooms[room]["players"]}}, room=room)
