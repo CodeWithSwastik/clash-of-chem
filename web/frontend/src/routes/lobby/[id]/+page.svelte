@@ -30,12 +30,12 @@
 
         socket.on("user_join", (d) => {
             if (d.data != username) {
-                players = [...players, d.data]; // TODO: fix this type error ;-;
+                players = d.data; // TODO: fix this type error ;-;
             }
         });
 
         socket.on("user_leave", (d) => {
-            players = d.data.players;
+            players = d.data;
         });
 
         start = () => {
