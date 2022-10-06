@@ -21,14 +21,14 @@
 
 <section>
 	<div class="flex items-center justify-center h-screen">
-		<div class="bg-rosewater rounded w-[30%] shadow-xl p-10">
+		<div class="bg-mantle rounded w-[30%] shadow-xl p-10">
 
 			<div>
 				<input
 					type="text"
 					bind:value={username}
 					placeholder="Enter your name"
-					class="p-2 mr-2 rounded w-full"
+					class="p-2 mr-2 rounded w-full bg-surface1 text-text"
 				/>
 			</div>
 			<div>
