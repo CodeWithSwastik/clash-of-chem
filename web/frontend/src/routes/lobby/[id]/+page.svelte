@@ -11,7 +11,7 @@
     let start: ClickCallback, leave: ClickCallback;
     let isOwner: boolean = true;
 
-    $:players = [];
+    let players: any[] = [];
 
     onMount(() => {
         console.log(data);
@@ -71,9 +71,9 @@
     <div class="flex justify-around my-5">
         <button on:click={isOwner? start : leave} class="p-2 bg-green hover:bg-red rounded">{isOwner? "Start": "Leave"} Clash</button>
     </div>
-    <div id="players" class="flex flex-wrap py-10 px-20 justify-around">
+    <div id="players" class="flex flex-wrap py-10 px-20 justify-center">
         {#each players as player}
-        <div class="my-5 mx-3">
+        <div class="my-5 mx-10">
             <SmallCard username={player} />
         </div>
         {/each}
