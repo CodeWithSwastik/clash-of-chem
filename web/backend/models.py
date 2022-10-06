@@ -1,6 +1,8 @@
 from dataclasses import dataclass
 import random
 from typing import List
+from datetime import datetime
+
 
 PFP_COLORS = [
     'rosewater', 'pink', 'maroon', 'peach', 'yellow', 'teal', 'sky', 'lavender'
@@ -25,11 +27,16 @@ class Room:
     players: List[User]
     owner: User
     settings: "ClashSettings"
+    created_at: datetime
 
     @staticmethod
     def create(owner: User):
         return Room(
-            id=owner.room_id, players=[owner], owner=owner, settings=ClashSettings()
+            id=owner.room_id, 
+            players=[owner], 
+            owner=owner, 
+            settings=ClashSettings(),
+            created_at=datetime.now()
         )
 
     def add_player(self, player: User):
@@ -46,6 +53,14 @@ class Room:
                 "color":x.pfp_color
             } for x in self.players
         ]
+
+    @property
+    def room_info(self):
+        return {
+            "id": self.id,
+            "players": self.players_info,
+            "countdown": (self.created_at - datetime.now()).total_seconds() + 60*5
+        }
 
     def create_clash(self):
         return Clash(id=self.id, settings=self.settings)

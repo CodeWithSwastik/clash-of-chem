@@ -16,6 +16,7 @@
 
     let players: any[] = [];
     let countdown: NodeJS.Timer;
+    let countdownSeconds = 300;
 
     onMount(() => {
         console.log(data);
@@ -28,7 +29,8 @@
         });
         socket.on("connect", () => console.log("connected"));
         socket.on("room_details", (d) => {
-            players = d.data;
+            players = d.data.players;
+            countdownSeconds = d.data.countdown;
             console.log(players);
             isOwner = (players.length) == 1;
             
@@ -67,7 +69,6 @@
     }
 
 
-    let countdownSeconds = 300;
     $:minutesLeft = Math.floor(countdownSeconds/60);
     $:secondsLeft = Math.floor(countdownSeconds - minutesLeft * 60)
 

@@ -26,7 +26,7 @@ async def connect(sid, environ, auth):
         rooms[user.room_id] = Room.create(user)
 
     room = rooms[user.room_id]
-    await sio.emit("room_details", {"data": room.players_info}, room=user.sid)
+    await sio.emit("room_details", {"data": room.room_info}, room=user.sid)
     await sio.emit("user_join", {"data": room.players_info}, room=room.id)
 
 
