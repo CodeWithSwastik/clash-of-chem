@@ -7,6 +7,9 @@ module.exports = {
 			colors: {
 				dark: '#191816',
 				'fg-dark': '#22231f'
+			},
+			animation: {
+				'spin-slow': 'spin 2s linear infinite'
 			}
 		}
 	},
