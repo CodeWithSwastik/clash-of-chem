@@ -21,17 +21,23 @@
 
 <section>
 	<div class="flex items-center justify-center h-screen">
-		<div class="bg-sky rounded shadow-xl p-10">
+		<div class="bg-rosewater rounded w-[30%] shadow-xl p-10">
 
 			<div>
 				<input
 					type="text"
 					bind:value={username}
 					placeholder="Enter your name"
-					class="p-2 mr-2 rounded"
+					class="p-2 mr-2 rounded w-full"
 				/>
-				<button on:click={start} class="bg-base hover:bg-red text-white hover:text-black py-2 px-3 font-bold rounded">Create Lobby</button>
 			</div>
+			<div>
+			<button on:click={start} class="bg-green hover:bg-mauve text-base hover:text-black py-2 px-3 mt-8 w-full font-bold rounded">Play!</button>
+				</div>
+			<div>
+				<button on:click={start} class="bg-blue hover:bg-lavender text-white hover:text-black py-2 px-3 mt-2 w-full rounded">Create Private Lobby</button>
+			</div>
+
 			<div>
 			</div>
 		</div>
