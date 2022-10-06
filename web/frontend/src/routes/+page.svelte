@@ -30,7 +30,6 @@
 					placeholder="Enter your name"
 					class="p-2 mr-2 rounded w-full bg-surface1 text-text"
 				/>
-				<button on:click={start} class="bg-base hover:bg-red text-white hover:text-black py-2 px-3 font-bold rounded">Create Lobby</button>
 			</div>
 			<div>
 			<button on:click={start} class="bg-green hover:bg-opacity-70 text-base hover:text-black py-2 px-3 mt-8 w-full font-bold rounded">Play!</button>
