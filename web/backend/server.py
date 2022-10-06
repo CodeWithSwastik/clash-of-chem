@@ -26,8 +26,8 @@ async def connect(sid, environ, auth):
         rooms[user.room_id] = Room.create(user)
 
     room = rooms[user.room_id]
-    await sio.emit("room_details", {"data": room.player_names}, room=user.sid)
-    await sio.emit("user_join", {"data": room.player_names}, room=room.id)
+    await sio.emit("room_details", {"data": room.players_info}, room=user.sid)
+    await sio.emit("user_join", {"data": room.players_info}, room=room.id)
 
 
 @sio.event
@@ -38,4 +38,4 @@ async def disconnect(sid):
     sio.leave_room(sid, room.id)
     room.remove_player(user)
 
-    await sio.emit("user_leave", {"data": room.player_names}, room=room.id)
+    await sio.emit("user_leave", {"data": room.players_info}, room=room.id)

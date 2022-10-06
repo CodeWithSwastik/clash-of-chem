@@ -59,7 +59,7 @@
 			<div class="text-text text-xl"><span>{'18 points'}</span> | <span class="">{'5:00'}</span></div>
 		</div>
 		<div class="flex justify-center pt-10">
-			<canvas data-smiles="cc=cc"/>
+			<canvas data-smiles="CC=1C([N+](=O)[O-])=CC([N+](=O)[O-])=CC1[N+](=O)[O-]"/>
 			<div class="w-[200px]"></div>
 			<canvas data-smiles="cc(Br)cc"></canvas>
 		</div>

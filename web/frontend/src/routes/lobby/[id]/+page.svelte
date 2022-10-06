@@ -29,6 +29,7 @@
         socket.on("connect", () => console.log("connected"));
         socket.on("room_details", (d) => {
             players = d.data;
+            console.log(players);
             isOwner = (players.length) == 1;
             
             countdown = setInterval(() => {
@@ -81,7 +82,7 @@
         <div id="players" class="flex flex-wrap py-10 px-20 justify-center">
             {#each players as player}
             <div class="my-5 mx-10">
-                <SmallCard username={player} />
+                <SmallCard username={player.username} color={player.color}/>
             </div>
             {/each}
         </div>

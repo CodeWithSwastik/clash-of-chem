@@ -1,5 +1,10 @@
 from dataclasses import dataclass
+import random
 from typing import List
+
+PFP_COLORS = [
+    'rosewater', 'pink', 'maroon', 'peach', 'yellow', 'teal', 'sky', 'lavender'
+]
 
 
 @dataclass
@@ -7,6 +12,11 @@ class User:
     sid: str
     username: str
     room_id: str
+    pfp_color: str = "red"
+
+    def __post_init__(self):
+        self.pfp_color = random.choice(PFP_COLORS)
+    
 
 
 @dataclass
@@ -29,8 +39,13 @@ class Room:
         self.players.remove(player)
 
     @property
-    def player_names(self):
-        return [x.username for x in self.players]
+    def players_info(self):
+        return [
+            {
+                "username":x.username, 
+                "color":x.pfp_color
+            } for x in self.players
+        ]
 
     def create_clash(self):
         return Clash(id=self.id, settings=self.settings)
