@@ -1,8 +1,6 @@
 <script lang="ts">
 	import { onMount } from "svelte";
 
-
-
     let facts = [
         "About 18% of the human body is made of carbon atoms.",
         "Carbon atoms make up the backbone of many important molecules in your body - proteins, DNA, mRNA, sugars and fats.",
@@ -15,14 +13,22 @@
     onMount(()=> fact = facts[Math.floor(Math.random()*facts.length)]);
 
 </script>
-
+<style lang="scss">
+    @import "../../style.scss";
+		// .animate_out {
+		// 	@include animate_out(2);
+		// }
+		.animate_in {
+			@include animate_in(2);
+		}
+</style>
 <div class="flex items-center justify-center h-screen">
-    <div class="bg-transparent text-text rounded w-[30%] shadow-2xl p-10">
+    <div class="animate_in bg-mantle text-text rounded-2xl shadow-mantle w-[30%] shadow-2xl p-10">
             <div class="text-center text-6xl">
                 <!-- TODO: Replace with benzene-->
                 <i class="fa-solid fa-atom text-sky animate-spin-slow" /> 
             </div>
 
-            <div class="text-center mt-2">{fact}</div>
+            <div class="text-center mt-2 text-text">{fact}</div>
     </div>
 </div>
