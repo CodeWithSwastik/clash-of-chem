@@ -2,12 +2,38 @@
 // @ts-nocheck
 	import SmilesDrawer from 'smiles-drawer';
 	import { onMount } from 'svelte';
+	import { socket } from '$lib/stores/socket.js';
 
 	let smilesDrawer = new SmilesDrawer.Drawer({});
 	let pfpColors = ['mauve', 'red', 'peach', 'green', 'sky', 'blue'];
 	let randomPfpColor = () => {
 		return pfpColors[Math.floor(Math.random() * pfpColors.length)]
 	};
+
+	let leaderboard = {
+		"Mid":10,
+		"Swas": 69
+	};
+
+	let players = {
+		"Mid": {
+			"color": "rosewater",
+		},
+		"Swas": {
+			"color": "sky",
+		},
+	};
+
+	let colors = {
+		'rosewater': "#f5e0dc",
+		'pink': "#f5c2e7", 
+		'maroon': "#eba0ac", 
+		'peach': "#fab387", 
+		'yellow': "#f9e2af", 
+		'teal': "#94e2d5", 
+		'sky': "#89dceb", 
+		'lavender': "#b4befe"
+    };
 
 	//c1Nc(F)c=c(Br)c(Cl)c1c(=O)cO
 	onMount(() => {
@@ -32,11 +58,20 @@
 			},
 		},
 		}, 'canvas[data-smiles]', 'dark', null);
+
+		if ($socket) {
+			$socket.on("clash_details", (d) => {
+				leaderboard = d.data.leaderboard;
+				numPlayers = Object.keys(leaderboard).length;
+				players = d.data.players;
+				console.log(players);
+			});
+		}
 	});
 	
 
 	export let data;
-	let numPlayers = data.numPlayers ?? 6;
+	let numPlayers = data.numPlayers ?? 2;
 	console.log(data.id);
 </script>
 
@@ -44,12 +79,12 @@
 	<div id="players" class="flex flex-col overflow-scroll w-[30%] h-screen border-r border-surface1">
 		<div class="px-5 pt-5 text-center text-2xl text-text">Challenge 1</div>
 		<div class="text-center text-text mb-5">{numPlayers} Players</div>
-		{#each Array(6) as _, i}
+		{#each Object.entries(leaderboard) as [player, points], i}
 			<div class="p-4 flex {i%2===0?'bg-surface0':''}">
-				<i class="fa-solid fa-user p-1 mr-2 bg-peach text-mantle rounded"/> 
-				<div class="text-text">{'midnight'}</div>
+				<i class="fa-solid fa-user p-1 mr-2 text-mantle rounded" style="background-color: {colors[players[player].color]}"/> 
+				<div class="text-text">{player}</div>
 				<div class="flex-grow"></div>
-				<div class="text-text font-bold">{'18'} points</div>
+				<div class="text-text font-bold">{points} points</div>
 			</div>
 		{/each}
 	</div>
