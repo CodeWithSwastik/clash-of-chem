@@ -1,6 +1,6 @@
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 import random
-from typing import List
+from typing import Dict, List
 from datetime import datetime
 
 
@@ -19,7 +19,9 @@ class User:
     def __post_init__(self):
         self.pfp_color = random.choice(PFP_COLORS)
     
-
+    @property
+    def user_info(self):
+        return {"username": self.username, "color": self.pfp_color}
 
 @dataclass
 class Room:
@@ -27,7 +29,10 @@ class Room:
     players: List[User]
     owner: User
     settings: "ClashSettings"
-    created_at: datetime
+    created_at: datetime 
+
+    def __del__(self):
+        print(f"Room {self.id} deleted.")
 
     @staticmethod
     def create(owner: User):
@@ -44,34 +49,65 @@ class Room:
 
     def remove_player(self, player: User):
         self.players.remove(player)
+        if player == self.owner and self.players:
+            self.owner = self.players[0]
+
+
 
     @property
     def players_info(self):
-        return [
-            {
-                "username":x.username, 
-                "color":x.pfp_color
-            } for x in self.players
-        ]
+        return [x.user_info for x in self.players]
+
+    @property
+    def countdown(self):
+        minutes = 5
+        return (self.created_at - datetime.now()).total_seconds() + 60*minutes
 
     @property
     def room_info(self):
         return {
             "id": self.id,
             "players": self.players_info,
-            "countdown": (self.created_at - datetime.now()).total_seconds() + 60*5
+            "countdown": self.countdown,
+            "owner": self.owner.username
         }
 
     def create_clash(self):
-        return Clash(id=self.id, settings=self.settings)
+        return Clash(
+            id=self.id, 
+            settings=self.settings, 
+            players=self.players
+        )
 
 
 @dataclass
 class Clash:
     id: str
-    players: List[User]
     settings: "ClashSettings"
+    players: List[User] = field(default_factory=list)
+    started_at: datetime = field(default_factory=datetime.now)
+    points: Dict[str, int] = field(default_factory=dict)
+    
+    def __post_init__(self):
+        self.points = {
+            player.username: 0 for player in self.players
+        }
 
+    @property
+    def leaderboard(self):
+        return dict(sorted(self.points.items(), key=lambda item: item[1]))
+
+    @property
+    def clash_info(self):
+        return {
+            "id": self.id,
+            "leaderboard": self.leaderboard,
+            "players": self.players_info
+        }
+
+    @property
+    def players_info(self):
+        return {x.username: x.user_info for x in self.players}
 
 @dataclass
 class ClashSettings:

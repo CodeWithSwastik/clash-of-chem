@@ -1,5 +1,6 @@
+import asyncio
 import socketio
-from .models import User, Room
+from .models import User, Room, Clash
 from typing import Dict
 
 sio = socketio.AsyncServer(async_mode="asgi", cors_allowed_origins="*")
@@ -7,6 +8,7 @@ app = socketio.ASGIApp(sio)
 
 users: Dict[str, User] = {}
 rooms: Dict[str, Room] = {}
+clashes: Dict[str, Clash] = {}
 
 
 @sio.event
@@ -39,3 +41,19 @@ async def disconnect(sid):
     room.remove_player(user)
 
     await sio.emit("user_leave", {"data": room.players_info}, room=room.id)
+
+@sio.event
+async def start_clash(sid, data):
+    room = rooms[data["room"]]
+    if room.owner.sid != sid:
+        return False
+    else:
+        clash = room.create_clash()
+        clashes[clash.id] = clash
+        del room, rooms[clash.id]
+
+        print("Clash Started")
+        await sio.emit("clash_started", room=clash.id)
+        await asyncio.sleep(2)
+        await sio.emit("clash_details", {"data": clash.clash_info}, room=clash.id)
+        

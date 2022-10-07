@@ -1,6 +1,8 @@
 <script lang="ts">
+    // @ts-nocheck
     import SmallCard from '$lib/components/SmallCard.svelte';
 	import LoadingCard from '$lib/components/LoadingCard.svelte';
+    import { socket } from "$lib/stores/socket.js";
 
 	import { onMount } from 'svelte';
     import io from "socket.io-client";
@@ -19,20 +21,27 @@
     let countdownSeconds = 300;
 
     onMount(() => {
-        console.log(data);
         let username = localStorage.getItem("username");
-        const socket = io("http://127.0.0.1:8000", {
-            auth: {
-                username: username,
-                room: data.lobby.id
-            }
+        if ($socket) {
+            loaded = true;
+        }
+        else {
+            const socketConnection = io("http://127.0.0.1:8000", {
+                auth: {
+                    username: username,
+                    room: data.lobby.id
+                }
+            });
+            socket.set(socketConnection);
+        $socket.on("connect", () => {
+            console.log("connected");
         });
-        socket.on("connect", () => console.log("connected"));
-        socket.on("room_details", (d) => {
+
+        
+        $socket.on("room_details", (d) => {
             players = d.data.players;
             countdownSeconds = d.data.countdown;
-            console.log(players);
-            isOwner = (players.length) == 1;
+            isOwner = d.data.owner == username;
             
             countdown = setInterval(() => {
                 countdownSeconds--;
@@ -45,21 +54,30 @@
             setTimeout(() => {loaded = true}, 2500);
         });
 
-        socket.on("user_join", (d) => {
+        $socket.on("user_join", (d) => {
             players = d.data; 
         });
 
-        socket.on("user_leave", (d) => {
+        $socket.on("user_leave", (d) => {
             players = d.data;
+        });
+
+        $socket.on("clash_started", (d) => {
+            console.log("Starting");
+            goto("/clash/"+data.lobby.id);
         });
 
         start = () => {
             clearInterval(countdown);
+            if (isOwner && $socket) {
+                $socket.emit("start_clash", {"room": data.lobby.id});
+            }
         };
 
         leave = () => {
-            socket.disconnect();
+            $socket.disconnect();
             goto('/');
+        }
         }
 
     });
