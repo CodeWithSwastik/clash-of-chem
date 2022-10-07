@@ -1,3 +1,4 @@
+import asyncio
 import socketio
 from .models import User, Room, Clash
 from typing import Dict
@@ -52,5 +53,7 @@ async def start_clash(sid, data):
         del room, rooms[clash.id]
 
         print("Clash Started")
-        await sio.emit("clash_started", {"data": clash.clash_info}, room=clash.id)
+        await sio.emit("clash_started", room=clash.id)
+        await asyncio.sleep(2)
+        await sio.emit("clash_details", {"data": clash.clash_info}, room=clash.id)
         

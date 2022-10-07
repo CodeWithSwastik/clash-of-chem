@@ -19,7 +19,9 @@ class User:
     def __post_init__(self):
         self.pfp_color = random.choice(PFP_COLORS)
     
-
+    @property
+    def user_info(self):
+        return {"username": self.username, "color": self.pfp_color}
 
 @dataclass
 class Room:
@@ -48,18 +50,14 @@ class Room:
     def remove_player(self, player: User):
         self.players.remove(player)
         if player == self.owner and self.players:
-            self.owner = self.players[1]
+            self.owner = self.players[0]
 
 
 
     @property
     def players_info(self):
-        return [
-            {
-                "username":x.username, 
-                "color":x.pfp_color
-            } for x in self.players
-        ]
+        return [x.user_info for x in self.players]
+
     @property
     def countdown(self):
         minutes = 5
@@ -103,8 +101,13 @@ class Clash:
     def clash_info(self):
         return {
             "id": self.id,
-            "leaderboard": self.leaderboard
+            "leaderboard": self.leaderboard,
+            "players": self.players_info
         }
+
+    @property
+    def players_info(self):
+        return {x.username: x.user_info for x in self.players}
 
 @dataclass
 class ClashSettings:
