@@ -19,7 +19,6 @@
     let countdownSeconds = 300;
 
     onMount(() => {
-        console.log(data);
         let username = localStorage.getItem("username");
         const socket = io("http://127.0.0.1:8000", {
             auth: {
@@ -31,8 +30,7 @@
         socket.on("room_details", (d) => {
             players = d.data.players;
             countdownSeconds = d.data.countdown;
-            console.log(players);
-            isOwner = (players.length) == 1;
+            isOwner = d.data.owner == username;
             
             countdown = setInterval(() => {
                 countdownSeconds--;
@@ -53,8 +51,16 @@
             players = d.data;
         });
 
+        socket.on("clash_started", (d) => {
+            console.log("Starting");
+            goto("/clash/"+data.lobby.id);
+        });
+
         start = () => {
             clearInterval(countdown);
+            if (isOwner) {
+                socket.emit("start_clash", {"room": data.lobby.id});
+            }
         };
 
         leave = () => {

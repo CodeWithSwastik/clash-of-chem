@@ -1,4 +1,4 @@
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 import random
 from typing import List
 from datetime import datetime
@@ -44,6 +44,10 @@ class Room:
 
     def remove_player(self, player: User):
         self.players.remove(player)
+        if player == self.owner and self.players:
+            self.owner = self.players[1]
+            
+
 
     @property
     def players_info(self):
@@ -53,13 +57,18 @@ class Room:
                 "color":x.pfp_color
             } for x in self.players
         ]
+    @property
+    def countdown(self):
+        minutes = 5
+        return (self.created_at - datetime.now()).total_seconds() + 60*minutes
 
     @property
     def room_info(self):
         return {
             "id": self.id,
             "players": self.players_info,
-            "countdown": (self.created_at - datetime.now()).total_seconds() + 60*5
+            "countdown": self.countdown,
+            "owner": self.owner.username
         }
 
     def create_clash(self):
@@ -69,8 +78,8 @@ class Room:
 @dataclass
 class Clash:
     id: str
-    players: List[User]
     settings: "ClashSettings"
+    players: List[User] = field(default_factory=list)
 
 
 @dataclass
