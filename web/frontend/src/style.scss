@@ -20,12 +20,25 @@
     } 
 }
 
+@keyframes popin {
+    0% {
+        opacity: 0;
+        scale: 0%;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        scale: 100%;
+        transform: translateY(0px);
+    } 
+}
+
 @mixin animate_in_childs($max_childs) {
     @for $i from 1 through $max_childs {
         div:nth-child(#{$i}n) {
             animation: fadeInUp 0.3s ease-in-out;
             animation-fill-mode: forwards;
-            animation-delay: #{$i * 0.1}s;
+            animation-delay: #{$i * 0.2}s;
         }
     }
 }
@@ -40,6 +53,16 @@
     }
 }
 
+@mixin pop_in_childs($max_childs){
+    @for $i from 1 through $max_childs {
+        div:nth-child(#{$i}n) {
+            animation: popin 0.3s ease-in-out;
+            animation-fill-mode: forwards;
+            animation-delay: #{$i * 0.3}s;
+        }
+    }
+}
+
 @mixin animate_in($max_childs) {
     @include animate_in_childs($max_childs);
     animation: fadeInUp 1s ease-in-out;
@@ -49,5 +72,11 @@
 @mixin animate_out($max_childs) {
     @include animate_out_childs($max_childs);
     animation: fadeOutUp 1s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@mixin pop_in($max_childs) {
+    @include pop_in_childs($max_childs);
+    animation: popin 1s ease-in-out;
     animation-fill-mode: forwards;
 }

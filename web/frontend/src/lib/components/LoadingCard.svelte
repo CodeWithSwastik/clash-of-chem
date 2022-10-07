@@ -15,9 +15,6 @@
 </script>
 <style lang="scss">
     @import "../../style.scss";
-		// .animate_out {
-		// 	@include animate_out(2);
-		// }
 		.animate_in {
 			@include animate_in(2);
 		}
