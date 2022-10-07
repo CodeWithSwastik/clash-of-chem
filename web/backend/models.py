@@ -1,6 +1,6 @@
 from dataclasses import dataclass, field
 import random
-from typing import List
+from typing import Dict, List
 from datetime import datetime
 
 
@@ -27,7 +27,10 @@ class Room:
     players: List[User]
     owner: User
     settings: "ClashSettings"
-    created_at: datetime
+    created_at: datetime 
+
+    def __del__(self):
+        print(f"Room {self.id} deleted.")
 
     @staticmethod
     def create(owner: User):
@@ -46,7 +49,7 @@ class Room:
         self.players.remove(player)
         if player == self.owner and self.players:
             self.owner = self.players[1]
-            
+
 
 
     @property
@@ -72,7 +75,11 @@ class Room:
         }
 
     def create_clash(self):
-        return Clash(id=self.id, settings=self.settings)
+        return Clash(
+            id=self.id, 
+            settings=self.settings, 
+            players=self.players
+        )
 
 
 @dataclass
@@ -80,7 +87,24 @@ class Clash:
     id: str
     settings: "ClashSettings"
     players: List[User] = field(default_factory=list)
+    started_at: datetime = field(default_factory=datetime.now)
+    points: Dict[str, int] = field(default_factory=dict)
+    
+    def __post_init__(self):
+        self.points = {
+            player.username: 0 for player in self.players
+        }
 
+    @property
+    def leaderboard(self):
+        return dict(sorted(self.points.items(), key=lambda item: item[1]))
+
+    @property
+    def clash_info(self):
+        return {
+            "id": self.id,
+            "leaderboard": self.leaderboard
+        }
 
 @dataclass
 class ClashSettings:

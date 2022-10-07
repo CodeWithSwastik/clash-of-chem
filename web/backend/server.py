@@ -48,7 +48,9 @@ async def start_clash(sid, data):
         return False
     else:
         clash = room.create_clash()
+        clashes[clash.id] = clash
+        del room, rooms[clash.id]
 
         print("Clash Started")
-        await sio.emit("clash_started", {"data": None}, room=room.id)
+        await sio.emit("clash_started", {"data": clash.clash_info}, room=clash.id)
         
