@@ -146,7 +146,7 @@
 	<div id="content" class="flex flex-col w-[70%]">
 		<div id="stats" class="flex p-2 border-b border-surface1">
 			<div class="flex-grow"></div>
-			<div class="text-text text-xl"><span>{'18 points'}</span> | <span class="">{challenge.time}</span></div>
+			<div class="text-text text-xl"><span>{'25 points'}</span> | <i class="fa-solid fa-clock" /> <span class="">{challenge.time}</span></div>
 		</div>
 		<div class="flex justify-center pt-10">
 			<canvas id="from-compound-canvas" data-smiles="C"/>
