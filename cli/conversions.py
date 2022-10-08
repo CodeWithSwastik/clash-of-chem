@@ -32,7 +32,7 @@ def convert(from_compound: str, to_compound: str, avoid: Optional[list] = None):
 
 def generate_conversion_problem(start: Optional[str] = None, length: int = 3):
     """
-    Generates a conversion problem that can be solved in upto `length` steps.
+    Generates a conversion problem that can be solved in up to `length` steps.
     """
     import random
 

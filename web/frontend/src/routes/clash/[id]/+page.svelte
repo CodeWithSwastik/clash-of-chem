@@ -40,7 +40,7 @@
 	};
 	let challenge = {
 		number: 1,
-		type: "startegy",
+		type: "strategy",
 		time: 60,
 		current: "C",
 		turn: "Swas",
@@ -165,7 +165,7 @@
 		});
 	}
 
-	const startegy_update = (reagent) => {
+	const strategy_update = (reagent) => {
 		$socket.emit("clash_strategy_update", {"clash": data.id, "reagent": reagent});
 	}
 
@@ -222,7 +222,7 @@
 
 					<div class="grid grid-cols-2 gap-4 m-4 {challenge.turn != username ? 'pointer-events-none': ''}">
 					{#each challenge.reagents as reagent}
-							<button on:click={() => startegy_update(reagent)} class="text-text bg-crust rounded p-3 hover:bg-mantle">{reagent}</button>
+							<button on:click={() => strategy_update(reagent)} class="text-text bg-crust rounded p-3 hover:bg-mantle">{reagent}</button>
 					{/each}
 					</div>
 
