@@ -2,7 +2,7 @@ import json
 import os
 from typing import Optional
 
-reactions_filepath = os.path.join(os.path.dirname( __file__ ), '..', "reactions.json")
+reactions_filepath = os.path.join(os.path.dirname(__file__), "..", "reactions.json")
 with open(reactions_filepath, "r") as f:
     reactions = json.load(f)
 
@@ -28,6 +28,7 @@ def convert(from_compound: str, to_compound: str, avoid: Optional[list] = None):
                     c = convert(from_compound, sub, avoid)
                     if c:
                         return c + x
+
 
 def generate_conversion_problem(start: Optional[str] = None, length: int = 3):
     """
