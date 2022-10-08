@@ -40,7 +40,7 @@ async def disconnect(sid):
     sio.leave_room(sid, room.id)
     room.remove_player(user)
     if room.players:
-        await sio.emit("user_leave", {"data": room.players_info}, room=room.id)
+        await sio.emit("user_leave", {"data": {"players":room.players_info, "owner":room.owner.username}}, room=room.id)
     else:
         del rooms[room.id], room
 
