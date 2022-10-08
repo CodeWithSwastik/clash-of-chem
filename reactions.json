@@ -126,7 +126,7 @@
     "aq. KOH": "propan-2-ol",
     "alc. KOH": "propene",
     "alc. AgCN": "2-isocyanopropane",
-    "alc. KCN": "2-butanenitrile",
+    "alc. KCN": "2-methylpropanenitrile",
     "AgNO2": "2-nitropropane",
     "KNO2": "2-propyl nitrite",
     "Na / dry ether": "2,3-dimethylbutane",
@@ -208,30 +208,30 @@
     "H2O / LiAlH4": "propan-2-ol",
     "I2": "iodopropanone"
   },
-  "methanoic acid":{
+  "methanoic acid": {
     "LiAlH4": "methanol",
     "PCl5": "methanoyl chloride",
     "PCl3": "methanoyl chloride",
     "SOCl2": "methanoyl chloride",
     "Na": "sodium methanoate",
-    "NH3 / H2O / (Heat)": "methanmide",
+    "NH3 / H2O / (Heat)": "methanamide",
     "Red P/ HI": "methane",
     "HN3 / conc. H2SO4": "methanamine"
   },
-  "ethanoic acid":{
+  "ethanoic acid": {
     "LiAlH4": "ethanol",
     "PCl5": "ethanoyl chloride",
     "PCl3": "ethanoyl chloride",
     "SOCl2": "ethanoyl chloride",
     "Na": "sodium ethanoate",
-    "NH3 / H2O / (Heat)": "ethanmide",
+    "NH3 / H2O / (Heat)": "ethanamide",
     "Red P/ HI": "ethane",
     "HN3 / conc. H2SO4": "ethanamine"
   },
-  "methanamide":{
+  "methanamide": {
     "Br2 / aq. NaOH": "ammonia"
   },
-  "ethanamide":{
+  "ethanamide": {
     "Br2 / aq. NaOH": "methanamine"
   },
   "benzene": {
@@ -263,7 +263,7 @@
     "Br2 / CCl4": "4-bromophenol",
     "conc. HNO3": "2,4,6-trinitrophenol",
     "CO2 / NaOH / H+ (423K, 3-7 atm)": "2-hydroxybenzoic acid",
-    "H2SO4/ (373K)": "4-hydroxysulphonic acid",
+    "H2SO4 (373K)": "4-hydroxybenzenesulfonic acid",
     "CHCl3 / aq. KOH": "2-hydroxybenzaldehyde",
     "NH3 / anhyd. ZnCl2 catalyst / (573K)": "aniline"
   },
@@ -280,7 +280,7 @@
     "Ni-H2": "cyclohexylamine",
     "conc. HNO3 / conc. H2SO4": "4-nitroaniline",
     "conc. H2SO4": "sulphanilic acid"
-  }, 
+  },
   "benzenediazonium chloride": {
     "NaOH / H20": "phenol",
     "HCl / Cu": "chlorobenzene",
@@ -294,17 +294,17 @@
     "H3PO2 / Cu": "benzene",
     "CuCN / H3O+": "benzoic acid"
   },
-  "nitrobenzene":{
+  "nitrobenzene": {
     "Zn / HCl": "aniline",
     "Sn / HCl": "aniline",
     "LiAlH4": "azobenzene",
     "Zn dust / aq. NaOH": "hydrazobenzene",
     "Zn / NH4Cl / 50% C2H5OH / (Heat)": "phenylhydroxyamine"
   },
-  "benzamide":{
+  "benzamide": {
     "Br2 / KOH": "aniline"
   },
   "2-hydroxybenzoic acid": {
-    "(CH3CO)2O": "aspirin"
+    "(CH3CO)2O": "2-acetoxybenzoic acid"
   }
 }
