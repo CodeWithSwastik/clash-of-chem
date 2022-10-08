@@ -269,7 +269,8 @@
   },
   "benzoic acid": {
     "LiAlH4": "phenylmethanol",
-    "PCl5": "benzoyl chloride"
+    "PCl5": "benzoyl chloride",
+    "conc HNO2 / conc. H2SO4": "4-nitrobenzoic acid"
   },
   "aniline": {
     "NaNO2 / HCl (0-5 deg C)": "benzenediazonium chloride",
