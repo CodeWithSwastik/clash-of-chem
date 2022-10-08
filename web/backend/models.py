@@ -2,12 +2,11 @@ from dataclasses import dataclass, field
 import random
 from typing import Dict, List
 from datetime import datetime
-
+from game import Game
 
 PFP_COLORS = [
     'rosewater', 'pink', 'maroon', 'peach', 'yellow', 'teal', 'sky', 'lavender'
 ]
-
 
 @dataclass
 class User:
@@ -87,7 +86,8 @@ class Clash:
     players: List[User] = field(default_factory=list)
     started_at: datetime = field(default_factory=datetime.now)
     points: Dict[str, int] = field(default_factory=dict)
-    
+    game: Game = field(default_factory=Game)
+
     def __post_init__(self):
         self.points = {
             player.username: 0 for player in self.players

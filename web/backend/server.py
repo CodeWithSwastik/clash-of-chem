@@ -61,4 +61,7 @@ async def start_clash(sid, data):
         await sio.emit("clash_started", room=clash.id)
         await asyncio.sleep(2)
         await sio.emit("clash_details", {"data": clash.clash_info}, room=clash.id)
+        nextc = clash.game.next_challenge()
+        print(nextc)
+        await sio.emit("new_challenge", {"data": nextc}, room=clash.id)
         
