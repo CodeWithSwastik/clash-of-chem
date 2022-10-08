@@ -97,20 +97,10 @@
     };
 
 </script>
-<style>
-    @keyframes popin {
-    0% {
-        opacity: 0;
-        scale: 0%;
-    }
-    100% {
-        opacity: 1;
-        scale: 100%;
-    } 
-}
+<style lang="scss">
+    @import "../../../style.scss";
     .pop_in{
-        animation: popin 0.3s ease-in-out;
-        animation-fill-mode: forwards;
+        @include pop_in(1);
     }
 </style>
 <section>

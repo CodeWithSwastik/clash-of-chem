@@ -15,7 +15,7 @@
 			card.classList.add("animate_out")
 			setTimeout(() => {
 				goto('/lobby/test');
-			}, 1000)
+			}, 700)
 		}
 		
 	};
