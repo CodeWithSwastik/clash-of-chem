@@ -1,9 +1,11 @@
-import os 
+import os
 import json
 import random
 from datetime import datetime
 
-reactions_filepath = os.path.join(os.path.dirname(__file__), "..",  "..", "reactions.json")
+reactions_filepath = os.path.join(
+    os.path.dirname(__file__), "..", "..", "reactions.json"
+)
 smiles_filepath = os.path.join(os.path.dirname(__file__), "smiles.json")
 
 with open(reactions_filepath, "r") as f:
@@ -12,19 +14,24 @@ with open(reactions_filepath, "r") as f:
 with open(smiles_filepath, "r") as f:
     SMILES = json.load(f)
 
+
 class Challenge:
     def __init__(self) -> None:
+        self.time = 25
+        self.difficulty = 1
+        self.type = "conversion"  # "naming", "predict product" etc
+        self.started_at = None
+        self.running = False
+        self.players_cleared = {}  # {name: time_taken_to_clear}
+
+        # conversion
         self.from_compound = random.choice(list(REACTIONS))
         self.correct_reagent = random.choice(list(REACTIONS[self.from_compound]))
         self.to_compound = REACTIONS[self.from_compound][self.correct_reagent]
-        self.reagents = random.choices(list(REACTIONS[self.from_compound]), k=3) + [self.correct_reagent]
+        self.reagents = random.choices(list(REACTIONS[self.from_compound]), k=3) + [
+            self.correct_reagent
+        ]
         random.shuffle(self.reagents)
-        self.time = 15
-        self.difficulty = 1
-        self.type = "conversion" # "naming", "predict product" etc
-        self.started_at = None
-        self.running = False
-        self.players_cleared = {} # {name: time_taken_to_clear}
 
     @property
     def challenge_data(self):
@@ -32,22 +39,23 @@ class Challenge:
             "from": SMILES[self.from_compound],
             "to": SMILES[self.to_compound],
             "reagents": self.reagents,
-            "time": self.time
+            "time": self.time,
         }
 
     def start(self):
         self.started_at = datetime.now()
         self.running = True
-    
+
     def player_cleared(self, player_name):
-        
+
         if not self.running or player_name in self.players_cleared:
             return 0
 
         time_taken = (datetime.now() - self.started_at).total_seconds()
-        points = int(((self.time - time_taken)/self.time)*30)
+        points = int(((self.time - time_taken) / self.time) * 30)
         self.players_cleared[player_name] = time_taken
         return points
+
 
 class Game:
     def __init__(self) -> None:
@@ -55,7 +63,7 @@ class Game:
         self.current_challenge = None
         self.counter = 0
         self.points_table = {}
-    
+
     def __iter__(self):
         return self
 
@@ -73,4 +81,3 @@ class Game:
     def clear_challenge(self, player_name):
         points = self.current_challenge.player_cleared(player_name)
         self.points_table[player_name] += points
-

@@ -23,7 +23,7 @@ async def connect(sid, environ, auth):
     sio.enter_room(sid, user.room_id)
 
     if user.room_id in rooms:
-        rooms[user.room_id].add_player(user)    
+        rooms[user.room_id].add_player(user)
     else:
         rooms[user.room_id] = Room.create(user)
 
@@ -65,7 +65,7 @@ async def start_clash(sid, data):
             print(challenge)
             await sio.emit("new_challenge", {"data": challenge}, room=clash.id)
             await asyncio.sleep(challenge["time"])
-        
+
         print("Clash over")
 
 
@@ -76,6 +76,3 @@ async def clash_answer(sid, data):
     if data["answer"] == clash.game.current_challenge.correct_reagent:
         clash.game.clear_challenge(user.username)
         await sio.emit("clash_details", {"data": clash.clash_info}, room=clash.id)
-
-
-
