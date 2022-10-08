@@ -2,7 +2,7 @@ from dataclasses import dataclass, field
 import random
 from typing import Dict, List
 from datetime import datetime
-from game import Game
+from .game import Game
 
 PFP_COLORS = [
     "rosewater",
