@@ -1,6 +1,6 @@
 import asyncio
 import socketio
-from .models import User, Room, Clash
+from models import User, Room, Clash
 from typing import Dict
 
 sio = socketio.AsyncServer(async_mode="asgi", cors_allowed_origins="*")

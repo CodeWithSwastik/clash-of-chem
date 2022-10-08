@@ -90,8 +90,29 @@
     $:minutesLeft = Math.floor(countdownSeconds/60);
     $:secondsLeft = Math.floor(countdownSeconds - minutesLeft * 60)
 
-</script>
+    let anim_delay = 0;
+    let get_delay = () => {
+        anim_delay += 1;
+        return anim_delay
+    };
 
+</script>
+<style>
+    @keyframes popin {
+    0% {
+        opacity: 0;
+        scale: 0%;
+    }
+    100% {
+        opacity: 1;
+        scale: 100%;
+    } 
+}
+    .pop_in{
+        animation: popin 0.3s ease-in-out;
+        animation-fill-mode: forwards;
+    }
+</style>
 <section>
     {#if loaded}
         <div id="countdown" class="text-7xl text-text text-center my-5">{minutesLeft}:{secondsLeft<10?'0'+secondsLeft.toString():secondsLeft}</div>
@@ -100,12 +121,12 @@
         </div>
         <div id="players" class="flex flex-wrap py-10 px-20 justify-center">
             {#each players as player}
-            <div class="my-5 mx-10">
+            <div class="pop_in my-5 mx-10 animate_in">
                 <SmallCard username={player.username} color={player.color}/>
             </div>
             {/each}
         </div>
     {:else}
-        <LoadingCard />
+        <LoadingCard/>
     {/if}
 </section>

@@ -14,8 +14,7 @@
     };
     let pfpcolor = colors[color];
 </script>
-
-<div class="min-w-[100px] p-5 bg-mantle rounded shadow-lg shadow-gray-900">
+<div class="min-w-[100px] p-5 bg-mantle shadow-lg shadow-mantle rounded-2xl">
     <div class="text-center text-5xl">
         <i class="fa-solid fa-user" style="color: {pfpcolor};"/>
     </div>
