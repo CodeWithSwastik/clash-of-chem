@@ -14,9 +14,7 @@
 		animateOut = true;
 		setTimeout(() => {
 			goto('/lobby/test');
-		}, 1000)
-		
-		
+		}, 700)
 	};
 </script>
 
@@ -34,7 +32,7 @@
 
 <section>
 	<div class="flex items-center justify-center h-screen">
-		<div id="home-card" class="bg-mantle rounded-2xl w-[30%] shadow-2xl shadow-mantle p-10 {animateOut? 'animate_out': ''}">
+		<div class="bg-mantle rounded-2xl w-[30%] shadow-2xl shadow-mantle p-10 {animateOut? 'animate_out': ''}">
  
 			<div>
 				<input
