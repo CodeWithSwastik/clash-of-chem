@@ -69,7 +69,10 @@
 
         start = () => {
             clearInterval(countdown);
+
+
             if (isOwner && $socket) {
+                console.log("starting?");
                 $socket.emit("start_clash", {"room": data.lobby.id});
             }
         };

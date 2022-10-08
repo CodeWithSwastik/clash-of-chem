@@ -39,13 +39,18 @@ async def disconnect(sid):
     room = rooms[user.room_id]
     sio.leave_room(sid, room.id)
     room.remove_player(user)
+    if room.players:
+        await sio.emit("user_leave", {"data": room.players_info}, room=room.id)
+    else:
+        del rooms[room.id], room
 
-    await sio.emit("user_leave", {"data": room.players_info}, room=room.id)
 
 @sio.event
 async def start_clash(sid, data):
     room = rooms[data["room"]]
+    print("1")
     if room.owner.sid != sid:
+        print("2")
         return False
     else:
         clash = room.create_clash()
