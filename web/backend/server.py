@@ -79,3 +79,13 @@ async def clash_answer(sid, data):
         return True
     else:
         return False
+
+@sio.event
+async def clash_strategy_update(sid, data):
+    clash = clashes[data["clash"]]
+    user = users[sid]
+    if clash.game.current_challenge.turn != user.username:
+        return False
+    else:
+        clash.game.current_challenge.update(data["reagent"])
+        await sio.emit("new_challenge", {"data": clash.game.current_challenge.challenge_data}, room=clash.id)

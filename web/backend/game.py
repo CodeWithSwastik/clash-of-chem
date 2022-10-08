@@ -2,6 +2,7 @@ import os
 import json
 import random
 from datetime import datetime
+from itertools import cycle
 
 reactions_filepath = os.path.join(
     os.path.dirname(__file__), "..", "..", "reactions.json"
@@ -47,10 +48,11 @@ class Challenge:
     @property
     def challenge_data(self):
         return {
+            "type": self.type,
+            "time": self.time,
             "from": SMILES[self.from_compound],
             "to": SMILES[self.to_compound],
             "reagents": self.reagents,
-            "time": self.time,
         }
 
     def start(self):
@@ -67,12 +69,69 @@ class Challenge:
         self.players_cleared[player_name] = time_taken
         return points
 
+class StrategyChallenge:
+    def __init__(self, players: list) -> None:
+        self.time = 300
+        self.type = "strategy"
+
+        self.starting = "methane"
+        self.current = self.starting
+
+        finals = [
+            "ethene", 
+            "propanone", 
+            "methoxyethane", 
+            "1-bromopropane", 
+            "methanoic acid",
+            "ethanoic acid"
+        ]
+        self.players = players
+
+        random.shuffle(finals)
+
+        self.targets = dict(zip(self.players, finals))
+
+        self.playerCycle = cycle(self.players)
+        self.turn = next(self.playerCycle)
+        self.winner = None
+
+    def get_reagents(self):
+        l = []
+        for r in list(REACTIONS[self.current]):
+            prod = REACTIONS[self.current][r]
+            if prod in REACTIONS:
+                l.append(r)
+
+        random.shuffle(l)
+        return l[:6]
+
+    def update(self, reagent):
+        self.current = REACTIONS[self.current][reagent]
+        if self.targets[self.turn] == self.current:
+            # win
+            print(self.turn, "wins")
+            self.winner = self.turn
+        
+        self.turn = next(self.playerCycle)
+
+    @property
+    def challenge_data(self):
+        return {
+            "type": self.type,
+            "time": self.time,
+            "current": SMILES[self.current],
+            "reagents": self.get_reagents(),
+            "turn": self.turn,
+            "targets": self.targets
+        }
+
+    
 
 class Game:
     def __init__(self) -> None:
-        self.challenges = [Challenge(), Challenge(), Challenge(), Challenge(), Challenge()]
+        self.challenges = [Challenge(), Challenge(), Challenge()]
         self.current_challenge = None
-        self.counter = 0
+        self.counter = 1
         self.points_table = {}
 
     def __iter__(self):
@@ -81,13 +140,16 @@ class Game:
     def __next__(self):
         if self.counter == len(self.challenges):
             raise StopIteration
+        elif self.counter == 1:
+            self.current_challenge = StrategyChallenge(list(self.points_table))
         else:
             self.current_challenge = self.challenges[self.counter]
             self.current_challenge.start()
-            self.counter += 1
-            data = self.current_challenge.challenge_data
-            data["number"] = self.counter
-            return data
+
+        data = self.current_challenge.challenge_data
+        data["number"] = self.counter
+        self.counter += 1
+        return data
 
     def clear_challenge(self, player_name):
         points = self.current_challenge.player_cleared(player_name)

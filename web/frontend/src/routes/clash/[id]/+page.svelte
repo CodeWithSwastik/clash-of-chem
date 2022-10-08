@@ -40,11 +40,15 @@
 	};
 	let challenge = {
 		number: 1,
+		type: "startegy",
 		time: 60,
-		from: "C",
-		to: "CC",
+		current: "C",
+		turn: "Swas",
+		targets: {
+			"Swas": "1-Chloropropane",
+		},
 		reagents: ["He", "Test Reagent for now honestly lmao", "HEHE"],
-	}
+	};
 
 	let players = {
 		"Mid": {
@@ -113,19 +117,27 @@
 			$socket.on("new_challenge", (d) => {
 				console.log(d);
 				challenge = d.data;
-				chosenAnswer = null;
-				answerResult = null;
-				SmilesDrawer.parse(challenge.from, function (tree) {
-					smilesDrawer.draw(tree, 'from-compound-canvas', 'dark', false);
-				}, function (err) {
-					console.log(err);
-				});
+				if (challenge.type == "conversion") {
+					chosenAnswer = null;
+					answerResult = null;
+					SmilesDrawer.parse(challenge.from, function (tree) {
+						smilesDrawer.draw(tree, 'from-compound-canvas', 'dark', false);
+					}, function (err) {
+						console.log(err);
+					});
 
-				SmilesDrawer.parse(challenge.to, function (tree) {
-					smilesDrawer.draw(tree, 'to-compound-canvas', 'dark', false);
-				}, function (err) {
-					console.log(err);
-				});
+					SmilesDrawer.parse(challenge.to, function (tree) {
+						smilesDrawer.draw(tree, 'to-compound-canvas', 'dark', false);
+					}, function (err) {
+						console.log(err);
+					});
+				} else {
+					SmilesDrawer.parse(challenge.current, function (tree) {
+						smilesDrawer.draw(tree, 'current-compound-canvas', 'dark', false);
+					}, function (err) {
+						console.log(err);
+					});					
+				}
 			});
 			$socket.on("clash_over", (d) => {
 				console.log("GG! Clash is over");
@@ -151,6 +163,10 @@
 		$socket.emit("clash_answer", {"clash": data.id, "answer": ans}, (res) => {
 			answerResult = res ? "correct" : "wrong"
 		});
+	}
+
+	const startegy_update = (reagent) => {
+		$socket.emit("clash_strategy_update", {"clash": data.id, "reagent": reagent});
 	}
 
 	export let data;
@@ -181,21 +197,37 @@
 		{#if winner}
 			<div class="text-text text-4xl text-center pt-10">GG! The Clash is over! The winner is {winner}</div>
 		{:else}
-		<div class="flex justify-center pt-10">
-			<canvas id="from-compound-canvas" data-smiles="C"/>
-			<div class="w-[200px] text-text text-4xl text-center flex h-full"><div class="m-auto">to</div></div>
-			<canvas id="to-compound-canvas" data-smiles="F"></canvas>
-		</div>
-		<div class="pt-10">
-			<div class="text-text m-4 mb-8 text-4xl"> Which reagent will carry out the conversion? </div>
-			<div class="grid grid-cols-2 gap-4 m-4 {answerResult ? 'pointer-events-none': ''}">
-			{#each challenge.reagents as reagent}
-					
-					<button on:click={() => answer(reagent)} class="text-text bg-crust rounded p-3 hover:bg-mantle" style={getStylesForButton(reagent)}>{reagent}</button>
-			{/each}
-			</div>
+			{#if challenge.type == 'conversion'}	
+				<div class="flex justify-center pt-10">
+					<canvas id="from-compound-canvas" data-smiles="C"/>
+					<div class="w-[200px] text-text text-4xl text-center flex h-full"><div class="m-auto">to</div></div>
+					<canvas id="to-compound-canvas" data-smiles="F"></canvas>
+				</div>
+				<div class="pt-10">
+					<div class="text-text m-4 mb-8 text-4xl"> Which reagent will carry out the conversion? </div>
+					<div class="grid grid-cols-2 gap-4 m-4 {answerResult ? 'pointer-events-none': ''}">
+					{#each challenge.reagents as reagent}
+							<button on:click={() => answer(reagent)} class="text-text bg-crust rounded p-3 hover:bg-mantle" style={getStylesForButton(reagent)}>{reagent}</button>
+					{/each}
+					</div>
 
-		</div>
+				</div>
+			{:else}
+				<div class="flex justify-center pt-10">
+					<canvas id="current-compound-canvas" data-smiles="C"/>
+				</div>
+				<div class="pt-10">
+					<div class="text-text m-4 text-4xl"> {challenge.turn == username ? 'Which reagent will you use?' : `Waiting for ${challenge.turn} to select a reagent...`} </div>
+					<div class="text-overlay2 m-4 text-2xl"> Current turn: {challenge.turn} | Your goal: Convert to {challenge.targets[username]} </div>
+
+					<div class="grid grid-cols-2 gap-4 m-4 {challenge.turn != username ? 'pointer-events-none': ''}">
+					{#each challenge.reagents as reagent}
+							<button on:click={() => startegy_update(reagent)} class="text-text bg-crust rounded p-3 hover:bg-mantle">{reagent}</button>
+					{/each}
+					</div>
+
+				</div>				
+			{/if}
 		{/if}
 	</div>
 </section>
