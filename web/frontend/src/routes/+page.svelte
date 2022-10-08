@@ -5,12 +5,12 @@
 	let username: string = "";
 
 	onMount(() => {
-		username = localStorage.getItem('username') ?? '';
+		username = sessionStorage.getItem('username') ?? '';
 	})
 
 	let animateOut = false;
 	let start = () => {
-		localStorage.setItem('username', username);
+		sessionStorage.setItem('username', username);
 		animateOut = true;
 		setTimeout(() => {
 			goto('/lobby/test');
