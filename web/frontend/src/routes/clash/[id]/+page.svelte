@@ -17,6 +17,13 @@
 		"Mid":10,
 		"Swas": 69
 	};
+	let challenge = {
+		number: 1,
+		time: 60,
+		from: "C",
+		to: "CC",
+		reagents: [],
+	}
 
 	let players = {
 		"Mid": {
@@ -68,6 +75,11 @@
 				numPlayers = Object.keys(leaderboard).length;
 				players = d.data.players;
 				console.log(players);
+				loaded = true;
+			});
+			$socket.on("new_challenge", (d) => {
+				console.log(d);
+				challenge = d.data;
 			});
 		}
 	});
@@ -80,7 +92,7 @@
 {#if loaded}
 <section class="flex">
 	<div id="players" class="flex flex-col overflow-scroll w-[30%] h-screen border-r border-surface1">
-		<div class="px-5 pt-5 text-center text-2xl text-text">Challenge 1</div>
+		<div class="px-5 pt-5 text-center text-2xl text-text">Challenge {challenge.number}</div>
 		<div class="text-center text-text mb-5">{numPlayers} Players</div>
 		{#each Object.entries(leaderboard) as [player, points], i}
 			<div class="p-4 flex {i%2===0?'bg-surface0':''}">
@@ -97,9 +109,9 @@
 			<div class="text-text text-xl"><span>{'18 points'}</span> | <span class="">{'5:00'}</span></div>
 		</div>
 		<div class="flex justify-center pt-10">
-			<canvas data-smiles="CC=1C([N+](=O)[O-])=CC([N+](=O)[O-])=CC1[N+](=O)[O-]"/>
+			<canvas data-smiles="{challenge.from}"/>
 			<div class="w-[200px]"></div>
-			<canvas data-smiles="cc(Br)cc"></canvas>
+			<canvas data-smiles="{challenge.to}"></canvas>
 		</div>
 	</div>
 </section>
