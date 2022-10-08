@@ -14,6 +14,10 @@ with open(reactions_filepath, "r") as f:
 with open(smiles_filepath, "r") as f:
     SMILES = json.load(f)
 
+REAGENTS = set()
+for substrate in REACTIONS:
+    for reagent, product in REACTIONS[substrate].items():
+        REAGENTS.add(reagent)
 
 class Challenge:
     def __init__(self) -> None:
@@ -28,9 +32,16 @@ class Challenge:
         self.from_compound = random.choice(list(REACTIONS))
         self.correct_reagent = random.choice(list(REACTIONS[self.from_compound]))
         self.to_compound = REACTIONS[self.from_compound][self.correct_reagent]
-        self.reagents = random.choices(list(REACTIONS[self.from_compound]), k=3) + [
-            self.correct_reagent
-        ]
+
+        self.reagents = [self.correct_reagent]
+
+        for _ in range(3):
+            r = random.choice(list(REAGENTS))
+
+            if r in self.reagents or (r in REACTIONS[self.from_compound] and REACTIONS[self.from_compound][r] == self.to_compound): 
+                continue
+            self.reagents.append(r)
+
         random.shuffle(self.reagents)
 
     @property
@@ -59,7 +70,7 @@ class Challenge:
 
 class Game:
     def __init__(self) -> None:
-        self.challenges = [Challenge(), Challenge(), Challenge()]
+        self.challenges = [Challenge(), Challenge(), Challenge(), Challenge(), Challenge()]
         self.current_challenge = None
         self.counter = 0
         self.points_table = {}

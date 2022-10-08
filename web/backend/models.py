@@ -95,7 +95,7 @@ class Clash:
 
     @property
     def leaderboard(self):
-        return dict(sorted(self.game.points_table.items(), key=lambda item: item[1]))
+        return dict(sorted(self.game.points_table.items(), key=lambda item: item[1], reverse=True))
 
     @property
     def clash_info(self):
