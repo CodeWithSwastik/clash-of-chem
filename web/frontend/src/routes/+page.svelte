@@ -8,6 +8,7 @@
 		username = localStorage.getItem('username') ?? '';
 	})
 
+	let animateOut = false;
 	let start = () => {
 		localStorage.setItem('username', username);
 		let card = document.getElementById("home-card")
@@ -17,7 +18,6 @@
 				goto('/lobby/test');
 			}, 700)
 		}
-		
 	};
 </script>
 
@@ -35,7 +35,7 @@
 
 <section>
 	<div class="flex items-center justify-center h-screen">
-		<div id="home-card" class="bg-mantle rounded-2xl w-[30%] shadow-2xl shadow-mantle p-10">
+		<div id="home-card" class="bg-mantle rounded-2xl w-[30%] shadow-2xl shadow-mantle p-10 {animateOut? 'animate_out': ''}">
  
 			<div>
 				<input
