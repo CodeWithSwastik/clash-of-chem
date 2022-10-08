@@ -3,6 +3,7 @@
     import SmallCard from '$lib/components/SmallCard.svelte';
 	import LoadingCard from '$lib/components/LoadingCard.svelte';
     import { socket } from "$lib/stores/socket.js";
+    import { PUBLIC_API_URL } from "$env/static/public";
 
 	import { onMount } from 'svelte';
     import io from "socket.io-client";
@@ -26,7 +27,7 @@
             loaded = true;
         }
         else {
-            const socketConnection = io(process.env.API_URL ?? "http://127.0.0.1:8000", {
+            const socketConnection = io(PUBLIC_API_URL ?? "http://127.0.0.1:8000", {
                 auth: {
                     username: username,
                     room: data.lobby.id
@@ -86,7 +87,7 @@
     });
 
     interface Lobby {
-        id: string,
+        id: string
     }
 
 
