@@ -18,7 +18,7 @@ class Challenge:
         self.to_compound = REACTIONS[self.from_compound][self.correct_reagent]
         self.reagents = random.choices(list(REACTIONS[self.from_compound]), k=3) + [self.correct_reagent]
         random.shuffle(self.reagents)
-        self.time = 60
+        self.time = 5
         self.difficulty = 1
         self.type = "conversion" # "naming", "predict product" etc
     
@@ -33,12 +33,18 @@ class Challenge:
 
 class Game:
     def __init__(self) -> None:
-        self.challenges = [Challenge()]
+        self.challenges = [Challenge(), Challenge(), Challenge()]
         self.counter = 0
     
-    def next_challenge(self):
-        challenge = self.challenges[self.counter]
-        self.counter += 1
-        data = challenge.challenge_data
-        data["number"] = self.counter
-        return data
+    def __iter__(self):
+        return self
+
+    def __next__(self):
+        if self.counter == len(self.challenges):
+            raise StopIteration
+        else:
+            challenge = self.challenges[self.counter]
+            self.counter += 1
+            data = challenge.challenge_data
+            data["number"] = self.counter
+            return data
