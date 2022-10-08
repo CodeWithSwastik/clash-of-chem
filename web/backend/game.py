@@ -129,7 +129,7 @@ class StrategyChallenge:
 
 class Game:
     def __init__(self) -> None:
-        self.challenges = [Challenge(), Challenge(), Challenge()]
+        self.challenges = [Challenge(), Challenge()]
         self.current_challenge = None
         self.counter = 1
         self.points_table = {}

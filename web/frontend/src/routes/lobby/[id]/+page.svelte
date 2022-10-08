@@ -26,7 +26,7 @@
             loaded = true;
         }
         else {
-            const socketConnection = io("http://127.0.0.1:8000", {
+            const socketConnection = io(process.env.API_URL ?? "http://127.0.0.1:8000", {
                 auth: {
                     username: username,
                     room: data.lobby.id
