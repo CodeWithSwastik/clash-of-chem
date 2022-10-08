@@ -5,7 +5,29 @@
 	import { socket } from '$lib/stores/socket.js';
 	import LoadingCard from '$lib/components/LoadingCard.svelte';
 
-	let smilesDrawer = new SmilesDrawer.Drawer({});
+	let smilesDrawer = new SmilesDrawer.Drawer({
+			width: 200,
+			height: 200,
+			themes: {
+			dark: {
+				C: '#cdd6f4',
+				O: '#f38ba8',
+				N: '#89b4fa',
+				F: '#94e2d5',
+				CL: '#a6e3a1',
+				BR: '#fab387',
+				I: '#cba6f7',
+				P: '#eba0ac',
+				S: '#f1c40f',
+				B: '#e67e22',
+				SI: '#e67e22',
+				H: '#f2cdcd',
+				BACKGROUND: '#1e1e2e'
+				}
+			}
+		}	
+		);
+
 	let pfpColors = ['mauve', 'red', 'peach', 'green', 'sky', 'blue'];
 	let randomPfpColor = () => {
 		return pfpColors[Math.floor(Math.random() * pfpColors.length)]
@@ -80,6 +102,17 @@
 			$socket.on("new_challenge", (d) => {
 				console.log(d);
 				challenge = d.data;
+				SmilesDrawer.parse(challenge.from, function (tree) {
+					smilesDrawer.draw(tree, 'from-compound-canvas', 'dark', false);
+				}, function (err) {
+					console.log(err);
+				});
+
+				SmilesDrawer.parse(challenge.to, function (tree) {
+					smilesDrawer.draw(tree, 'to-compound-canvas', 'dark', false);
+				}, function (err) {
+					console.log(err);
+				});
 			});
 		}
 	});
@@ -109,9 +142,9 @@
 			<div class="text-text text-xl"><span>{'18 points'}</span> | <span class="">{'5:00'}</span></div>
 		</div>
 		<div class="flex justify-center pt-10">
-			<canvas data-smiles="{challenge.from}"/>
+			<canvas id="from-compound-canvas"/>
 			<div class="w-[200px]"></div>
-			<canvas data-smiles="{challenge.to}"></canvas>
+			<canvas id="to-compound-canvas"></canvas>
 		</div>
 	</div>
 </section>
