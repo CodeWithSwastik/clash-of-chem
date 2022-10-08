@@ -4,6 +4,7 @@
 	import { onMount } from 'svelte';
 	import { socket } from '$lib/stores/socket.js';
 	import LoadingCard from '$lib/components/LoadingCard.svelte';
+	import { goto } from '$app/navigation';
 
 	let smilesDrawer = new SmilesDrawer.Drawer({
 			width: 200,
@@ -60,7 +61,12 @@
 		'yellow': "#f9e2af", 
 		'teal': "#94e2d5", 
 		'sky': "#89dceb", 
-		'lavender': "#b4befe"
+		'lavender': "#b4befe",
+		'red': "#f38ba8",
+		'green': "#a6e3a1",
+		'mantle': "#181825",
+		'crust': "#11111b",
+		'text': "#cdd6f4",
     };
 
 	//c1Nc(F)c=c(Br)c(Cl)c1c(=O)cO
@@ -103,7 +109,8 @@
 			$socket.on("new_challenge", (d) => {
 				console.log(d);
 				challenge = d.data;
-
+				chosenAnswer = null;
+				answerResult = null;
 				SmilesDrawer.parse(challenge.from, function (tree) {
 					smilesDrawer.draw(tree, 'from-compound-canvas', 'dark', false);
 				}, function (err) {
@@ -116,11 +123,29 @@
 					console.log(err);
 				});
 			});
+			$socket.on("clash_over", (d) => {
+				console.log("GG! Clash is over");
+				setTimeout(() => {goto("/")}, 10000);
+			});
+
 		}
 	});
 	
+	let chosenAnswer = null;
+	let answerResult = null;
+
+	const getStylesForButton = (reagent) => {
+		if (chosenAnswer == reagent) {
+			let bg = answerResult == "wrong" ? colors.red : colors.green;
+			return "background-color:" + bg + "; color: " + colors.crust;
+		} 
+		return "background-color:" + colors.crust + "; color: " + colors.text;
+	}
 	const answer = (ans) => {
-		$socket.emit("clash_answer", {"clash": data.id, "answer": ans})
+		chosenAnswer = ans;
+		$socket.emit("clash_answer", {"clash": data.id, "answer": ans}, (res) => {
+			answerResult = res ? "correct" : "wrong"
+		});
 	}
 
 	export let data;
@@ -155,9 +180,10 @@
 		</div>
 		<div class="pt-10">
 			<div class="text-text m-4 mb-8 text-4xl"> Which reagent will carry out the conversion? </div>
-			<div class="grid grid-cols-2 gap-4 m-4">
+			<div class="grid grid-cols-2 gap-4 m-4 {answerResult ? 'pointer-events-none': ''}">
 			{#each challenge.reagents as reagent}
-					<button on:click={() => answer(reagent)} class="text-text bg-crust rounded p-3 hover:bg-mantle">{reagent}</button>
+					
+					<button on:click={() => answer(reagent)} class="text-text bg-crust rounded p-3 hover:bg-mantle" style={getStylesForButton(reagent)}>{reagent}</button>
 			{/each}
 			</div>
 

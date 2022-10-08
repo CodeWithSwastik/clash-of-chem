@@ -48,9 +48,7 @@ async def disconnect(sid):
 @sio.event
 async def start_clash(sid, data):
     room = rooms[data["room"]]
-    print("1")
     if room.owner.sid != sid:
-        print("2")
         return False
     else:
         clash = room.create_clash()
@@ -67,6 +65,8 @@ async def start_clash(sid, data):
             await asyncio.sleep(challenge["time"])
 
         print("Clash over")
+        await sio.emit("clash_over", {"data": clash.winner}, room=clash.id)
+        del clashes[clash.id], clash
 
 
 @sio.event
@@ -76,3 +76,6 @@ async def clash_answer(sid, data):
     if data["answer"] == clash.game.current_challenge.correct_reagent:
         clash.game.clear_challenge(user.username)
         await sio.emit("clash_details", {"data": clash.clash_info}, room=clash.id)
+        return True
+    else:
+        return False

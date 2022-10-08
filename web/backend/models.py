@@ -98,6 +98,11 @@ class Clash:
         return dict(sorted(self.game.points_table.items(), key=lambda item: item[1], reverse=True))
 
     @property
+    def winner(self):
+        return list(self.leaderboard)[0]
+
+
+    @property
     def clash_info(self):
         return {
             "id": self.id,
