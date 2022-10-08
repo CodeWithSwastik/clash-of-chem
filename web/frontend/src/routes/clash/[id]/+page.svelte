@@ -97,11 +97,17 @@
 				numPlayers = Object.keys(leaderboard).length;
 				players = d.data.players;
 				console.log(players);
+				if (!loaded) {
+				setInterval(
+					()=>{challenge.time--;}, 1000
+				);
+				}
 				loaded = true;
 			});
 			$socket.on("new_challenge", (d) => {
 				console.log(d);
 				challenge = d.data;
+
 				SmilesDrawer.parse(challenge.from, function (tree) {
 					smilesDrawer.draw(tree, 'from-compound-canvas', 'dark', false);
 				}, function (err) {
@@ -117,10 +123,15 @@
 		}
 	});
 	
+	const answer = (ans) => {
+		$socket.emit("clash_answer", {"clash": data.id, "answer": ans})
+	}
 
 	export let data;
 	let numPlayers = data.numPlayers ?? 2;
 	console.log(data.id);
+
+
 </script>
 {#if loaded}
 <section class="flex">
@@ -139,12 +150,19 @@
 	<div id="content" class="flex flex-col w-[70%]">
 		<div id="stats" class="flex p-2 border-b border-surface1">
 			<div class="flex-grow"></div>
-			<div class="text-text text-xl"><span>{'18 points'}</span> | <span class="">{'5:00'}</span></div>
+			<div class="text-text text-xl"><span>{'18 points'}</span> | <span class="">{challenge.time}</span></div>
 		</div>
 		<div class="flex justify-center pt-10">
 			<canvas id="from-compound-canvas"/>
 			<div class="w-[200px]"></div>
 			<canvas id="to-compound-canvas"></canvas>
+		</div>
+		<div class="pt-10">
+			{#each challenge.reagents as reagent}
+				<div>
+					<button on:click={() => answer(reagent)} class="text-text bg-crust">{reagent}</button>
+				</div>
+			{/each}
 		</div>
 	</div>
 </section>

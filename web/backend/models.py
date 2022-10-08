@@ -85,17 +85,16 @@ class Clash:
     settings: "ClashSettings"
     players: List[User] = field(default_factory=list)
     started_at: datetime = field(default_factory=datetime.now)
-    points: Dict[str, int] = field(default_factory=dict)
     game: Game = field(default_factory=Game)
 
     def __post_init__(self):
-        self.points = {
+        self.game.points_table = {
             player.username: 0 for player in self.players
         }
 
     @property
     def leaderboard(self):
-        return dict(sorted(self.points.items(), key=lambda item: item[1]))
+        return dict(sorted(self.game.points_table.items(), key=lambda item: item[1]))
 
     @property
     def clash_info(self):
