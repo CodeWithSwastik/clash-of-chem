@@ -3,12 +3,15 @@
 	import SmilesDrawer from 'smiles-drawer';
 	import { onMount } from 'svelte';
 	import { socket } from '$lib/stores/socket.js';
+	import LoadingCard from '$lib/components/LoadingCard.svelte';
 
 	let smilesDrawer = new SmilesDrawer.Drawer({});
 	let pfpColors = ['mauve', 'red', 'peach', 'green', 'sky', 'blue'];
 	let randomPfpColor = () => {
 		return pfpColors[Math.floor(Math.random() * pfpColors.length)]
 	};
+
+	let loaded = false;
 
 	let leaderboard = {
 		"Mid":10,
@@ -74,7 +77,7 @@
 	let numPlayers = data.numPlayers ?? 2;
 	console.log(data.id);
 </script>
-
+{#if loaded}
 <section class="flex">
 	<div id="players" class="flex flex-col overflow-scroll w-[30%] h-screen border-r border-surface1">
 		<div class="px-5 pt-5 text-center text-2xl text-text">Challenge 1</div>
@@ -100,3 +103,6 @@
 		</div>
 	</div>
 </section>
+{:else}
+<LoadingCard />
+{/if}
