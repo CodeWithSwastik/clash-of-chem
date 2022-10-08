@@ -5,12 +5,12 @@
 	let username: string = "";
 
 	onMount(() => {
-		username = sessionStorage.getItem('username') ?? '';
+		username = localStorage.getItem('username') ?? '';
 	})
 
 	let animateOut = false;
 	let start = () => {
-		sessionStorage.setItem('username', username);
+		localStorage.setItem('username', username);
 		animateOut = true;
 		setTimeout(() => {
 			goto('/lobby/test');
@@ -31,7 +31,7 @@
 </svelte:head>
 
 <section>
-	<div class="flex items-center justify-center h-screen">
+	<div class="flex items-center justify-center h-screen z-10">
 		<div class="bg-mantle rounded-2xl w-[30%] shadow-2xl shadow-mantle p-10 {animateOut? 'animate_out': ''}">
  
 			<div>

@@ -32,6 +32,7 @@
 
 	let loaded = false;
 	let username = "";
+	let winner = null;
 
 	let leaderboard = {
 		"Mid":10,
@@ -72,7 +73,7 @@
 
 	//c1Nc(F)c=c(Br)c(Cl)c1c(=O)cO
 	onMount(() => {
-        username = sessionStorage.getItem("username");
+        username = localStorage.getItem("username");
 
 		SmilesDrawer.apply({
 			width: 200,
@@ -128,6 +129,7 @@
 			});
 			$socket.on("clash_over", (d) => {
 				console.log("GG! Clash is over");
+				winner = d.data;
 				setTimeout(() => {goto("/")}, 10000);
 			});
 
@@ -176,6 +178,9 @@
 			<div class="flex-grow"></div>
 			<div class="text-text text-xl"><span>{leaderboard[username]} points</span> | <i class="fa-solid fa-clock" /> <span class="">{challenge.time}</span></div>
 		</div>
+		{#if winner}
+			<div class="text-text text-4xl text-center pt-10">GG! The Clash is over! The winner is {winner}</div>
+		{:else}
 		<div class="flex justify-center pt-10">
 			<canvas id="from-compound-canvas" data-smiles="C"/>
 			<div class="w-[200px] text-text text-4xl text-center flex h-full"><div class="m-auto">to</div></div>
@@ -191,6 +196,7 @@
 			</div>
 
 		</div>
+		{/if}
 	</div>
 </section>
 {:else}
