@@ -19,7 +19,7 @@ class Challenge:
         self.to_compound = REACTIONS[self.from_compound][self.correct_reagent]
         self.reagents = random.choices(list(REACTIONS[self.from_compound]), k=3) + [self.correct_reagent]
         random.shuffle(self.reagents)
-        self.time = 30
+        self.time = 15
         self.difficulty = 1
         self.type = "conversion" # "naming", "predict product" etc
         self.started_at = None
@@ -44,9 +44,10 @@ class Challenge:
         if not self.running or player_name in self.players_cleared:
             return 0
 
-        time_taken = int((datetime.now() - self.started_at).total_seconds())
+        time_taken = (datetime.now() - self.started_at).total_seconds()
+        points = int(((self.time - time_taken)/self.time)*30)
         self.players_cleared[player_name] = time_taken
-        return self.time - time_taken
+        return points
 
 class Game:
     def __init__(self) -> None:

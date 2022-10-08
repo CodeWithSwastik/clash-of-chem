@@ -28,10 +28,6 @@
 		}	
 		);
 
-	let pfpColors = ['mauve', 'red', 'peach', 'green', 'sky', 'blue'];
-	let randomPfpColor = () => {
-		return pfpColors[Math.floor(Math.random() * pfpColors.length)]
-	};
 
 	let loaded = false;
 
@@ -44,7 +40,7 @@
 		time: 60,
 		from: "C",
 		to: "CC",
-		reagents: [],
+		reagents: ["He", "Test Reagent for now honestly lmao", "HEHE"],
 	}
 
 	let players = {
@@ -153,16 +149,18 @@
 			<div class="text-text text-xl"><span>{'18 points'}</span> | <span class="">{challenge.time}</span></div>
 		</div>
 		<div class="flex justify-center pt-10">
-			<canvas id="from-compound-canvas"/>
-			<div class="w-[200px]"></div>
-			<canvas id="to-compound-canvas"></canvas>
+			<canvas id="from-compound-canvas" data-smiles="C"/>
+			<div class="w-[200px] text-text text-4xl text-center flex h-full"><div class="m-auto">to</div></div>
+			<canvas id="to-compound-canvas" data-smiles="F"></canvas>
 		</div>
 		<div class="pt-10">
+			<div class="text-text m-4 mb-8 text-4xl"> Which reagent will carry out the conversion? </div>
+			<div class="grid grid-cols-2 gap-4 m-4">
 			{#each challenge.reagents as reagent}
-				<div>
-					<button on:click={() => answer(reagent)} class="text-text bg-crust">{reagent}</button>
-				</div>
+					<button on:click={() => answer(reagent)} class="text-text bg-crust rounded p-3 hover:bg-mantle">{reagent}</button>
 			{/each}
+			</div>
+
 		</div>
 	</div>
 </section>
