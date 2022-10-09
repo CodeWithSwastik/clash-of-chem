@@ -23,7 +23,7 @@
 		}
 </style>
 <div class="flex items-center justify-center h-screen">
-    <div class="animate_in bg-mantle text-text rounded-2xl shadow-mantle w-[30%] shadow-2xl p-10">
+    <div class="animate_in bg-mantle text-text rounded-2xl shadow-mantle w-[90%] md:w-[30%] shadow-2xl p-10">
             <div class="text-center text-6xl">
                 <!-- TODO: Replace with benzene-->
                 <i class="fa-solid fa-atom text-sky animate-spin-slow" /> 
