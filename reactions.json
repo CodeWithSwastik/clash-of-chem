@@ -209,13 +209,13 @@
     "CH3MgBr / H3O+": "propan-2-ol",
     "NaOH / I2": "triiodomethane",
     "NaOH / Br2": "tribromomethane",
-    "NaOH / CL2": "trichloromethane"
+    "NaOH / Cl2": "trichloromethane"
   },
   "propanone": {
     "H2O / LiAlH4": "propan-2-ol",
     "NaOH / I2": "triiodomethane",
     "NaOH / Br2": "tribromomethane",
-    "NaOH / CL2": "trichloromethane",
+    "NaOH / Cl2": "trichloromethane",
     "I2": "iodopropanone"
   },
   "methanoic acid": {
