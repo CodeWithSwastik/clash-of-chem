@@ -34,7 +34,7 @@
 
 <section>
 	<div class="flex items-center justify-center h-screen z-10">
-		<div class="bg-mantle rounded-2xl w-[30%] shadow-2xl shadow-mantle p-10 {animateOut? 'animate_out': ''}">
+		<div class="bg-mantle rounded-2xl min-w-[30%] shadow-2xl shadow-mantle p-10 {animateOut? 'animate_out': ''}">
  
 			<div>
 				<input
