@@ -10,6 +10,8 @@
 
 	let animateOut = false;
 	let start = () => {
+		if (username.length > 24 || username.length < 2)
+			return alert('Username must be between 2-24 chars (inclusive).');
 		localStorage.setItem('username', username);
 		animateOut = true;
 		setTimeout(() => {
