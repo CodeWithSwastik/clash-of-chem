@@ -192,7 +192,8 @@
     "Red P / HBr": "methane",
     "KMnO4": "methanoic acid",
     "K2Cr2O7 / H2SO4": "methanoic acid",
-    "LiAlH4": "methanol"
+    "LiAlH4": "methanol",
+    "CH3MgBr / H3O+": "ethanol"
   },
   "ethanal": {
     "HCN": "hydroxypropionitrile",
@@ -202,10 +203,17 @@
     "KMnO4": "ethanoic acid",
     "K2Cr2O7 / H2SO4": "ethanoic acid",
     "LiAlH4": "ethanol",
-    "NaOH": "3-hydroxybutanal"
+    "NaOH": "3-hydroxybutanal",
+    "CH3MgBr / H3O+": "propan-2-ol",
+    "NaOH / I2": "triiodomethane",
+    "NaOH / Br2": "tribromomethane",
+    "NaOH / CL2": "trichloromethane"
   },
   "propanone": {
     "H2O / LiAlH4": "propan-2-ol",
+    "NaOH / I2": "triiodomethane",
+    "NaOH / Br2": "tribromomethane",
+    "NaOH / CL2": "trichloromethane",
     "I2": "iodopropanone"
   },
   "methanoic acid": {
