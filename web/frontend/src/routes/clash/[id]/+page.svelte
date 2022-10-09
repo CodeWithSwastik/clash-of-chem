@@ -33,6 +33,7 @@
 	let loaded = false;
 	let username = "";
 	let winner = null;
+	let menuOpen = false;
 
 	let leaderboard = {
 		"Mid":10,
@@ -177,7 +178,7 @@
 </script>
 {#if loaded}
 <section class="flex">
-	<div id="players" class="flex flex-col overflow-scroll w-[30%] h-screen border-r border-surface1">
+	<div id="players" class="hidden md:flex flex-col overflow-scroll w-[30%] h-screen border-r border-surface1">
 		<div class="px-5 pt-5 text-center text-2xl text-text">Challenge {challenge.number}</div>
 		<div class="text-center text-text mb-5">{numPlayers} Players</div>
 		{#each Object.entries(leaderboard) as [player, points], i}
@@ -189,8 +190,22 @@
 			</div>
 		{/each}
 	</div>
-	<div id="content" class="flex flex-col w-[70%]">
+	<div id="players" class="absolute {menuOpen?'flex':'hidden'} w-[80%] bg-crust md:hidden flex-col overflow-scroll h-screen border-r border-surface1">
+		<button class="text-text p-2 m-2 rounded bg-crust" on:click={() => {menuOpen=false}}><i class="fa-solid fa-arrow-left"></i></button>
+		<div class="px-5 pt-5 text-center text-2xl text-text">Challenge {challenge.number}</div>
+		<div class="text-center text-text mb-5">{numPlayers} Players</div>
+		{#each Object.entries(leaderboard) as [player, points], i}
+			<div class="p-4 flex {i%2===0?'bg-surface0':''}">
+				<i class="fa-solid fa-user p-1 mr-2 text-mantle rounded" style="background-color: {colors[players[player].color]}"/> 
+				<div class="text-text">{player}</div>
+				<div class="flex-grow"></div>
+				<div class="text-text font-bold">{points} points</div>
+			</div>
+		{/each}
+	</div>
+	<div id="content" class="flex flex-col md:w-[70%]">
 		<div id="stats" class="flex p-2 border-b border-surface1">
+			<button class="md:hidden text-text" on:click={() => {menuOpen = true}}><i class="fa-solid fa-bars"></i></button>
 			<div class="flex-grow"></div>
 			<div class="text-text text-xl"><span>{leaderboard[username]} points</span> | <i class="fa-solid fa-clock" /> <span class="">{challenge.time}</span></div>
 		</div>
