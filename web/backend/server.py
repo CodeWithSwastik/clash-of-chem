@@ -34,8 +34,9 @@ async def connect(sid, environ, auth):
 
 @sio.event
 async def disconnect(sid):
-    print(sid, "disconnected")
     user = users[sid]
+    print(sid, user.username, "disconnected")
+
     room = rooms[user.room_id]
     sio.leave_room(sid, room.id)
     room.remove_player(user)
