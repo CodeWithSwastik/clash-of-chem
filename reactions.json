@@ -23,7 +23,9 @@
     "H2O / dil H2SO4": "ethanol",
     "O3 / Zn dust / H2O": "methanal",
     "B2H6": "ethanol",
-    "Br2 / CCl4": "1,2-dibromoethane"
+    "Br2 / CCl4": "1,2-dibromoethane",
+    "Cl2 / CCl4": "1,2-dichloroethane",
+    "Cl2 / H2O": "2-chloroethanol"
   },
   "propene": {
     "HCl": "2-chloropropane",
