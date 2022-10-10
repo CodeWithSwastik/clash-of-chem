@@ -145,12 +145,14 @@
     "DIBAL-H": "ethanal",
     "CH3MgBr / H+": "propanone",
     "H2 / Pd": "ethylamine",
+    "H3O+ (partial)":"ethanamide",
     "H3O+": "ethanoic acid"
   },
   "propanenitrile": {
     "SnCl2 / HCl / H2O": "propanal",
     "DIBAL-H": "propanal",
     "CH3MgBr / H+": "butanone",
+    "H3O+ (partial)":"propanamide",
     "H3O+": "propanoic acid"
   },
   "methanol": {
@@ -222,7 +224,8 @@
     "NaOH / I2": "triiodomethane",
     "NaOH / Br2": "tribromomethane",
     "NaOH / Cl2": "trichloromethane",
-    "I2": "iodopropanone"
+    "I2": "iodopropanone",
+    "HCN": "acetone cyanohydrin"
   },
   "methanoic acid": {
     "LiAlH4": "methanol",
@@ -270,7 +273,8 @@
     "Br2 / FeBr3": "4-bromochlorobenzene",
     "Cl2 / FeCl3": "1,4-dichlorobenzene",
     "conc. HNO3 / conc. H2SO4": "4-nitrochlorobenzene",
-    "NH3 / Cu2O catalyst / (60 atm, 523-773K)": "aniline"
+    "NH3 / Cu2O catalyst / (60 atm, 523-773K)": "aniline",
+    "Na / Dry Ether": "diphenyl"
   },
   "phenol": {
     "Zn": "benzene",
