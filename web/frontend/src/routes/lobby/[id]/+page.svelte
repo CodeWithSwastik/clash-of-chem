@@ -23,6 +23,11 @@
 
     onMount(() => {
         let username = localStorage.getItem("username");
+        if (!username) {
+            username = "User#" + Math.floor(Math.random()*9000 + 1000);
+            localStorage.setItem("username", username);
+        }
+
         if ($socket) {
             loaded = true;
         }
@@ -60,7 +65,8 @@
         });
 
         $socket.on("user_leave", (d) => {
-            players = d.data;
+            players = d.data.players;
+            isOwner = d.data.owner == username;
         });
 
         $socket.on("clash_started", (d) => {
