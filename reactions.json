@@ -140,12 +140,14 @@
     "SnCl2 / HCl / H2O": "ethanal",
     "DIBAL-H": "ethanal",
     "CH3MgBr / H+": "propanone",
-    "H2 / Pd": "ethylamine"
+    "H2 / Pd": "ethylamine",
+    "H3O+": "ethanoic acid"
   },
   "propanenitrile": {
     "SnCl2 / HCl / H2O": "propanal",
     "DIBAL-H": "propanal",
-    "CH3MgBr / H+": "butanone"
+    "CH3MgBr / H+": "butanone",
+    "H3O+": "propanoic acid"
   },
   "methanol": {
     "Na": "sodium methoxide",
