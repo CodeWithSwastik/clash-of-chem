@@ -25,7 +25,8 @@
     "B2H6": "ethanol",
     "Br2 / CCl4": "1,2-dibromoethane",
     "Cl2 / CCl4": "1,2-dichloroethane",
-    "Cl2 / H2O": "2-chloroethanol"
+    "Cl2 / H2O": "2-chloroethanol",
+    "Br2 / H2O": "2-bromoethanol"
   },
   "propene": {
     "HCl": "2-chloropropane",
@@ -60,7 +61,8 @@
     "NH3 excess": "methylamine",
     "Red P / HI": "methane",
     "Red P / HBr": "methane",
-    "Mg": "methyl magnesium chloride"
+    "Mg": "methyl magnesium chloride",
+    "sodium methoxide": "methoxymethane"
   },
   "bromomethane": {
     "aq. NaOH": "methanol",
@@ -76,7 +78,8 @@
     "NH3 excess": "methylamine",
     "Red P / HI": "methane",
     "Red P / HBr": "methane",
-    "Mg": "methyl magnesium bromide"
+    "Mg": "methyl magnesium bromide",
+    "sodium methoxide": "methoxymethane"
   },
   "chloroethane": {
     "aq. NaOH": "ethanol",
@@ -93,7 +96,8 @@
     "NH3 excess": "ethylamine",
     "Red P/ HI": "ethane",
     "Red P/ HBr": "ethane",
-    "Mg": "ethyl magnesium chloride"
+    "Mg": "ethyl magnesium chloride",
+    "sodium ethoxide": "ethoxyethane"
   },
   "bromoethane": {
     "aq. NaOH": "ethanol",
@@ -110,7 +114,8 @@
     "NH3 excess": "ethylamine",
     "Red P / HI": "ethane",
     "Red P / HBr": "ethane",
-    "Mg": "ethyl magnesium bromide"
+    "Mg": "ethyl magnesium bromide",
+    "sodium ethoxide": "ethoxyethane"
   },
   "1-bromopropane": {
     "aq. NaOH": "propan-1-ol",
@@ -184,7 +189,8 @@
     "Red P / HI": "ethane",
     "Red P / HBr": "ethane",
     "Cu (573K)": "ethanal",
-    "KMnO4": "ethanoic acid"
+    "KMnO4": "ethanoic acid",
+    "conc. H2SO4 (413K)": "methoxymethane"
   },
   "propan-1-ol": {
     "PCl5": "1-chloropropane",
@@ -203,7 +209,10 @@
     "KMnO4": "methanoic acid",
     "K2Cr2O7 / H2SO4": "methanoic acid",
     "LiAlH4": "methanol",
-    "CH3MgBr / H3O+": "ethanol"
+    "NaBH4": "methanol",
+    "Zn(Hg) / HCl": "methane",
+    "CH3MgBr / H3O+": "ethanol",
+    "NH2NH2 / aq. KOH": "methane"
   },
   "ethanal": {
     "HCN": "hydroxypropionitrile",
@@ -217,7 +226,10 @@
     "CH3MgBr / H3O+": "propan-2-ol",
     "NaOH / I2": "triiodomethane",
     "NaOH / Br2": "tribromomethane",
-    "NaOH / Cl2": "trichloromethane"
+    "NaOH / Cl2": "trichloromethane",
+    "Zn(Hg) / HCl": "ethane",
+    "NaBH4": "ethanol",
+    "NH2NH2 / aq. KOH": "ethane"
   },
   "propanone": {
     "H2O / LiAlH4": "propan-2-ol",
