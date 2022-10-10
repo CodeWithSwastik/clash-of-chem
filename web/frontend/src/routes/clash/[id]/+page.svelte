@@ -50,6 +50,7 @@
 		},
 		reagents: ["He", "Test Reagent for now honestly lmao", "HEHE"],
 	};
+	let challengeNumber = 1;
 
 	let players = {
 		"Mid": {
@@ -118,6 +119,7 @@
 			$socket.on("new_challenge", (d) => {
 				console.log(d);
 				challenge = d.data;
+				challengeNumber ??= challenge.number;
 				if (challenge.type == "conversion") {
 					chosenAnswer = null;
 					answerResult = null;
@@ -178,8 +180,8 @@
 </script>
 {#if loaded}
 <section class="flex">
-	<div id="players" class="hidden md:flex flex-col overflow-scroll w-[30%] h-screen border-r border-surface1">
-		<div class="px-5 pt-5 text-center text-2xl text-text">Challenge {challenge.number}</div>
+	<div id="players" class="hidden md:flex flex-col w-[30%] h-screen border-r border-surface1">
+		<div class="px-5 pt-5 text-center text-2xl text-text">Challenge {challengeNumber}</div>
 		<div class="text-center text-text mb-5">{numPlayers} Players</div>
 		{#each Object.entries(leaderboard) as [player, points], i}
 			<div class="p-4 flex {i%2===0?'bg-surface0':''}">
