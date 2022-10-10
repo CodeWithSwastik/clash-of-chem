@@ -10,7 +10,10 @@
         "The word “vi­ta­min” comes from vita (life) and amine (a ni­troge­nous or­gan­ic com­pound)",
         "The human body contains enough carbon to provide 'lead' (which is really graphite) for 9,000 pencils.",
         "Hydrofluoric acid is so corrosive that it will dissolve glass. Although it is corrosive, hydrofluoric acid is considered to be a weak acid.",
-        "The nineteenth-century German chemist August Kekulé claimed to have pictured the ring structure of benzene after dreaming of a snake eating its own tail."
+        "The nineteenth-century German chemist August Kekulé claimed to have pictured the ring structure of benzene after dreaming of a snake eating its own tail.",
+        "Did you know alcohols are so less acidic that even water is more acidic than them.",
+        "There are nearly 20 compounds with the formula C₆H₁₂O₆, Glucose and Fructose being just a few of them.",
+        "Methanol poisoning is treated with injecting doese of ethanol (or what is present in very less fractions in alcoholic beverages)."
     ]
     let fact = "";
     onMount(()=> fact = facts[Math.floor(Math.random()*facts.length)]);
