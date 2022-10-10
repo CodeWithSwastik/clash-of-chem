@@ -50,14 +50,15 @@
             isOwner = d.data.owner == username;
             
             countdown = setInterval(() => {
-                countdownSeconds--;
 
-                if (countdownSeconds == 0) {
+                if (countdownSeconds <= 0) {
                     start();
+                } else {
+                    countdownSeconds--;
                 }
                 
             }, 1000);
-            setTimeout(() => {loaded = true}, 2500);
+            setTimeout(() => {loaded = true}, 3000);
         });
 
         $socket.on("user_join", (d) => {
@@ -76,8 +77,7 @@
 
         start = () => {
             clearInterval(countdown);
-
-
+            
             if (isOwner && $socket) {
                 console.log("starting?");
                 $socket.emit("start_clash", {"room": data.lobby.id});
