@@ -37,4 +37,4 @@ for substrate in REACTIONS:
 
 
 with open(smiles_filepath, "w") as f:
-    json.dump(SMILES, f)
+    json.dump(SMILES, f, indent=4)
