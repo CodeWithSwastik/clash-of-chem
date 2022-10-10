@@ -3,6 +3,8 @@
 	import { onMount } from 'svelte';
 
 	let username: string = "";
+	let lobby: string = "";
+
 
 	onMount(() => {
 		username = localStorage.getItem('username') ?? '';
@@ -15,7 +17,7 @@
 		localStorage.setItem('username', username);
 		animateOut = true;
 		setTimeout(() => {
-			goto('/lobby/test');
+			goto('/lobby/' + (lobby ? lobby : "test"));
 		}, 700)
 	};
 </script>
@@ -44,9 +46,16 @@
 					class="p-2 mr-2 rounded-xl w-full bg-surface1 text-text"
 				/>
 			</div>
-			<div>
-			<button on:click={start} class="bg-green hover:bg-opacity-70 text-base hover:text-black py-2 px-3 mt-8 w-full font-bold rounded-xl">Play!</button>
-				</div>
+
+			<div class="grid grid-cols-2 mt-8">
+				<input
+					type="text"
+					bind:value={lobby}
+					placeholder="Enter lobby code"
+					class="p-2 mr-2 rounded-xl bg-surface1 text-text"
+				/>
+				<button on:click={start} class="bg-green hover:bg-opacity-70 text-base hover:text-black py-2 px-3 font-bold rounded-xl">Play!</button>
+			</div>
 			<div>
 				<button on:click={start} class="bg-sapphire hover:bg-opacity-70 text-base hover:text-black py-2 px-3 mt-2 w-full font-bold rounded-xl">Create Private Lobby</button>
 			</div>
