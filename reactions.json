@@ -59,7 +59,8 @@
     "CH3ONa": "methoxymethane",
     "NH3 excess": "methylamine",
     "Red P / HI": "methane",
-    "Red P / HBr": "methane"
+    "Red P / HBr": "methane",
+    "Mg": "methyl magnesium chloride"
   },
   "bromomethane": {
     "aq. NaOH": "methanol",
@@ -74,7 +75,8 @@
     "CH3ONa": "methoxymethane",
     "NH3 excess": "methylamine",
     "Red P / HI": "methane",
-    "Red P / HBr": "methane"
+    "Red P / HBr": "methane",
+    "Mg": "methyl magnesium bromide"
   },
   "chloroethane": {
     "aq. NaOH": "ethanol",
@@ -90,7 +92,8 @@
     "CH3ONa": "methoxyethane",
     "NH3 excess": "ethylamine",
     "Red P/ HI": "ethane",
-    "Red P/ HBr": "ethane"
+    "Red P/ HBr": "ethane",
+    "Mg": "ethyl magnesium chloride"
   },
   "bromoethane": {
     "aq. NaOH": "ethanol",
@@ -106,7 +109,8 @@
     "CH3ONa": "methoxyethane",
     "NH3 excess": "ethylamine",
     "Red P / HI": "ethane",
-    "Red P / HBr": "ethane"
+    "Red P / HBr": "ethane",
+    "Mg": "ethyl magnesium bromide"
   },
   "1-bromopropane": {
     "aq. NaOH": "propan-1-ol",
@@ -140,12 +144,14 @@
     "SnCl2 / HCl / H2O": "ethanal",
     "DIBAL-H": "ethanal",
     "CH3MgBr / H+": "propanone",
-    "H2 / Pd": "ethylamine"
+    "H2 / Pd": "ethylamine",
+    "H3O+": "ethanoic acid"
   },
   "propanenitrile": {
     "SnCl2 / HCl / H2O": "propanal",
     "DIBAL-H": "propanal",
-    "CH3MgBr / H+": "butanone"
+    "CH3MgBr / H+": "butanone",
+    "H3O+": "propanoic acid"
   },
   "methanol": {
     "Na": "sodium methoxide",
