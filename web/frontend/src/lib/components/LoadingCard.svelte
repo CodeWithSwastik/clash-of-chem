@@ -11,9 +11,12 @@
         "The human body contains enough carbon to provide 'lead' (which is really graphite) for 9,000 pencils.",
         "Hydrofluoric acid is so corrosive that it will dissolve glass. Although it is corrosive, hydrofluoric acid is considered to be a weak acid.",
         "The nineteenth-century German chemist August Kekulé claimed to have pictured the ring structure of benzene after dreaming of a snake eating its own tail.",
-        "Did you know alcohols are so less acidic that even water is more acidic than them.",
-        "There are nearly 20 compounds with the formula C₆H₁₂O₆, Glucose and Fructose being just a few of them.",
-        "Methanol poisoning is treated with injecting doese of ethanol (or what is present in very less fractions in alcoholic beverages)."
+        "Alcohols are so less acidic that even water is more acidic than them.",
+        "There are nearly 20 compounds with the formula C6H12O6, Glucose and Fructose being just a few of them.",
+        "Ethanol, or ethyl alcohol, is the only type of alcohol that you can drink without seriously harming yourself, and then only if it hasn't been denatured or doesn't contain toxic impurities.",
+        "TNT (Trinitrotoluene) was first prepared in 1863 by German chemist Julius Wilbrand and originally used as a yellow dye.",
+        "Phenol is a normal metabolic product, excreted in quantities up to 40 mg/L in human urine.",
+        "Phenol is used in molecular biology for obtaining nucleic acids (DNA, RNA) from tissues or cell culture samples."
     ]
     let fact = "";
     onMount(()=> fact = facts[Math.floor(Math.random()*facts.length)]);
