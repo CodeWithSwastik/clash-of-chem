@@ -231,6 +231,10 @@
 				<div class="flex justify-center pt-10">
 					<canvas id="current-compound-canvas" data-smiles="C"/>
 				</div>
+				{#if challenge.winner}
+					<div class="text-text m-4 text-4xl"> {challenge.winner} has won this challenge! </div>
+
+				{:else}
 				<div class="pt-10">
 					<div class="text-text m-4 text-4xl"> {challenge.turn == username ? 'Which reagent will you use?' : `Waiting for ${challenge.turn} to select a reagent...`} </div>
 					<div class="text-overlay2 m-4 text-2xl"> Current turn: {challenge.turn} | Your goal: Convert to {challenge.targets[username]} </div>
@@ -241,7 +245,8 @@
 					{/each}
 					</div>
 
-				</div>				
+				</div>			
+				{/if}	
 			{/if}
 		{/if}
 	</div>

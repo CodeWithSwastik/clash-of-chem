@@ -81,9 +81,9 @@ class StrategyChallenge:
             "ethene", 
             "propanone", 
             "methoxyethane", 
-            "1-bromopropane", 
             "methanoic acid",
-            "ethanoic acid"
+            "ethanoic acid",
+            "ethanol"
         ]
         self.players = players
 
@@ -108,22 +108,24 @@ class StrategyChallenge:
     def update(self, reagent):
         self.current = REACTIONS[self.current][reagent]
         if self.targets[self.turn] == self.current:
-            # win
             print(self.turn, "wins")
             self.winner = self.turn
+            return
         
         self.turn = next(self.playerCycle)
 
     @property
     def challenge_data(self):
-        return {
+        d = {
             "type": self.type,
             "time": self.time,
             "current": SMILES[self.current],
             "reagents": self.get_reagents(),
             "turn": self.turn,
-            "targets": self.targets
+            "targets": self.targets,
+            "winner": self.winner
         }
+        return d
 
     
 
@@ -154,3 +156,9 @@ class Game:
     def clear_challenge(self, player_name):
         points = self.current_challenge.player_cleared(player_name)
         self.points_table[player_name] += points
+
+    def strategy_update(self, reagent):
+        self.current_challenge.update(reagent)
+
+        if self.current_challenge.winner:
+            self.points_table[self.current_challenge.winner] += 100

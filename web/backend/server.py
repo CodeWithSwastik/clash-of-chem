@@ -88,5 +88,10 @@ async def clash_strategy_update(sid, data):
     if clash.game.current_challenge.turn != user.username:
         return False
     else:
-        clash.game.current_challenge.update(data["reagent"])
+        clash.game.strategy_update(data["reagent"])
         await sio.emit("new_challenge", {"data": clash.game.current_challenge.challenge_data}, room=clash.id)
+
+        if clash.game.current_challenge.winner:
+            await sio.emit("clash_details", {"data": clash.clash_info}, room=clash.id)
+
+        
