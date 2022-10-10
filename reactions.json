@@ -43,7 +43,8 @@
   },
   "ethyne": {
     "Red Hot Fe Tube (873 K)": "benzene",
-    "HgSO4 / H2SO4": "ethanal"
+    "HgSO4 / H2SO4": "ethanal",
+    "B2H6 / H2O2 / OH-": "ethanal"
   },
   "propyne": {
     "HgSO4 / H2SO4": "propanone"
