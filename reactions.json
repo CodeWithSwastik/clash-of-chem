@@ -131,7 +131,9 @@
     "AgF": "1-fluoropropane",
     "CH3ONa": "1-methoxypropane",
     "Red P / HI": "propane",
-    "Red P / HBr": "propane"
+    "Red P / HBr": "propane",
+    "Mg": "propyl magnesum bromide",
+    "sodium ethoxide": "1-methoxypropane"
   },
   "2-bromopropane": {
     "aq. NaOH": "propan-2-ol",
