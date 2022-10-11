@@ -224,7 +224,7 @@
     "NaHSO3": "sodium 1-hydroxymethanesulphonate",
     "Red P / HI": "methane",
     "Red P / HBr": "methane",
-    "KMnO4": "methanoic acid",
+    "KMnO4 / H+": "methanoic acid",
     "K2Cr2O7 / H2SO4": "methanoic acid",
     "LiAlH4": "methanol",
     "NaBH4": "methanol",
@@ -237,7 +237,7 @@
     "NaHSO3": "sodium 1-hydroxyethanesulphonate",
     "Red P / HI": "ethane",
     "Red P / HBr": "ethane",
-    "KMnO4": "ethanoic acid",
+    "KMnO4 / H+": "ethanoic acid",
     "K2Cr2O7 / H2SO4": "ethanoic acid",
     "LiAlH4": "ethanol",
     "NaOH": "3-hydroxybutanal",
@@ -257,7 +257,8 @@
     "NaOH / Cl2": "trichloromethane",
     "I2": "iodopropanone",
     "HCN": "acetone cyanohydrin",
-    "NaOH (Heat)":"4-methylpent-3-en-2-one"
+    "NaOH (Heat)":"4-methylpent-3-en-2-one",
+    "CH3MgBr": "1,1-dimethylalcohol"
   },
   "methanoic acid": {
     "LiAlH4": "methanol",
