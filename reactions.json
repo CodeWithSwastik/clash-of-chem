@@ -379,7 +379,11 @@
     "Sn / HCl": "aniline",
     "LiAlH4": "azobenzene",
     "Zn dust / aq. NaOH": "hydrazobenzene",
-    "Zn / NH4Cl / 50% C2H5OH (Heat)": "phenylhydroxyamine"
+    "Zn / NH4Cl / 50% C2H5OH (Heat)": "phenylhydroxyamine",
+    "fuming HNO3 / conc. H2SO4": "1,3,5-trinitrobenzene",
+    "conc. HNO3 / conc. H2SO4": "1,3-dinitrobenzene",
+    "Cl2 / FeCl3": "3-chloronitrobenzene",
+    "conc. H2SO4 (Heat)": "3-nitrobenzene sulphonic acid"
   },
   "benzamide": {
     "Br2 / KOH": "aniline",
