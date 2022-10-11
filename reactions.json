@@ -185,7 +185,7 @@
     "ZnCl2 / HCl": "chloromethane",
     "HCOOH": "methyl methanoate",
     "Cu (573K)": "methanal",
-    "KMnO4": "methanoic acid",
+    "KMnO4 / H+": "methanoic acid",
     "HCl": "chloromethane",
     "HBr": "bromomethane",
     "HI": "iodomethane",
@@ -206,7 +206,7 @@
     "Red P / HI": "ethane",
     "Red P / HBr": "ethane",
     "Cu (573K)": "ethanal",
-    "KMnO4": "ethanoic acid",
+    "KMnO4 / H+": "ethanoic acid",
     "conc. H2SO4 (413K)": "methoxymethane"
   },
   "ethane-1,2-diol":{
@@ -215,7 +215,7 @@
   },
   "propan-1-ol": {
     "PCl5": "1-chloropropane",
-    "H+ / KMnO4": "propanoic acid",
+    "KMnO4 / H+": "propanoic acid",
     "PCC": "propanal",
     "conc H2SO4": "propene"
   },
