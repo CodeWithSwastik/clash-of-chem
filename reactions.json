@@ -269,10 +269,12 @@
     "Br2 / aq. NaOH": "methanamine"
   },
   "methanamine":{
-    "CH3COCl": "N-methylacetamide"
+    "CH3COCl": "N-methylacetamide",
+    "NaNO2 / HCl": "methanol"
   },
   "ethanamine":{
-    "CH3COCl": "N-ethylacetamide"
+    "CH3COCl": "N-ethylacetamide",
+    "NaNO2 / HCl": "ethanol"
   },
   "benzene": {
     "Cl2 / Fe": "chlorobenzene",
