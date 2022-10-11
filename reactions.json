@@ -211,7 +211,7 @@
     "K2Cr2O7 / H2SO4": "methanoic acid",
     "LiAlH4": "methanol",
     "NaBH4": "methanol",
-    "Zn(Hg) / HCl": "methane",
+    "Zn-Hg / HCl": "methane",
     "CH3MgBr / H3O+": "ethanol",
     "NH2NH2 / aq. KOH": "methane"
   },
@@ -228,7 +228,7 @@
     "NaOH / I2": "triiodomethane",
     "NaOH / Br2": "tribromomethane",
     "NaOH / Cl2": "trichloromethane",
-    "Zn(Hg) / HCl": "ethane",
+    "Zn-Hg / HCl": "ethane",
     "NaBH4": "ethanol",
     "NH2NH2 / aq. KOH": "ethane",
     "CH3CHO": "3-hydroxybutanal"
@@ -284,7 +284,8 @@
     "conc H2SO4": "benzenesulphonic acid",
     "H2 / Ni (473 K)": "cyclohexane",
     "O3 / Zn (Heat)": "ethanedial",
-    "CO / anhyd. AlCl3 / HCl / CuCl": "benzaldehyde"
+    "CO / anhyd. AlCl3 / HCl / CuCl": "benzaldehyde",
+    "CrO2Cl2 / CS2": "benzaldehyde"
   },
   "toluene": {
     "H2 / Ni (473 K)": "1-methylcyclohexene",
@@ -318,7 +319,7 @@
     "conc HNO2 / conc. H2SO4": "4-nitrobenzoic acid"
   },
   "aniline": {
-    "NaNO2 / HCl (0-5 deg C)": "benzenediazonium chloride",
+    "NaNO2 / HCl (273-278K)": "benzenediazonium chloride",
     "Br / H20": "2,4,6-tribromoaniline",
     "Br2 / CS2": "4-bromoaniline",
     "Na2CrO7 / H2SO4": "p-benzoquinone",
