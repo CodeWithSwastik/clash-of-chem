@@ -40,7 +40,10 @@
   },
   "butene":{
     "Cl2": "1,2-dichlorobutane",
-    "Br2": "1,2-dibromobutane"
+    "Br2": "1,2-dibromobutane",
+    "HCl": "2-chlorobutane",
+    "HBr": "2-bromobutane",
+    "HBr / Peroxide": "1-bromobutane"
   },
   "but-2-ene": {
     "H2O / dil H2SO4": "butan-2-ol",
