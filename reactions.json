@@ -240,7 +240,7 @@
     "NaOH / Cl2": "trichloromethane",
     "I2": "iodopropanone",
     "HCN": "acetone cyanohydrin",
-    "NaOH / (Heat)":"4-methylpent-3-en-2-one"
+    "NaOH (Heat)":"4-methylpent-3-en-2-one"
   },
   "methanoic acid": {
     "LiAlH4": "methanol",
@@ -248,9 +248,10 @@
     "PCl3": "methanoyl chloride",
     "SOCl2": "methanoyl chloride",
     "Na": "sodium methanoate",
-    "NH3 / H2O / (Heat)": "methanamide",
+    "NH3 / H2O (Heat)": "methanamide",
     "Red P/ HI": "methane",
-    "HN3 / conc. H2SO4": "methanamine"
+    "HN3 / conc. H2SO4": "methanamine",
+    "MnO (573K)": "methanol"
   },
   "ethanoic acid": {
     "LiAlH4": "ethanol",
@@ -258,9 +259,10 @@
     "PCl3": "ethanoyl chloride",
     "SOCl2": "ethanoyl chloride",
     "Na": "sodium ethanoate",
-    "NH3 / H2O / (Heat)": "ethanamide",
+    "NH3 / H2O (Heat)": "ethanamide",
     "Red P/ HI": "ethane",
-    "HN3 / conc. H2SO4": "ethanamine"
+    "HN3 / conc. H2SO4": "ethanamine",
+    "MnO (573K)": "ethanol"
   },
   "methanamide": {
     "Br2 / aq. NaOH": "ammonia"
@@ -296,7 +298,7 @@
     "Br2 / FeBr3": "4-bromochlorobenzene",
     "Cl2 / FeCl3": "1,4-dichlorobenzene",
     "conc. HNO3 / conc. H2SO4": "4-nitrochlorobenzene",
-    "NH3 / Cu2O catalyst / (60 atm, 523-773K)": "aniline",
+    "NH3 / Cu2O catalyst (60 atm, 523-773K)": "aniline",
     "Na / Dry Ether": "diphenyl"
   },
   "phenol": {
@@ -308,7 +310,7 @@
     "CO2 / NaOH / H+ (423K, 3-7 atm)": "2-hydroxybenzoic acid",
     "H2SO4 (373K)": "4-hydroxybenzenesulfonic acid",
     "CHCl3 / aq. KOH": "2-hydroxybenzaldehyde",
-    "NH3 / anhyd. ZnCl2 catalyst / (573K)": "aniline"
+    "NH3 / anhyd. ZnCl2 catalyst (573K)": "aniline"
   },
   "benzoic acid": {
     "LiAlH4": "phenylmethanol",
@@ -333,7 +335,7 @@
     "CuCN": "benzonitrile",
     "KI": "iodobenzene",
     "HBF4 / (Heat)": "fluorobenzene",
-    "HBF4 / Cu / NaNO2 / (Heat)": "nitrobenzene",
+    "HBF4 / Cu / NaNO2 (Heat)": "nitrobenzene",
     "H3PO2 / Cu": "benzene",
     "CuCN / H3O+": "benzoic acid"
   },
@@ -342,7 +344,7 @@
     "Sn / HCl": "aniline",
     "LiAlH4": "azobenzene",
     "Zn dust / aq. NaOH": "hydrazobenzene",
-    "Zn / NH4Cl / 50% C2H5OH / (Heat)": "phenylhydroxyamine"
+    "Zn / NH4Cl / 50% C2H5OH (Heat)": "phenylhydroxyamine"
   },
   "benzamide": {
     "Br2 / KOH": "aniline"
