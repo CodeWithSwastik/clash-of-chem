@@ -380,5 +380,10 @@
   },
   "2-hydroxybenzoic acid": {
     "(CH3CO)2O": "2-acetoxybenzoic acid"
+  },
+  "glucose":{
+    "Br2 in H2O": "gluconic acid",
+    "dil. HNO3": "glucaric acid",
+    "Red P / HI": "hexane"
   }
 }
