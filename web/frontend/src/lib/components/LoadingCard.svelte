@@ -18,7 +18,8 @@
         "Phenol is a normal metabolic product, excreted in quantities up to 40 mg/L in human urine.",
         "Phenol is used in molecular biology for obtaining nucleic acids (DNA, RNA) from tissues or cell culture samples.",
         "The number of organic compounds is nearly three times the number of inorganic compounds.",
-        "Friedrich Wohler in 1828 synthesized urea as the first organic compound for the first time in labrotary from ammonium cyanate."
+        "Friedrich Wohler in 1828 synthesized urea as the first organic compound for the first time in labrotary from ammonium cyanate.",
+        "Number of organic compounds outnumber inorganic compounds by nearly 10 million."
     ]
     let fact = "";
     onMount(()=> fact = facts[Math.floor(Math.random()*facts.length)]);
