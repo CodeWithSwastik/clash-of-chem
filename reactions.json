@@ -262,7 +262,10 @@
     "NH3 / H2O (Heat)": "ethanamide",
     "Red P/ HI": "ethane",
     "HN3 / conc. H2SO4": "ethanamine",
-    "MnO (573K)": "ethanol"
+    "MnO (573K)": "ethanol",
+    "P / Cl":"chloroethanoic acid",
+    "P / Br":"bromoethanoic acid",
+    "P / I":"iodoethanoic acid"
   },
   "methanamide": {
     "Br2 / aq. NaOH": "ammonia"
