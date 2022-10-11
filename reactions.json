@@ -315,7 +315,8 @@
   },
   "benzaldehyde":{
     "Zn-Hg / conc. HCl": "toluene",
-    "conc. HNO3 / conc. H2SO4": "4-nitrobenzaldehyde"
+    "conc. HNO3 / conc. H2SO4": "3-nitrobenzaldehyde",
+    "conc. H2SO4": "benzaldehyde-3-sulfonic acid"
   },
   "benzoic acid": {
     "LiAlH4": "phenylmethanol",
