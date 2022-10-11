@@ -285,6 +285,14 @@
     "LiAlH4": "ethanamine",
     "P2O5": "ethanenitrile"
   },
+  "methanoyl chloride":{
+    "H2O": "methanoic acid",
+    "NH3 excess": "methyl amide"
+  },
+  "ethanoyl chloride":{
+    "H2O": "ethanoic acid",
+    "NH3 excess": "ethyl amide"
+  },
   "methanamine":{
     "CH3COCl": "N-methylacetamide",
     "NaNO2 / HCl": "methanol"
