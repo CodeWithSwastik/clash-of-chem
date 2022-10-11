@@ -202,7 +202,8 @@
     "conc. H2SO4 (413K)": "methoxymethane"
   },
   "ethane-1,2-diol":{
-    "KMnO4 / H2SO4": "ethane-1,2-dioic acid"
+    "KMnO4 / H2SO4": "ethane-1,2-dioic acid",
+    "Red P / HI": "ethene"
   },
   "propan-1-ol": {
     "PCl5": "1-chloropropane",
