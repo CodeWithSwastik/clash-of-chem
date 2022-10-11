@@ -144,7 +144,9 @@
     "Na / dry ether": "2,3-dimethylbutane",
     "NaI": "2-iodopropane",
     "AgF": "2-fluoropropane",
-    "CH3ONa": "2-methoxypropane"
+    "CH3ONa": "2-methoxypropane",
+    "Red P / HI": "propane",
+    "Red P / HBr": "propane"
   },
   "1,2-dibromomethane":{
     "aq KOH": "ethane-1,2-diol",
