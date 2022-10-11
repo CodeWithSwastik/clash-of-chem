@@ -376,7 +376,8 @@
     "Zn / NH4Cl / 50% C2H5OH (Heat)": "phenylhydroxyamine"
   },
   "benzamide": {
-    "Br2 / KOH": "aniline"
+    "Br2 / KOH": "aniline",
+    "NaOH / dil. HCl / H3O+": "benzoic acid"
   },
   "2-hydroxybenzoic acid": {
     "(CH3CO)2O": "2-acetoxybenzoic acid"
