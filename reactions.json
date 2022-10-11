@@ -274,10 +274,16 @@
     "P / I":"iodoethanoic acid"
   },
   "methanamide": {
-    "Br2 / aq. NaOH": "ammonia"
+    "Br2 / aq. NaOH": "ammonia",
+    "NaOH / H+": "methanoic acid",
+    "LiAlH4": "methanamine",
+    "P2O5": "hydrogen cyanide"
   },
   "ethanamide": {
-    "Br2 / aq. NaOH": "methanamine"
+    "Br2 / aq. NaOH": "methanamine",
+    "NaOH / H+": "ethanoic acid",
+    "LiAlH4": "ethanamine",
+    "P2O5": "ethanenitrile"
   },
   "methanamine":{
     "CH3COCl": "N-methylacetamide",
