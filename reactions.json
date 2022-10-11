@@ -35,7 +35,8 @@
     "HBr / Peroxide": "1-bromopropane",
     "O3 / Zn dust / H2O": "ethanal",
     "H2O / dil H2SO4": "propan-2-ol",
-    "B2H6": "propan-1-ol"
+    "B2H6": "propan-1-ol",
+    "Br2 / CCl4": "1,2-dibromopropane"
   },
   "but-2-ene": {
     "H2O / dil H2SO4": "butan-2-ol",
@@ -63,8 +64,7 @@
     "NH3 excess": "methylamine",
     "Red P / HI": "methane",
     "Red P / HBr": "methane",
-    "Mg": "methyl magnesium chloride",
-    "sodium methoxide": "methoxymethane"
+    "Mg": "methyl magnesium chloride"
   },
   "bromomethane": {
     "aq. NaOH": "methanol",
@@ -80,8 +80,7 @@
     "NH3 excess": "methylamine",
     "Red P / HI": "methane",
     "Red P / HBr": "methane",
-    "Mg": "methyl magnesium bromide",
-    "sodium methoxide": "methoxymethane"
+    "Mg": "methyl magnesium bromide"
   },
   "chloroethane": {
     "aq. NaOH": "ethanol",
@@ -99,7 +98,7 @@
     "Red P/ HI": "ethane",
     "Red P/ HBr": "ethane",
     "Mg": "ethyl magnesium chloride",
-    "sodium ethoxide": "ethoxyethane"
+    "sodium ethoxide": "methoxymethane"
   },
   "bromoethane": {
     "aq. NaOH": "ethanol",
@@ -117,7 +116,7 @@
     "Red P / HI": "ethane",
     "Red P / HBr": "ethane",
     "Mg": "ethyl magnesium bromide",
-    "sodium ethoxide": "ethoxyethane"
+    "sodium ethoxide": "methoxymethane"
   },
   "1-bromopropane": {
     "aq. NaOH": "propan-1-ol",
