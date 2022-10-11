@@ -313,6 +313,10 @@
     "CHCl3 / aq. KOH": "2-hydroxybenzaldehyde",
     "NH3 / anhyd. ZnCl2 catalyst (573K)": "aniline"
   },
+  "benzaldehyde":{
+    "Zn-Hg / conc. HCl": "toluene",
+    "conc. HNO3 / conc. H2SO4": "4-nitrobenzaldehyde"
+  },
   "benzoic acid": {
     "LiAlH4": "phenylmethanol",
     "PCl5": "benzoyl chloride",
