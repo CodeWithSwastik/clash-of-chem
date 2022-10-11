@@ -396,6 +396,7 @@
   "glucose":{
     "Br2 in H2O": "gluconic acid",
     "dil. HNO3": "glucaric acid",
-    "Red P / HI": "hexane"
+    "Red P / HI": "hexane",
+    "HCN": "glucose cyanohydrin"
   }
 }
