@@ -289,11 +289,11 @@
   },
   "methanoyl chloride":{
     "H2O": "methanoic acid",
-    "NH3 excess": "methyl amide"
+    "NH3 excess": "methanamide"
   },
   "ethanoyl chloride":{
     "H2O": "ethanoic acid",
-    "NH3 excess": "ethyl amide"
+    "NH3 excess": "ethanamide"
   },
   "methanamine":{
     "CH3COCl": "N-methylacetamide",
