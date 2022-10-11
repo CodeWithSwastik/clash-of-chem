@@ -293,7 +293,8 @@
   },
   "ethanoyl chloride":{
     "H2O": "ethanoic acid",
-    "NH3 excess": "ethanamide"
+    "NH3 excess": "ethanamide",
+    "sodium ethoxide": "ethylethanoate"
   },
   "methanamine":{
     "CH3COCl": "N-methylacetamide",
