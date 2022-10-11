@@ -146,6 +146,9 @@
     "AgF": "2-fluoropropane",
     "CH3ONa": "2-methoxypropane"
   },
+  "1,2-dibromomethane":{
+    "aq KOH": "ethane-1,2-diol"
+  },
   "ethanenitrile": {
     "SnCl2 / HCl / H2O": "ethanal",
     "DIBAL-H": "ethanal",
