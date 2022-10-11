@@ -147,7 +147,8 @@
     "CH3ONa": "2-methoxypropane"
   },
   "1,2-dibromomethane":{
-    "aq KOH": "ethane-1,2-diol"
+    "aq KOH": "ethane-1,2-diol",
+    "alc. KOH / NaNH2": "ethyne"
   },
   "ethanenitrile": {
     "SnCl2 / HCl / H2O": "ethanal",
@@ -196,14 +197,14 @@
     "KMnO4": "ethanoic acid",
     "conc. H2SO4 (413K)": "methoxymethane"
   },
+  "ethane-1,2-diol":{
+    "KMnO4 / H2SO4": "ethane-1,2-dioic acid"
+  },
   "propan-1-ol": {
     "PCl5": "1-chloropropane",
     "H+ / KMnO4": "propanoic acid",
     "PCC": "propanal",
     "conc H2SO4": "propene"
-  },
-  "1,2-dibromoethane": {
-    "alc. KOH / NaNH2": "ethyne"
   },
   "methanal": {
     "HCN": "hydroxyethanenitrile",
