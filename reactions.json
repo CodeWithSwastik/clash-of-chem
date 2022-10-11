@@ -38,9 +38,14 @@
     "B2H6": "propan-1-ol",
     "Br2 / CCl4": "1,2-dibromopropane"
   },
+  "butene":{
+    "Cl2": "1,2-dichlorobutane",
+    "Br2": "1,2-dibromobutane"
+  },
   "but-2-ene": {
     "H2O / dil H2SO4": "butan-2-ol",
-    "Br2 / CCl4": "2,3-dibromobutane"
+    "Br2 / CCl4": "2,3-dibromobutane",
+    "KMnO4 / OH-": "ethanoic acid"
   },
   "ethyne": {
     "Red Hot Fe Tube (873 K)": "benzene",
