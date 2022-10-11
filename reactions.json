@@ -298,7 +298,7 @@
     "H2 / Ni (473 K)": "1-methylcyclohexene",
     "conc HNO3 / conc H2SO4": "2,4,6-trinitrotoluene",
     "CrO2Cl2 / CS2 / H+": "benzaldehyde",
-    "H+ / KMnO4": "benzoic acid"
+    "KMnO4 / H+": "benzoic acid"
   },
   "chlorobenzene": {
     "NaOH / HCl (300 atm, 623K)": "phenol",
