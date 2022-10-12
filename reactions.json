@@ -315,7 +315,8 @@
     "NaBH4": "ethanol",
     "NH2NH2 / aq. KOH": "ethane",
     "CH3CHO": "3-hydroxybutanal",
-    "Dry HCl / CH3OH": "1,1-diethoxyethane"
+    "Dry HCl / CH3OH": "1,1-diethoxyethane",
+    "NH3 (Warm)": "ethanimine"
   },
   "propanone": {
     "H2O / LiAlH4": "propan-2-ol",
@@ -423,7 +424,8 @@
     "conc. H2SO4": "benzaldehyde-3-sulfonic acid",
     "Br2 / FeBr": "3-bromobenzaldehyde",
     "Cl2 / FeCl": "3-chlorobenzaldehyde",
-    "NH3": "hydrobenzamide"
+    "NH3": "hydrobenzamide",
+    "C6H5NH2": "benzalninine"
   },
   "benzoic acid": {
     "LiAlH4": "phenylmethanol",
