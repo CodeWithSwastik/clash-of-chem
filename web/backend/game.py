@@ -79,13 +79,13 @@ class StrategyChallenge:
         self.type = "strategy"
 
         self.starting = random.choice(list(REACTIONS))
+        self.finals = []
 
         while len(REACTIONS[self.starting]) < 5 and self.get_reagents(self.starting):
             self.starting = random.choice(list(REACTIONS))
 
         self.current = self.starting
 
-        self.finals = []
 
         while len(self.finals) < len(players):
             p = random.choice(list(PRODUCTS))
