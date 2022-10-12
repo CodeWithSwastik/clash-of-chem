@@ -176,6 +176,38 @@
     "Mg": "propyl magnesum bromide",
     "sodium ethoxide": "1-methoxypropane"
   },
+  "2-chloropropane": {
+    "aq. NaOH": "propan-2-ol",
+    "aq. KOH": "propan-2-ol",
+    "alc. KOH": "propene",
+    "alc. AgCN": "2-isocyanopropane",
+    "alc. KCN": "2-methylpropanenitrile",
+    "AgNO2": "2-nitropropane",
+    "KNO2": "2-propyl nitrite",
+    "Na / dry ether": "2,3-dimethylbutane",
+    "NaI": "2-iodopropane",
+    "AgF": "2-fluoropropane",
+    "CH3ONa": "2-methoxypropane",
+    "Red P / HI": "propane",
+    "Red P / HBr": "propane"
+  },
+  "1-chloropropane": {
+    "aq. NaOH": "propan-1-ol",
+    "aq. KOH": "propan-1-ol",
+    "alc. KOH": "propene",
+    "alc. AgCN": "1-isocyanopropane",
+    "alc. KCN": "1-butanenitrile",
+    "AgNO2": "1-nitropropane",
+    "KNO2": "1-propyl nitrite",
+    "Na / dry ether": "hexane",
+    "NaI": "1-iodopropane",
+    "AgF": "1-fluoropropane",
+    "CH3ONa": "1-methoxypropane",
+    "Red P / HI": "propane",
+    "Red P / HBr": "propane",
+    "Mg": "propyl magnesum bromide",
+    "sodium ethoxide": "1-methoxypropane"
+  },
   "2-bromopropane": {
     "aq. NaOH": "propan-2-ol",
     "aq. KOH": "propan-2-ol",
