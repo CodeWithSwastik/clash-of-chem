@@ -295,7 +295,8 @@
     "Zn-Hg / HCl": "methane",
     "CH3MgBr / H3O+": "ethanol",
     "NH2NH2 / aq. KOH": "methane",
-    "NH3": "hexamethylenetetramine"
+    "NH3": "hexamethylenetetramine",
+    "SeO2": "oxaldehyde"
   },
   "ethanal": {
     "HCN": "hydroxypropionitrile",
@@ -324,7 +325,8 @@
     "I2": "iodopropanone",
     "HCN": "acetone cyanohydrin",
     "NaOH (Heat)":"4-methylpent-3-en-2-one",
-    "CH3MgBr": "1,1-dimethylalcohol"
+    "CH3MgBr": "1,1-dimethylalcohol",
+    "SeO2": "methylglyoxal"
   },
   "methanoic acid": {
     "LiAlH4": "methanol",
