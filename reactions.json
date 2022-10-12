@@ -248,7 +248,8 @@
     "Zn-Hg / HCl": "ethane",
     "NaBH4": "ethanol",
     "NH2NH2 / aq. KOH": "ethane",
-    "CH3CHO": "3-hydroxybutanal"
+    "CH3CHO": "3-hydroxybutanal",
+    "Dry HCl / CH3OH": "1,1-diethoxyethane"
   },
   "propanone": {
     "H2O / LiAlH4": "propan-2-ol",
