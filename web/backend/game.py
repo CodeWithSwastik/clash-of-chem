@@ -1,3 +1,4 @@
+from math import prod
 import os
 import json
 import random
@@ -16,9 +17,12 @@ with open(smiles_filepath, "r") as f:
     SMILES = json.load(f)
 
 REAGENTS = set()
+PRODUCTS = set()
+
 for substrate in REACTIONS:
     for reagent, product in REACTIONS[substrate].items():
         REAGENTS.add(reagent)
+        PRODUCTS.add(product)
 
 class Challenge:
     def __init__(self) -> None:
@@ -74,32 +78,34 @@ class StrategyChallenge:
         self.time = 300
         self.type = "strategy"
 
-        self.starting = "methane"
+        self.starting = random.choice(list(REACTIONS))
+
+        while len(REACTIONS[self.starting]) < 5 and self.get_reagents(self.starting):
+            self.starting = random.choice(list(REACTIONS))
+
         self.current = self.starting
 
-        finals = [
-            "ethene", 
-            "propanone", 
-            "methoxyethane", 
-            "methanoic acid",
-            "ethanoic acid",
-            "ethanol"
-        ]
+        self.finals = []
+
+        while len(self.finals) < len(players):
+            p = random.choice(list(PRODUCTS))
+            if p in REACTIONS[self.current].values():
+                continue
+            self.finals.append(p)
         self.players = players
 
-        random.shuffle(finals)
-
-        self.targets = dict(zip(self.players, finals))
+        self.targets = dict(zip(self.players, self.finals))
 
         self.playerCycle = cycle(self.players)
         self.turn = next(self.playerCycle)
         self.winner = None
 
-    def get_reagents(self):
+    def get_reagents(self, comp = None):
+        comp = comp or self.current
         l = []
-        for r in list(REACTIONS[self.current]):
-            prod = REACTIONS[self.current][r]
-            if prod in REACTIONS:
+        for r in list(REACTIONS[comp]):
+            prod = REACTIONS[comp][r]
+            if prod in REACTIONS or prod in self.finals:
                 l.append(r)
 
         random.shuffle(l)

@@ -7,8 +7,8 @@
 	import { goto } from '$app/navigation';
 
 	let smilesDrawer = new SmilesDrawer.Drawer({
-			width: 200,
-			height: 200,
+			width: 250,
+			height: 250,
 			themes: {
 			dark: {
 				C: '#cdd6f4',
