@@ -294,7 +294,8 @@
     "NaBH4": "methanol",
     "Zn-Hg / HCl": "methane",
     "CH3MgBr / H3O+": "ethanol",
-    "NH2NH2 / aq. KOH": "methane"
+    "NH2NH2 / aq. KOH": "methane",
+    "NH3": "hexamethylenetetramine"
   },
   "ethanal": {
     "HCN": "hydroxypropionitrile",
