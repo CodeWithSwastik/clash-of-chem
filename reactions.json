@@ -420,7 +420,8 @@
     "conc. HNO3 / conc. H2SO4": "3-nitrobenzaldehyde",
     "conc. H2SO4": "benzaldehyde-3-sulfonic acid",
     "Br2 / FeBr": "3-bromobenzaldehyde",
-    "Cl2 / FeCl": "3-chlorobenzaldehyde"
+    "Cl2 / FeCl": "3-chlorobenzaldehyde",
+    "NH3": "hydrobenzamide"
   },
   "benzoic acid": {
     "LiAlH4": "phenylmethanol",
