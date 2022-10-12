@@ -21,7 +21,7 @@ def add_smile(compound):
         print(compound, "added!")
     except Exception as e:
         with open(smiles_filepath, "w") as f:
-            json.dump(SMILES, f)
+            json.dump(SMILES, f, indent=4)
         print("Failed:", compound)
         print("Reason:", res.json()["message"])
         print(e)
