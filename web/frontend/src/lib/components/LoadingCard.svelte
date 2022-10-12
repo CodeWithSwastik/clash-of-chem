@@ -3,7 +3,7 @@
 
     let facts = [
         "About 18% of the human body is made of carbon atoms.",
-        "Carbon atoms make up the backbone of many important molecules in your body - proteins, DNA, mRNA, sugars and fats.",
+        "Carbon atoms make up the backbone of many important molecules in your body - proteins, DNA, RNA, sugars and fats.",
         "Carbon is the fourth most lavish element in the universe, fifteenth on earth and second in the human body, after oxygen.",
         "Ev­ery hy­dro­gen atom in your body is around 13.5 bil­lion years old",
         "If you mix a liter of wa­ter in a liter of ethyl al­co­hol, you only get around 1.9 liters of so­lu­tion. Magic!",
@@ -16,7 +16,10 @@
         "Ethanol, or ethyl alcohol, is the only type of alcohol that you can drink without seriously harming yourself, and then only if it hasn't been denatured or doesn't contain toxic impurities.",
         "TNT (Trinitrotoluene) was first prepared in 1863 by German chemist Julius Wilbrand and originally used as a yellow dye.",
         "Phenol is a normal metabolic product, excreted in quantities up to 40 mg/L in human urine.",
-        "Phenol is used in molecular biology for obtaining nucleic acids (DNA, RNA) from tissues or cell culture samples."
+        "Phenol is used in molecular biology for obtaining nucleic acids (DNA, RNA) from tissues or cell culture samples.",
+        "The number of organic compounds is nearly three times the number of inorganic compounds.",
+        "Friedrich Wohler in 1828 synthesized urea as the first organic compound for the first time in labrotary from ammonium cyanate.",
+        "Number of organic compounds outnumber inorganic compounds by nearly 10 million."
     ]
     let fact = "";
     onMount(()=> fact = facts[Math.floor(Math.random()*facts.length)]);

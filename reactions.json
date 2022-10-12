@@ -25,7 +25,9 @@
     "B2H6": "ethanol",
     "Br2 / CCl4": "1,2-dibromoethane",
     "Cl2 / CCl4": "1,2-dichloroethane",
-    "Cl2 / H2O": "2-chloroethanol"
+    "Cl2 / H2O": "2-chloroethanol",
+    "Br2 / H2O": "2-bromoethanol",
+    "CuCl2 / O2": "ethanal"
   },
   "propene": {
     "HCl": "2-chloropropane",
@@ -33,15 +35,25 @@
     "HBr / Peroxide": "1-bromopropane",
     "O3 / Zn dust / H2O": "ethanal",
     "H2O / dil H2SO4": "propan-2-ol",
-    "B2H6": "propan-1-ol"
+    "B2H6": "propan-1-ol",
+    "Br2 / CCl4": "1,2-dibromopropane"
+  },
+  "but-1-ene":{
+    "Cl2": "1,2-dichlorobutane",
+    "Br2": "1,2-dibromobutane",
+    "HCl": "2-chlorobutane",
+    "HBr": "2-bromobutane",
+    "HBr / Peroxide": "1-bromobutane"
   },
   "but-2-ene": {
     "H2O / dil H2SO4": "butan-2-ol",
-    "Br2 / CCl4": "2,3-dibromobutane"
+    "Br2 / CCl4": "2,3-dibromobutane",
+    "KMnO4 / OH-": "ethanoic acid"
   },
   "ethyne": {
     "Red Hot Fe Tube (873 K)": "benzene",
-    "HgSO4 / H2SO4": "ethanal"
+    "HgSO4 / H2SO4": "ethanal",
+    "B2H6 / H2O2 / OH-": "ethanal"
   },
   "propyne": {
     "HgSO4 / H2SO4": "propanone"
@@ -78,6 +90,21 @@
     "Red P / HBr": "methane",
     "Mg": "methyl magnesium bromide"
   },
+  "iodomethane": {
+    "aq. NaOH": "methanol",
+    "aq. KOH": "methanol",
+    "alc. AgCN": "isocyanomethane",
+    "alc. KCN": "ethanenitrile",
+    "AgNO2": "nitromethane",
+    "KNO2": "methyl nitrite",
+    "Na / dry ether": "ethane",
+    "AgF": "fluoromethane",
+    "CH3ONa": "methoxymethane",
+    "NH3 excess": "methylamine",
+    "Red P / HI": "methane",
+    "Red P / HBr": "methane",
+    "Mg": "methyl magnesium chloride"
+  },
   "chloroethane": {
     "aq. NaOH": "ethanol",
     "aq. KOH": "ethanol",
@@ -93,7 +120,8 @@
     "NH3 excess": "ethylamine",
     "Red P/ HI": "ethane",
     "Red P/ HBr": "ethane",
-    "Mg": "ethyl magnesium chloride"
+    "Mg": "ethyl magnesium chloride",
+    "sodium ethoxide": "methoxymethane"
   },
   "bromoethane": {
     "aq. NaOH": "ethanol",
@@ -110,7 +138,25 @@
     "NH3 excess": "ethylamine",
     "Red P / HI": "ethane",
     "Red P / HBr": "ethane",
-    "Mg": "ethyl magnesium bromide"
+    "Mg": "ethyl magnesium bromide",
+    "sodium ethoxide": "methoxymethane"
+  },
+  "iodoethane": {
+    "aq. NaOH": "ethanol",
+    "aq. KOH": "ethanol",
+    "alc. KOH": "ethene",
+    "alc. AgCN": "isocyanoethane",
+    "alc. KCN": "propanenitrile",
+    "AgNO2": "nitroethane",
+    "KNO2": "ethyl nitrite",
+    "Na / dry ether": "butane",
+    "AgF": "fluoroethane",
+    "CH3ONa": "methoxyethane",
+    "NH3 excess": "ethylamine",
+    "Red P/ HI": "ethane",
+    "Red P/ HBr": "ethane",
+    "Mg": "ethyl magnesium chloride",
+    "sodium ethoxide": "methoxymethane"
   },
   "1-bromopropane": {
     "aq. NaOH": "propan-1-ol",
@@ -125,7 +171,41 @@
     "AgF": "1-fluoropropane",
     "CH3ONa": "1-methoxypropane",
     "Red P / HI": "propane",
+    "Red P / HBr": "propane",
+    "Mg": "propyl magnesum bromide",
+    "sodium ethoxide": "1-methoxypropane"
+  },
+  "2-chloropropane": {
+    "aq. NaOH": "propan-2-ol",
+    "aq. KOH": "propan-2-ol",
+    "alc. KOH": "propene",
+    "alc. AgCN": "2-isocyanopropane",
+    "alc. KCN": "2-methylpropanenitrile",
+    "AgNO2": "2-nitropropane",
+    "KNO2": "2-propyl nitrite",
+    "Na / dry ether": "2,3-dimethylbutane",
+    "NaI": "2-iodopropane",
+    "AgF": "2-fluoropropane",
+    "CH3ONa": "2-methoxypropane",
+    "Red P / HI": "propane",
     "Red P / HBr": "propane"
+  },
+  "1-chloropropane": {
+    "aq. NaOH": "propan-1-ol",
+    "aq. KOH": "propan-1-ol",
+    "alc. KOH": "propene",
+    "alc. AgCN": "1-isocyanopropane",
+    "alc. KCN": "1-butanenitrile",
+    "AgNO2": "1-nitropropane",
+    "KNO2": "1-propyl nitrite",
+    "Na / dry ether": "hexane",
+    "NaI": "1-iodopropane",
+    "AgF": "1-fluoropropane",
+    "CH3ONa": "1-methoxypropane",
+    "Red P / HI": "propane",
+    "Red P / HBr": "propane",
+    "Mg": "propyl magnesum bromide",
+    "sodium ethoxide": "1-methoxypropane"
   },
   "2-bromopropane": {
     "aq. NaOH": "propan-2-ol",
@@ -138,19 +218,27 @@
     "Na / dry ether": "2,3-dimethylbutane",
     "NaI": "2-iodopropane",
     "AgF": "2-fluoropropane",
-    "CH3ONa": "2-methoxypropane"
+    "CH3ONa": "2-methoxypropane",
+    "Red P / HI": "propane",
+    "Red P / HBr": "propane"
+  },
+  "1,2-dibromomethane":{
+    "aq KOH": "ethane-1,2-diol",
+    "alc. KOH / NaNH2": "ethyne"
   },
   "ethanenitrile": {
     "SnCl2 / HCl / H2O": "ethanal",
     "DIBAL-H": "ethanal",
     "CH3MgBr / H+": "propanone",
     "H2 / Pd": "ethylamine",
+    "H3O+ (partial)":"ethanamide",
     "H3O+": "ethanoic acid"
   },
   "propanenitrile": {
     "SnCl2 / HCl / H2O": "propanal",
     "DIBAL-H": "propanal",
     "CH3MgBr / H+": "butanone",
+    "H3O+ (partial)":"propanamide",
     "H3O+": "propanoic acid"
   },
   "methanol": {
@@ -161,7 +249,7 @@
     "ZnCl2 / HCl": "chloromethane",
     "HCOOH": "methyl methanoate",
     "Cu (573K)": "methanal",
-    "KMnO4": "methanoic acid",
+    "KMnO4 / H+": "methanoic acid",
     "HCl": "chloromethane",
     "HBr": "bromomethane",
     "HI": "iodomethane",
@@ -182,47 +270,67 @@
     "Red P / HI": "ethane",
     "Red P / HBr": "ethane",
     "Cu (573K)": "ethanal",
-    "KMnO4": "ethanoic acid"
+    "KMnO4 / H+": "ethanoic acid",
+    "conc. H2SO4 (413K)": "methoxymethane"
+  },
+  "ethane-1,2-diol":{
+    "KMnO4 / H2SO4": "ethane-1,2-dioic acid",
+    "Red P / HI": "ethene"
   },
   "propan-1-ol": {
     "PCl5": "1-chloropropane",
-    "H+ / KMnO4": "propanoic acid",
+    "KMnO4 / H+": "propanoic acid",
     "PCC": "propanal",
     "conc H2SO4": "propene"
-  },
-  "1,2-dibromoethane": {
-    "alc. KOH / NaNH2": "ethyne"
   },
   "methanal": {
     "HCN": "hydroxyethanenitrile",
     "NaHSO3": "sodium 1-hydroxymethanesulphonate",
     "Red P / HI": "methane",
     "Red P / HBr": "methane",
-    "KMnO4": "methanoic acid",
+    "KMnO4 / H+": "methanoic acid",
     "K2Cr2O7 / H2SO4": "methanoic acid",
     "LiAlH4": "methanol",
-    "CH3MgBr / H3O+": "ethanol"
+    "NaBH4": "methanol",
+    "Zn-Hg / HCl": "methane",
+    "CH3MgBr / H3O+": "ethanol",
+    "NH2NH2 / aq. KOH": "methane",
+    "NH3": "hexamethylenetetramine",
+    "SeO2": "oxaldehyde"
   },
   "ethanal": {
     "HCN": "hydroxypropionitrile",
     "NaHSO3": "sodium 1-hydroxyethanesulphonate",
     "Red P / HI": "ethane",
     "Red P / HBr": "ethane",
-    "KMnO4": "ethanoic acid",
+    "KMnO4 / H+": "ethanoic acid",
     "K2Cr2O7 / H2SO4": "ethanoic acid",
     "LiAlH4": "ethanol",
     "NaOH": "3-hydroxybutanal",
     "CH3MgBr / H3O+": "propan-2-ol",
     "NaOH / I2": "triiodomethane",
     "NaOH / Br2": "tribromomethane",
-    "NaOH / Cl2": "trichloromethane"
+    "NaOH / Cl2": "trichloromethane",
+    "Zn-Hg / HCl": "ethane",
+    "NaBH4": "ethanol",
+    "NH2NH2 / aq. KOH": "ethane",
+    "CH3CHO": "3-hydroxybutanal",
+    "Dry HCl / CH3OH": "1,1-diethoxyethane",
+    "NH3 (Warm)": "ethanimine",
+    "NH2OH": "acetaldoxime",
+    "NH2NH2 / H3O+": "acetaldehyde hydrazone"
   },
   "propanone": {
     "H2O / LiAlH4": "propan-2-ol",
     "NaOH / I2": "triiodomethane",
     "NaOH / Br2": "tribromomethane",
     "NaOH / Cl2": "trichloromethane",
-    "I2": "iodopropanone"
+    "I2": "iodopropanone",
+    "HCN": "acetone cyanohydrin",
+    "NaOH (Heat)":"4-methylpent-3-en-2-one",
+    "CH3MgBr": "1,1-dimethylalcohol",
+    "SeO2": "methylglyoxal",
+    "NH2NH2 / H3O+": "acetone hydrazone"
   },
   "methanoic acid": {
     "LiAlH4": "methanol",
@@ -230,9 +338,10 @@
     "PCl3": "methanoyl chloride",
     "SOCl2": "methanoyl chloride",
     "Na": "sodium methanoate",
-    "NH3 / H2O / (Heat)": "methanamide",
+    "NH3 / H2O (Heat)": "methanamide",
     "Red P/ HI": "methane",
-    "HN3 / conc. H2SO4": "methanamine"
+    "HN3 / conc. H2SO4": "methanamine",
+    "MnO (573K)": "methanol"
   },
   "ethanoic acid": {
     "LiAlH4": "ethanol",
@@ -240,15 +349,42 @@
     "PCl3": "ethanoyl chloride",
     "SOCl2": "ethanoyl chloride",
     "Na": "sodium ethanoate",
-    "NH3 / H2O / (Heat)": "ethanamide",
+    "NH3 / H2O (Heat)": "ethanamide",
     "Red P/ HI": "ethane",
-    "HN3 / conc. H2SO4": "ethanamine"
+    "HN3 / conc. H2SO4": "ethanamine",
+    "MnO (573K)": "ethanol",
+    "P / Cl":"chloroethanoic acid",
+    "P / Br":"bromoethanoic acid",
+    "P / I":"iodoethanoic acid"
   },
   "methanamide": {
-    "Br2 / aq. NaOH": "ammonia"
+    "Br2 / aq. NaOH": "ammonia",
+    "NaOH / H+": "methanoic acid",
+    "LiAlH4": "methanamine",
+    "P2O5": "hydrogen cyanide"
   },
   "ethanamide": {
-    "Br2 / aq. NaOH": "methanamine"
+    "Br2 / aq. NaOH": "methanamine",
+    "NaOH / H+": "ethanoic acid",
+    "LiAlH4": "ethanamine",
+    "P2O5": "ethanenitrile"
+  },
+  "methanoyl chloride":{
+    "H2O": "methanoic acid",
+    "NH3 excess": "methanamide"
+  },
+  "ethanoyl chloride":{
+    "H2O": "ethanoic acid",
+    "NH3 excess": "ethanamide",
+    "sodium ethoxide": "ethylethanoate"
+  },
+  "methanamine":{
+    "CH3COCl": "N-methylacetamide",
+    "NaNO2 / HCl": "methanol"
+  },
+  "ethanamine":{
+    "CH3COCl": "N-ethylacetamide",
+    "NaNO2 / HCl": "ethanol"
   },
   "benzene": {
     "Cl2 / Fe": "chlorobenzene",
@@ -256,13 +392,14 @@
     "conc H2SO4": "benzenesulphonic acid",
     "H2 / Ni (473 K)": "cyclohexane",
     "O3 / Zn (Heat)": "ethanedial",
-    "CO / anhyd. AlCl3 / HCl / CuCl": "benzaldehyde"
+    "CO / anhyd. AlCl3 / HCl / CuCl": "benzaldehyde",
+    "CrO2Cl2 / CS2": "benzaldehyde"
   },
   "toluene": {
     "H2 / Ni (473 K)": "1-methylcyclohexene",
     "conc HNO3 / conc H2SO4": "2,4,6-trinitrotoluene",
     "CrO2Cl2 / CS2 / H+": "benzaldehyde",
-    "H+ / KMnO4": "benzoic acid"
+    "KMnO4 / H+": "benzoic acid"
   },
   "chlorobenzene": {
     "NaOH / HCl (300 atm, 623K)": "phenol",
@@ -270,7 +407,8 @@
     "Br2 / FeBr3": "4-bromochlorobenzene",
     "Cl2 / FeCl3": "1,4-dichlorobenzene",
     "conc. HNO3 / conc. H2SO4": "4-nitrochlorobenzene",
-    "NH3 / Cu2O catalyst / (60 atm, 523-773K)": "aniline"
+    "NH3 / Cu2O catalyst (60 atm, 523-773K)": "aniline",
+    "Na / Dry Ether": "diphenyl"
   },
   "phenol": {
     "Zn": "benzene",
@@ -281,15 +419,26 @@
     "CO2 / NaOH / H+ (423K, 3-7 atm)": "2-hydroxybenzoic acid",
     "H2SO4 (373K)": "4-hydroxybenzenesulfonic acid",
     "CHCl3 / aq. KOH": "2-hydroxybenzaldehyde",
-    "NH3 / anhyd. ZnCl2 catalyst / (573K)": "aniline"
+    "NH3 / anhyd. ZnCl2 catalyst (573K)": "aniline"
+  },
+  "benzaldehyde":{
+    "Zn-Hg / conc. HCl": "toluene",
+    "conc. HNO3 / conc. H2SO4": "3-nitrobenzaldehyde",
+    "conc. H2SO4": "benzaldehyde-3-sulfonic acid",
+    "Br2 / FeBr": "3-bromobenzaldehyde",
+    "Cl2 / FeCl": "3-chlorobenzaldehyde",
+    "NH3": "hydrobenzamide",
+    "C6H5NH2": "benzalninine"
   },
   "benzoic acid": {
     "LiAlH4": "phenylmethanol",
     "PCl5": "benzoyl chloride",
-    "conc HNO2 / conc. H2SO4": "4-nitrobenzoic acid"
+    "conc HNO2 / conc. H2SO4": "4-nitrobenzoic acid",
+    "Br2 / FeBr": "3-bromobenzoic acid",
+    "Cl2 / FeCl": "3-chlorobenzoic acid"
   },
   "aniline": {
-    "NaNO2 / HCl (0-5 deg C)": "benzenediazonium chloride",
+    "NaNO2 / HCl (273-278K)": "benzenediazonium chloride",
     "Br / H20": "2,4,6-tribromoaniline",
     "Br2 / CS2": "4-bromoaniline",
     "Na2CrO7 / H2SO4": "p-benzoquinone",
@@ -306,7 +455,7 @@
     "CuCN": "benzonitrile",
     "KI": "iodobenzene",
     "HBF4 / (Heat)": "fluorobenzene",
-    "HBF4 / Cu / NaNO2 / (Heat)": "nitrobenzene",
+    "HBF4 / Cu / NaNO2 (Heat)": "nitrobenzene",
     "H3PO2 / Cu": "benzene",
     "CuCN / H3O+": "benzoic acid"
   },
@@ -315,12 +464,23 @@
     "Sn / HCl": "aniline",
     "LiAlH4": "azobenzene",
     "Zn dust / aq. NaOH": "hydrazobenzene",
-    "Zn / NH4Cl / 50% C2H5OH / (Heat)": "phenylhydroxyamine"
+    "Zn / NH4Cl / 50% C2H5OH (Heat)": "phenylhydroxyamine",
+    "fuming HNO3 / conc. H2SO4": "1,3,5-trinitrobenzene",
+    "conc. HNO3 / conc. H2SO4": "1,3-dinitrobenzene",
+    "Cl2 / FeCl3": "3-chloronitrobenzene",
+    "conc. H2SO4 (Heat)": "3-nitrobenzene sulphonic acid"
   },
   "benzamide": {
-    "Br2 / KOH": "aniline"
+    "Br2 / KOH": "aniline",
+    "NaOH / dil. HCl / H3O+": "benzoic acid"
   },
   "2-hydroxybenzoic acid": {
     "(CH3CO)2O": "2-acetoxybenzoic acid"
+  },
+  "glucose":{
+    "Br2 in H2O": "gluconic acid",
+    "dil. HNO3": "glucaric acid",
+    "Red P / HI": "hexane",
+    "HCN": "glucose cyanohydrin"
   }
 }
