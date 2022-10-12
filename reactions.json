@@ -316,7 +316,9 @@
     "NH2NH2 / aq. KOH": "ethane",
     "CH3CHO": "3-hydroxybutanal",
     "Dry HCl / CH3OH": "1,1-diethoxyethane",
-    "NH3 (Warm)": "ethanimine"
+    "NH3 (Warm)": "ethanimine",
+    "NH2OH": "acetaldoxime",
+    "NH2NH2 / H3O+": "acetaldehyde hydrazone"
   },
   "propanone": {
     "H2O / LiAlH4": "propan-2-ol",
@@ -327,7 +329,8 @@
     "HCN": "acetone cyanohydrin",
     "NaOH (Heat)":"4-methylpent-3-en-2-one",
     "CH3MgBr": "1,1-dimethylalcohol",
-    "SeO2": "methylglyoxal"
+    "SeO2": "methylglyoxal",
+    "NH2NH2 / H3O+": "acetone hydrazone"
   },
   "methanoic acid": {
     "LiAlH4": "methanol",
