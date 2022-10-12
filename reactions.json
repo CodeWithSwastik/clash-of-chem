@@ -90,6 +90,21 @@
     "Red P / HBr": "methane",
     "Mg": "methyl magnesium bromide"
   },
+  "iodomethane": {
+    "aq. NaOH": "methanol",
+    "aq. KOH": "methanol",
+    "alc. AgCN": "isocyanomethane",
+    "alc. KCN": "ethanenitrile",
+    "AgNO2": "nitromethane",
+    "KNO2": "methyl nitrite",
+    "Na / dry ether": "ethane",
+    "AgF": "fluoromethane",
+    "CH3ONa": "methoxymethane",
+    "NH3 excess": "methylamine",
+    "Red P / HI": "methane",
+    "Red P / HBr": "methane",
+    "Mg": "methyl magnesium chloride"
+  },
   "chloroethane": {
     "aq. NaOH": "ethanol",
     "aq. KOH": "ethanol",
@@ -124,6 +139,24 @@
     "Red P / HI": "ethane",
     "Red P / HBr": "ethane",
     "Mg": "ethyl magnesium bromide",
+    "sodium ethoxide": "methoxymethane"
+  },
+  "iodoethane": {
+    "aq. NaOH": "ethanol",
+    "aq. KOH": "ethanol",
+    "alc. KOH": "ethene",
+    "alc. AgCN": "isocyanoethane",
+    "alc. KCN": "propanenitrile",
+    "AgNO2": "nitroethane",
+    "KNO2": "ethyl nitrite",
+    "Na / dry ether": "butane",
+    "NaI": "iodoethane",
+    "AgF": "fluoroethane",
+    "CH3ONa": "methoxyethane",
+    "NH3 excess": "ethylamine",
+    "Red P/ HI": "ethane",
+    "Red P/ HBr": "ethane",
+    "Mg": "ethyl magnesium chloride",
     "sodium ethoxide": "methoxymethane"
   },
   "1-bromopropane": {
