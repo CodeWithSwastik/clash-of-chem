@@ -1,10 +1,6 @@
 # Clash of Chem
 
-It's Clash of Code, but Organic Chemistry.
-
-## Concept UI
-
-![image](https://user-images.githubusercontent.com/61446939/189540221-0d1309c9-caf4-4c10-823e-56eafaf33fe2.png)
+Clash of Chem is a multiplayer online organic chemistry game that you can play with your friends!
 
 ## Contribution to reactions.json
 
