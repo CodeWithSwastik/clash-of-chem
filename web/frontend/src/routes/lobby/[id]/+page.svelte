@@ -29,22 +29,40 @@
         }
 
         if ($socket) {
-            loaded = true;
+            $socket.emit("join_room", {
+                    room: data.lobby.id
+                }, (d) => {
+                    console.log(d);
+                    if (d == "Viewer") {
+                        goto("/clash/"+data.lobby.id);
+                    }
+                    // TODO: fix the bug where room details does not
+                    // get fired if you're already connected?
+                });
         }
         else {
             const socketConnection = io(PUBLIC_API_URL ?? "http://127.0.0.1:8000", {
                 auth: {
                     username: username,
-                    room: data.lobby.id
                 }
             });
             socket.set(socketConnection);
+
         $socket.on("connect", () => {
             console.log("connected");
-        });
+            $socket.emit("join_room", {
+                    room: data.lobby.id
+                }, (d) => {
+                    console.log(d);
+                    if (d == "Viewer") {
+                        goto("/clash/"+data.lobby.id);
+                    }
+                })
+            }); 
 
         
         $socket.on("room_details", (d) => {
+            console.log("Room details", d);
             players = d.data.players;
             countdownSeconds = d.data.countdown;
             isOwner = d.data.owner == username;

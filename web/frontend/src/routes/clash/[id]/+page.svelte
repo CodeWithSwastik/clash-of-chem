@@ -5,6 +5,8 @@
 	import { socket } from '$lib/stores/socket.js';
 	import LoadingCard from '$lib/components/LoadingCard.svelte';
 	import { goto } from '$app/navigation';
+    import io from "socket.io-client";
+    import { PUBLIC_API_URL } from "$env/static/public";
 
 	let smilesDrawer = new SmilesDrawer.Drawer({
 			width: 250,
@@ -48,9 +50,12 @@
 		targets: {
 			"Swas": "1-Chloropropane",
 		},
-		reagents: ["He", "Test Reagent for now honestly lmao", "HEHE"],
+		reagents: [],
+		viewers: 0,
 	};
+
 	let challengeNumber = 1;
+	let challengeLoaded = false;
 
 	let players = {
 		"Mid": {
@@ -77,9 +82,15 @@
 		'text': "#cdd6f4",
     };
 
+	let viewerMode = false;
+	let viewerCount = 0;
 	//c1Nc(F)c=c(Br)c(Cl)c1c(=O)cO
 	onMount(() => {
         username = localStorage.getItem("username");
+        if (!username) {
+            username = "User#" + Math.floor(Math.random()*9000 + 1000);
+            localStorage.setItem("username", username);
+        }
 
 		SmilesDrawer.apply({
 			width: 200,
@@ -104,19 +115,32 @@
 		}, 'canvas[data-smiles]', 'dark', null);
 
 		if ($socket) {
+			$socket.emit("request_clash_details", {
+				"clash": data.id,
+			}, (d) => {
+				if (d=="Viewer") {
+					viewerMode = true;
+				} else if (d == "Invalid") {
+					goto("/");
+				}
+			});
+
 			$socket.on("clash_details", (d) => {
 				leaderboard = d.data.leaderboard;
 				numPlayers = Object.keys(leaderboard).length;
 				players = d.data.players;
-				console.log(players);
+				viewerCount = d.data.viewers;
+				console.log(d.data);
+
 				if (!loaded) {
 				setInterval(
 					()=>{challenge.time--;}, 1000
 				);
-				}
 				loaded = true;
+				}
 			});
 			$socket.on("new_challenge", (d) => {
+				challengeLoaded = true;
 				console.log(d);
 				challenge = d.data;
 				challengeNumber ??= challenge.number;
@@ -148,6 +172,9 @@
 				setTimeout(() => {goto("/")}, 10000);
 			});
 
+		}
+		else {
+            goto("/lobby/"+data.id);
 		}
 	});
 	
@@ -209,7 +236,15 @@
 		<div id="stats" class="flex p-2 border-b border-surface1">
 			<button class="md:hidden text-text" on:click={() => {menuOpen = true}}><i class="fa-solid fa-bars"></i></button>
 			<div class="flex-grow"></div>
-			<div class="text-text text-xl"><span>{leaderboard[username]} points</span> | <i class="fa-solid fa-clock" /> <span class="">{challenge.time}</span></div>
+			<div class="text-text text-xl">
+				{#if leaderboard[username]}
+				<span>{leaderboard[username]} points</span> | 
+				{/if}
+				{#if viewerCount}
+				<i class="fa-solid fa-eye" /> <span class="">{viewerCount} </span> |
+				{/if}
+				<i class="fa-solid fa-clock" /> <span class="">{challenge.time}</span>
+			</div>
 		</div>
 		{#if winner}
 			<div class="text-text text-4xl text-center pt-10">GG! The Clash is over! The winner is {winner}</div>
@@ -220,6 +255,7 @@
 					<div class="w-[200px] text-text text-4xl text-center flex h-full"><div class="m-auto">to</div></div>
 					<canvas id="to-compound-canvas" data-smiles="F"></canvas>
 				</div>
+				{#if challengeLoaded}
 				<div class="pt-10">
 					<div class="text-text m-4 mb-8 text-4xl"> Which reagent will carry out the conversion? </div>
 					<div class="grid grid-cols-2 gap-4 m-4 {answerResult ? 'pointer-events-none': ''}">
@@ -227,8 +263,8 @@
 							<button on:click={() => answer(reagent)} class="text-text bg-crust rounded p-3 hover:bg-mantle" style={getStylesForButton(reagent)}>{reagent}</button>
 					{/each}
 					</div>
-
 				</div>
+				{/if}
 			{:else}
 				<div class="flex justify-center pt-10">
 					<canvas id="current-compound-canvas" data-smiles="C"/>
@@ -237,17 +273,21 @@
 					<div class="text-text m-4 text-4xl"> {challenge.winner} has won this challenge! </div>
 
 				{:else}
-				<div class="pt-10">
-					<div class="text-text m-4 text-4xl"> {challenge.turn == username ? 'Which reagent will you use?' : `Waiting for ${challenge.turn} to select a reagent...`} </div>
-					<div class="text-overlay2 m-4 text-2xl"> Current turn: {challenge.turn} | Your goal: Convert to {challenge.targets[username]} </div>
+				{#if challengeLoaded}
+					<div class="pt-10">
+						<div class="text-text m-4 text-4xl"> {challenge.turn == username ? 'Which reagent will you use?' : `Waiting for ${challenge.turn} to select a reagent...`} </div>
+						<div class="text-overlay2 m-4 text-2xl"> Current turn: {challenge.turn} </div>
+						{#if !viewerMode} 
+							<div class="text-overlay2 m-4 mt-2 text-2xl"> Your goal: Convert to {challenge.targets[username]} </div>
+						{/if}
 
-					<div class="grid grid-cols-2 gap-4 m-4 {challenge.turn != username ? 'pointer-events-none': ''}">
-					{#each challenge.reagents as reagent}
-							<button on:click={() => strategy_update(reagent)} class="text-text bg-crust rounded p-3 hover:bg-mantle">{reagent}</button>
-					{/each}
+						<div class="grid grid-cols-2 gap-4 m-4 {challenge.turn != username ? 'pointer-events-none': ''}">
+						{#each challenge.reagents as reagent}
+								<button on:click={() => strategy_update(reagent)} class="text-text bg-crust rounded p-3 hover:bg-mantle">{reagent}</button>
+						{/each}
+						</div>
 					</div>
-
-				</div>			
+				{/if}			
 				{/if}	
 			{/if}
 		{/if}
