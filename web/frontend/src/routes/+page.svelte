@@ -17,19 +17,14 @@
 		localStorage.setItem('username', username);
 		animateOut = true;
 		setTimeout(() => {
-			goto('/lobby/' + (lobby ? lobby : "test"));
+			let r = Math.random().toString(36).slice(2, 7);
+			goto('/lobby/' + (lobby ? lobby : r));
 		}, 700)
 	};
 </script>
 
 <svelte:head>
 	<title>Home</title>
-	<meta property="og:title" content="Clash of Chem" />
-	<meta
-		property="og:description"
-		content="Clash of Chem is a multiplayer online ogranic chemistry game that you can play with your friends!"
-	/>
-    <meta name="theme-color" content="#1e1e2e" />
 
 	<style lang="scss">		
 		@import "../style.scss";
