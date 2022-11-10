@@ -158,6 +158,9 @@
     "Mg": "ethyl magnesium chloride",
     "sodium ethoxide": "methoxymethane"
   },
+  "1,1-dichloroethane": {
+    "aq. KOH / Heat": "ethanal"
+  },
   "1-bromopropane": {
     "aq. NaOH": "propan-1-ol",
     "aq. KOH": "propan-1-ol",
