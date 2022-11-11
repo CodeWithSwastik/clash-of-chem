@@ -336,7 +336,8 @@
     "NaOH (Heat)": "4-methylpent-3-en-2-one",
     "CH3MgBr": "1,1-dimethylethanol",
     "SeO2": "methylglyoxal",
-    "NH2NH2 / H3O+": "acetone hydrazone"
+    "NH2NH2 / H3O+": "acetone hydrazone",
+    "Zn-Hg / conc. HCl": "propane"
   },
   "methanoic acid": {
     "LiAlH4": "methanol",
