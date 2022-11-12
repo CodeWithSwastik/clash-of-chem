@@ -400,13 +400,16 @@
     "H2 / Ni (473 K)": "cyclohexane",
     "O3 / Zn (Heat)": "ethanedial",
     "CO / anhyd. AlCl3 / HCl / CuCl": "benzaldehyde",
-    "CrO2Cl2 / CS2": "benzaldehyde"
+    "CrO2Cl2 / CS2": "benzaldehyde",
+    "CH3COCl / anhyd. AlCl3": "acetophenone",
+    "CH3Cl / anhyd. AlCl3": "toluene"
   },
   "toluene": {
     "H2 / Ni (473 K)": "1-methylcyclohexene",
     "conc HNO3 / conc H2SO4": "2,4,6-trinitrotoluene",
     "CrO2Cl2 / CS2 / H+": "benzaldehyde",
-    "KMnO4 / H+": "benzoic acid"
+    "KMnO4 / H+": "benzoic acid",
+    "Cl2 / uv": "benzyl chloride"
   },
   "chlorobenzene": {
     "NaOH / HCl (300 atm, 623K)": "phenol",
@@ -415,7 +418,8 @@
     "Cl2 / FeCl3": "1,4-dichlorobenzene",
     "conc. HNO3 / conc. H2SO4": "4-nitrochlorobenzene",
     "NH3 / Cu2O catalyst (60 atm, 523-773K)": "aniline",
-    "Na / Dry Ether": "biphenyl"
+    "Na / Dry Ether": "biphenyl",
+    "CH3ONa": "anisole"
   },
   "phenol": {
     "Zn": "benzene",
@@ -442,7 +446,8 @@
     "PCl5": "benzoyl chloride",
     "conc HNO2 / conc. H2SO4": "4-nitrobenzoic acid",
     "Br2 / FeBr": "3-bromobenzoic acid",
-    "Cl2 / FeCl": "3-chlorobenzoic acid"
+    "Cl2 / FeCl": "3-chlorobenzoic acid",
+    "NaOH / CaO": "benzene"
   },
   "aniline": {
     "NaNO2 / HCl (273-278K)": "benzenediazonium chloride",
@@ -464,7 +469,8 @@
     "HBF4 / (Heat)": "fluorobenzene",
     "HBF4 / Cu / NaNO2 (Heat)": "nitrobenzene",
     "H3PO2 / Cu": "benzene",
-    "CuCN / H3O+": "benzoic acid"
+    "CuCN / H3O+": "benzoic acid",
+    "KSH": "thiophenol"
   },
   "nitrobenzene": {
     "Zn / HCl": "aniline",
@@ -483,6 +489,13 @@
   },
   "2-hydroxybenzoic acid": {
     "(CH3CO)2O": "2-acetoxybenzoic acid"
+  },
+  "acetophenone": {
+    "Zn-Hg / conc. HCl": "ethyl benzene"
+  },
+  "benzonitrile": {
+    "H20 / H+": "benzoic acid",
+    "H20 / OH-": "benzamide"
   },
   "glucose": {
     "Br2 in H2O": "gluconic acid",
