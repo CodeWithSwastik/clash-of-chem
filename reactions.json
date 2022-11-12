@@ -494,8 +494,8 @@
     "Zn-Hg / conc. HCl": "ethyl benzene"
   },
   "benzonitrile": {
-    "H20 / H+": "benzoic acid",
-    "H20 / OH-": "benzamide"
+    "H2O / H+": "benzoic acid",
+    "H2O / OH-": "benzamide"
   },
   "glucose": {
     "Br2 in H2O": "gluconic acid",
