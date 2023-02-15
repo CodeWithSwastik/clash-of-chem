@@ -105,7 +105,7 @@ class StrategyChallenge:
         l = []
         for r in list(REACTIONS[comp]):
             prod = REACTIONS[comp][r]
-            if prod in REACTIONS or prod in self.finals:
+            if prod in self.finals:
                 l.append(r)
 
         random.shuffle(l)
