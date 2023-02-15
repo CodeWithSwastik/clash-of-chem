@@ -102,12 +102,7 @@ class StrategyChallenge:
 
     def get_reagents(self, comp = None):
         comp = comp or self.current
-        l = []
-        for r in list(REACTIONS[comp]):
-            prod = REACTIONS[comp][r]
-            if prod in self.finals:
-                l.append(r)
-
+        l = list(REACTIONS[comp])
         random.shuffle(l)
         return l[:6]
 
