@@ -141,6 +141,8 @@
 			});
 			$socket.on("conversion", (d) => {
 				console.log(d);
+				console.log(d.who + " used " + d.reagent + " to convert " + d.prev + " to " + d.to);
+
 			});
 			$socket.on("new_challenge", (d) => {
 				challengeLoaded = true;
