@@ -178,5 +178,14 @@
     "biphenyl": "C1(=CC=CC=C1)C1=CC=CC=C1",
     "1-phenyl-N,N'-bis[(E)-phenylmethylidene]methanediamine": "C1(=CC=CC=C1)C(/N=C/C1=CC=CC=C1)/N=C/C1=CC=CC=C1",
     "benzylideneaniline": "C(C1=CC=CC=C1)=NC1=CC=CC=C1",
-    "3-formylbenzenesulfonic acid": "C(=O)C=1C=C(C=CC1)S(=O)(=O)O"
+    "3-formylbenzenesulfonic acid": "C(=O)C=1C=C(C=CC1)S(=O)(=O)O",
+    "1,1-dichloroethane": "ClC(C)Cl",
+    "acetophenone": "C(C)(=O)C1=CC=CC=C1",
+    "benzyl chloride": "C(C1=CC=CC=C1)Cl",
+    "anisole": "C1(=CC=CC=C1)OC",
+    "4-bromoanisole": "BrC1=CC=C(C=C1)OC",
+    "4-nitroanisole": "[N+](=O)([O-])C1=CC=C(C=C1)OC",
+    "4-methoxytoluene": "COC1=CC=C(C)C=C1",
+    "thiophenol": "C1(=CC=CC=C1)S",
+    "ethyl benzene": "C(C)C1=CC=CC=C1"
 }
