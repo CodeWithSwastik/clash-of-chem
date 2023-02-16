@@ -4,14 +4,16 @@
     "Br / uv": "bromomethane",
     "O2": "carbon dioxide",
     "O2 / Cu (523K , 100 atm)": "methanol",
-    "O2 / Mo2O3": "methanal"
+    "O2 / Mo2O3": "methanal",
+    "O2 / (CH3COO)2Mn": "methanoic acid"
   },
   "ethane": {
     "Cl / uv": "chloroethane",
     "Br / uv": "bromoethane",
     "O2": "carbon dioxide",
     "O2 / Cu (523K , 100 atm)": "ethanol",
-    "O2 / Mo2O3": "ethanal"
+    "O2 / Mo2O3": "ethanal",
+    "O2 / (CH3COO)2Mn": "ethanoic acid"
   },
   "propane": {
     "Cl / uv": "2-chloropropane",
@@ -358,11 +360,11 @@
     "Na": "sodium ethanoate",
     "NH3 / H2O (Heat)": "ethanamide",
     "Red P/ HI": "ethane",
-    "HN3 / conc. H2SO4": "ethanamine",
+    "NH3 / conc. H2SO4": "ethanamine",
     "MnO (573K)": "ethanol",
-    "P / Cl": "chloroethanoic acid",
-    "P / Br": "bromoethanoic acid",
-    "P / I": "iodoethanoic acid"
+    "Red P / Cl2": "chloroethanoic acid",
+    "Red P / Br2": "bromoethanoic acid",
+    "Red P / I2": "iodoethanoic acid"
   },
   "methanamide": {
     "Br2 / aq. NaOH": "ammonia",
