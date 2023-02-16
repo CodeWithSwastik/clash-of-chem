@@ -19,7 +19,32 @@
         "Phenol is used in molecular biology for obtaining nucleic acids (DNA, RNA) from tissues or cell culture samples.",
         "The number of organic compounds is nearly three times the number of inorganic compounds.",
         "Friedrich Wohler in 1828 synthesized urea as the first organic compound for the first time in labrotary from ammonium cyanate.",
-        "Number of organic compounds outnumber inorganic compounds by nearly 10 million."
+        "Number of organic compounds outnumber inorganic compounds by nearly 10 million.",
+        "Enantiomers are a type of isomer that are non-superimposable mirror images of each other, and they can have very different biological effects.",
+        "Many organic compounds have distinct smells, such as the fruity smell of esters and the pungent smell of thiols.",
+        "Aromatic compounds contain a special type of bonding that gives them unique properties, such as the ability to undergo substitution reactions.",
+        "Organic chemistry is essential to many fields, including medicine, materials science, and energy production.",
+        "Chemists continue to discover and synthesize new organic compounds with fascinating properties and potential applications.",
+        "Carbon has the unique ability to form covalent bonds with up to four other atoms, giving it a versatile ability to form a wide range of organic compounds.",
+        "Many organic compounds are optically active, meaning they rotate plane-polarized light, and this property can be used to determine the structure of a molecule.",
+        "The Nobel Prize in Chemistry has been awarded to numerous organic chemists for their contributions to the field, including the discovery of new reactions and synthesis of important molecules.",
+        "Organic chemists often use protective groups to control the reactivity of a molecule during a synthesis, allowing them to selectively modify certain parts of a molecule without affecting others.",
+        "Organic chemistry plays a key role in the development of pharmaceuticals, as the properties and behavior of organic molecules can be fine-tuned to achieve specific therapeutic effects.",
+        "Many organic compounds can exist in different phases or states of matter, such as liquid crystals, which have both liquid-like and crystal-like properties.",
+        "Organic chemists often use spectroscopic techniques, such as infrared and nuclear magnetic resonance (NMR) spectroscopy, to study the structures and properties of molecules.",
+        "The field of organic electronics is rapidly growing, with the development of organic semiconductors and organic photovoltaics for use in electronic devices.",
+        "Carbon nanotubes, which are a type of organic compound, have unique mechanical, electrical, and thermal properties that make them useful in many applications, such as nanoelectronics and nanocomposites.",
+        "Many organic reactions are catalyzed by enzymes, which are biological catalysts that can speed up reactions and selectively control the formation of certain products.",
+        "Amines are organic compounds that contain a nitrogen atom with a lone pair of electrons, and they can be either primary, secondary, or tertiary depending on the number of carbon groups attached to the nitrogen.",
+        "Aldehydes and ketones are both carbonyl compounds that contain a carbon atom double-bonded to an oxygen atom, with aldehydes having the carbonyl group at the end of a carbon chain and ketones having it in the middle.",
+        "Esters are organic compounds that contain a carbonyl group bonded to an oxygen atom and another carbon atom, and they are often responsible for the fruity smells of many fruits and flowers.",
+        "Carboxylic acids are organic compounds that contain a carboxyl group, which is a carbonyl group bonded to a hydroxyl group (-COOH), and they are often responsible for the sour taste of many foods.",
+        "Amino acids are organic compounds that contain both an amino group (-NH2) and a carboxyl group (-COOH), and they are the building blocks of proteins.",
+        "Phenols are organic compounds that contain a hydroxyl group (-OH) bonded to a benzene ring, and they have distinct acidic properties due to the stabilization of the negative charge on the oxygen atom by the aromatic ring.",
+        "Alcohols are organic compounds that contain a hydroxyl group (-OH), and they can be either primary, secondary, or tertiary depending on the number of carbon groups attached to the carbon atom bonded to the hydroxyl group.",
+        "Thiols are organic compounds that contain a sulfur atom bonded to a hydrogen atom (-SH), and they have distinctive pungent odors that are often described as smelling like rotten eggs.",
+        "Nitriles are organic compounds that contain a carbon atom triple-bonded to a nitrogen atom, and they are often used in organic synthesis as versatile intermediates.",
+        "Acid chlorides are organic compounds that contain a carbonyl group bonded to a chlorine atom (-COCl), and they are highly reactive compounds that are often used as acylating agents in organic synthesis."
     ]
     let fact = "";
     onMount(()=> fact = facts[Math.floor(Math.random()*facts.length)]);
