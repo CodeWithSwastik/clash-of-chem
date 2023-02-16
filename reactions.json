@@ -17,7 +17,13 @@
   },
   "propane": {
     "Cl / uv": "2-chloropropane",
-    "Br / uv": "2-bromopropane"
+    "Br / uv": "2-bromopropane",
+    "O2": "carbon dioxide"
+  },
+  "butane": {
+    "Cl / uv": "2-chlorobutane",
+    "Br / uv": "2-bromobutane",
+    "O2": "carbon dioxide"
   },
   "ethene": {
     "HCl": "chloroethane",
@@ -231,6 +237,14 @@
     "aq KOH": "ethane-1,2-diol",
     "alc. KOH / NaNH2": "ethyne"
   },
+  "2-chlorobutane": {
+    "alc. KOH": "but-2-ene",
+    "t-BuONa": "but-1-ene"
+  },
+  "2-bromobutane": {
+    "alc. KOH": "but-2-ene",
+    "t-BuONa": "but-1-ene"
+  },
   "ethanenitrile": {
     "SnCl2 / HCl / H2O": "ethanal",
     "DIBAL-H": "ethanal",
@@ -422,6 +436,12 @@
     "NH3 / Cu2O catalyst (60 atm, 523-773K)": "aniline",
     "Na / Dry Ether": "biphenyl",
     "CH3ONa": "anisole"
+  },
+  "anisole": {
+    "HI": "phenol",
+    "Br2 / CH3COOH": "4-bromoanisole",
+    "conc. HNO3 / conc. H2SO4": "4-nitroanisole",
+    "CH3Cl / anhyd. AlCl3 / CS2": "4-methoxytoluene"
   },
   "phenol": {
     "Zn": "benzene",
