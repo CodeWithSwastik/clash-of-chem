@@ -141,7 +141,6 @@
 			});
 			$socket.on("conversion", (d) => {
 				console.log(d);
-			}
 			});
 			$socket.on("new_challenge", (d) => {
 				challengeLoaded = true;
