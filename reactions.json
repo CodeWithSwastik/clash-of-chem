@@ -380,6 +380,17 @@
     "Red P / Br2": "bromoethanoic acid",
     "Red P / I2": "iodoethanoic acid"
   },
+  "propanoic acid": {
+    "LiAlH4": "propan-1-ol",
+    "PCl5": "propanoyl chloride",
+    "PCl3": "propanoyl chloride",
+    "SOCl2": "propanoyl chloride",
+    "Na": "sodium propanoate",
+    "NH3 / H2O (Heat)": "propanamide",
+    "Red P/ HI": "propane",
+    "NH3 / conc. H2SO4": "propan-1-amine",
+    "MnO (573K)": "propan-1-ol"
+  },
   "methanamide": {
     "Br2 / aq. NaOH": "ammonia",
     "NaOH / H+": "methanoic acid",
@@ -392,6 +403,12 @@
     "LiAlH4": "ethanamine",
     "P2O5": "ethanenitrile"
   },
+  "propanamide": {
+    "Br2 / aq. NaOH": "ethanamine",
+    "NaOH / H+": "propanoic acid",
+    "LiAlH4": "propan-1-amine",
+    "P2O5": "propanenitrile"
+  },
   "methanoyl chloride": {
     "H2O": "methanoic acid",
     "NH3 excess": "methanamide"
@@ -401,6 +418,10 @@
     "NH3 excess": "ethanamide",
     "sodium ethoxide": "ethylethanoate"
   },
+  "propanoyl chloride": {
+    "H2O": "propanoic acid",
+    "NH3 excess": "propanamide"
+  },
   "methanamine": {
     "CH3COCl": "N-methylacetamide",
     "NaNO2 / HCl": "methanol"
@@ -408,6 +429,10 @@
   "ethanamine": {
     "CH3COCl": "N-ethylacetamide",
     "NaNO2 / HCl": "ethanol"
+  },
+  "propan-1-amine": {
+    "CH3COCl": "N-propylacetamide",
+    "NaNO2 / HCl": "propan-1-ol"
   },
   "benzene": {
     "Cl2 / Fe": "chlorobenzene",
