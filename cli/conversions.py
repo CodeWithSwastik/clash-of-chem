@@ -1,61 +1,79 @@
 import json
 import os
-from typing import Optional
+import random
+from typing import Optional, Tuple, List
+from collections import deque
 
 reactions_filepath = os.path.join(os.path.dirname(__file__), "..", "reactions.json")
 with open(reactions_filepath, "r") as f:
     reactions = json.load(f)
 
 
-def convert(from_compound: str, to_compound: str, avoid: Optional[list] = None):
+def find_conversion_path(starting_compound: str, target_compound: str) -> Optional[List[Tuple[str, str, str]]]:
     """
-    Uses backtracking to convert from_compound to to_compound.
-    avoid is an optional list of compounds to avoid during conversion.
-    Does not find the most optimal solution, this function only returns the
-    first solution it finds.
+    Finds a conversion path from `starting_compound` to `target_compound` using the given `reactions` dictionary.
+
+    Args:
+    - starting_compound (str): The starting compound for the conversion path.
+    - target_compound (str): The target compound for the conversion path.
+
+    Returns:
+    - A list of tuples representing the conversion path from `starting_compound` to `target_compound`, where each tuple
+      represents a reaction step and contains three strings: the reactant, reagent, and product. If no conversion path
+      exists, returns None.
     """
-    if avoid is None:
-        avoid = []
+    queue = deque([(starting_compound, [])])
+    visited = set()
 
-    for sub in reactions:
-        for reag, prod in reactions[sub].items():
-            if prod == to_compound and sub not in avoid:
-                x = f" + {reag} → {prod}"
-                avoid.append(sub)
-                if sub == from_compound:
-                    return sub + x
-                else:
-                    c = convert(from_compound, sub, avoid)
-                    if c:
-                        return c + x
+    while queue:
+        current, path = queue.popleft()
+
+        if current == target_compound:
+            return path
+
+        visited.add(current)
+
+        for reagent, product in reactions.get(current, {}).items():
+            if product not in visited:
+                new_path = path + [(current, reagent, product)]
+                queue.append((product, new_path))
+
+    return None
 
 
-def generate_conversion_problem(start: Optional[str] = None, length: int = 3):
+def generate_conversion_problem(start: Optional[str] = None, max_steps: int = 3) -> Tuple[str, str]:
     """
-    Generates a conversion problem that can be solved in up to `length` steps.
+    Generates a conversion problem that can be solved in up to `max_steps` steps.
+    Returns the starting and target compound.
     """
-    import random
-
+    available_compounds = list(reactions.keys())
     if start is None:
-        start = random.choice(list(reactions))
+        start = random.choice(available_compounds)
+    else:
+        available_compounds.remove(start)
+        
+    target = None
+    while target is None:
+        target = random.choice(available_compounds)
+        if target == start or target in reactions[start].values():
+            target = None
+        else:
+            for _ in range(max_steps - 1):
+                try:
+                    available_reagents = [reagent for reagent, product in reactions[target].items() if product not in (start, target)]
+                    if not available_reagents:
+                        target = None
+                        break
+                    reagent = random.choice(available_reagents)
+                    target = reactions[target][reagent]
+                    if target == start:
+                        target = None
+                        break
+                except KeyError:
+                    target = None
+                    break
 
-    c = 0
-    end = start
-
-    while length:
-        prev = end
-        end = random.choice(list(reactions[prev].values()))
-
-        if c == 10000:
-            break
-
-        if length > 0 and end not in reactions:
-            c += 1
-            end = prev
-            continue
-        length -= 1
-
-    return start, end
+    return start, target
 
 
 def generate_problem():
