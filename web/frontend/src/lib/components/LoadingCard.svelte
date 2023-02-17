@@ -44,7 +44,17 @@
         "Alcohols are organic compounds that contain a hydroxyl group (-OH), and they can be either primary, secondary, or tertiary depending on the number of carbon groups attached to the carbon atom bonded to the hydroxyl group.",
         "Thiols are organic compounds that contain a sulfur atom bonded to a hydrogen atom (-SH), and they have distinctive pungent odors that are often described as smelling like rotten eggs.",
         "Nitriles are organic compounds that contain a carbon atom triple-bonded to a nitrogen atom, and they are often used in organic synthesis as versatile intermediates.",
-        "Acid chlorides are organic compounds that contain a carbonyl group bonded to a chlorine atom (-COCl), and they are highly reactive compounds that are often used as acylating agents in organic synthesis."
+        "Acid chlorides are organic compounds that contain a carbonyl group bonded to a chlorine atom (-COCl), and they are highly reactive compounds that are often used as acylating agents in organic synthesis.",
+        "The word 'organic' originally referred to compounds that came from living organisms, but now refers to any compound that contains carbon.",    
+        "Carbon is unique in its ability to form long chains and branched structures, which makes it the basis for the incredible diversity of organic molecules.",    
+        "The chirality of a molecule refers to its 'handedness.' Chiral molecules have mirror-image isomers that are not superimposable.",    
+        "Most natural amino acids, the building blocks of proteins, are chiral and exist in the L-configuration, while most sugars are chiral and exist in the D-configuration.",    
+        "The smell of a molecule is often related to its shape and functional groups. For example, esters are often responsible for fruity smells, while thiols are responsible for the smell of skunks.",    
+        "The discovery of the buckminsterfullerene (C60) molecule in 1985 led to the development of the field of nanotechnology.",    
+        "Organic chemistry has important applications in medicine, as many drugs are organic compounds.",    
+        "The polymer polyethylene is the most common plastic and is used in a wide variety of applications, including packaging and pipes.",    
+        "The reactions that occur in photosynthesis, the process by which plants produce energy from sunlight, are all organic chemistry reactions.",    
+        "The longest organic compound ever synthesized is a carbon chain with 200,000 atoms, known as 'tetranitratoxycarbon.'"        
     ]
     let fact = "";
     onMount(()=> fact = facts[Math.floor(Math.random()*facts.length)]);
