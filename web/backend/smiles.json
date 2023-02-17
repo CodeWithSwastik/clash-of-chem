@@ -187,5 +187,9 @@
     "4-nitroanisole": "[N+](=O)([O-])C1=CC=C(C=C1)OC",
     "4-methoxytoluene": "COC1=CC=C(C)C=C1",
     "thiophenol": "C1(=CC=CC=C1)S",
-    "ethyl benzene": "C(C)C1=CC=CC=C1"
+    "ethyl benzene": "C(C)C1=CC=CC=C1",
+    "propanoyl chloride": "C(CC)(=O)Cl",
+    "sodium propanoate": "C(CC)(=O)[O-].[Na+]",
+    "propan-1-amine": "C(CC)N",
+    "N-propylacetamide": "C(CC)NC(C)=O"
 }
