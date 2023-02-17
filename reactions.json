@@ -323,7 +323,6 @@
     "CH3MgBr / H3O+": "ethanol",
     "NH2NH2 / aq. KOH": "methane",
     "NH3": "1,3,5,7-tetraazaadamantane",
-    "SeO2": "oxaldehyde"
   },
   "ethanal": {
     "HCN": "hydroxypropionitrile",
@@ -359,7 +358,7 @@
     "HCN": "acetone cyanohydrin",
     "NaOH (Heat)": "4-methylpent-3-en-2-one",
     "CH3MgBr": "1,1-dimethylethanol",
-    "SeO2": "methylglyoxal",
+    "SeO2": "2-oxopropanal",
     "NH2NH2 / H3O+": "acetone hydrazone",
     "Zn-Hg / conc. HCl": "propane"
   },
