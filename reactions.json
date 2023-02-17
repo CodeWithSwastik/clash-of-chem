@@ -237,6 +237,9 @@
     "aq KOH": "ethane-1,2-diol",
     "alc. KOH / NaNH2": "ethyne"
   },
+  "1,2-dibromopropane": {
+    "alc. KOH / NaNH2": "propyne"
+  },
   "2-chlorobutane": {
     "alc. KOH": "but-2-ene",
     "t-BuONa": "but-1-ene"
@@ -300,6 +303,11 @@
     "PCl5": "1-chloropropane",
     "KMnO4 / H+": "propanoic acid",
     "PCC": "propanal",
+    "conc H2SO4": "propene"
+  },
+  "propan-2-ol": {
+    "PCl5": "2-chloropropane",
+    "PCC": "propanone",
     "conc H2SO4": "propene"
   },
   "methanal": {
