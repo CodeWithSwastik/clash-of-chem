@@ -191,5 +191,6 @@
     "propanoyl chloride": "C(CC)(=O)Cl",
     "sodium propanoate": "C(CC)(=O)[O-].[Na+]",
     "propan-1-amine": "C(CC)N",
-    "N-propylacetamide": "C(CC)NC(C)=O"
+    "N-propylacetamide": "C(CC)NC(C)=O",
+    "2-oxopropanal": "O=C(C=O)C"
 }
