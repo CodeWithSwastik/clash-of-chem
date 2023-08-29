@@ -38,7 +38,10 @@
 <section>
 	<div class="flex items-center justify-center h-screen z-10">
 		<div class="bg-mantle rounded-2xl min-w-[30%] shadow-2xl shadow-mantle p-10 {animateOut? 'animate_out': ''}">
- 
+			<div class="pb-8 rounded-xl w-full text-text text-center text-3xl font-bold	">
+				Clash of Chemistry ⚗️				
+			</div>
+
 			<div>
 				<input
 					type="text"
@@ -48,7 +51,7 @@
 				/>
 			</div>
 
-			<div class="grid grid-cols-2 mt-10">
+			<div class="grid grid-cols-2 mt-3">
 				<input
 					type="text"
 					bind:value={lobby}
@@ -58,7 +61,7 @@
 				<button on:click={start} class="bg-green hover:bg-opacity-70 text-base hover:text-black py-2 px-3 font-bold rounded-xl">Play!</button>
 			</div>
 			<div>
-				<button on:click={start} class="bg-sapphire hover:bg-opacity-70 text-base hover:text-black py-2 px-3 mt-5 w-full font-bold rounded-xl">Create Private Lobby</button>
+				<button on:click={start} class="bg-sapphire hover:bg-opacity-70 text-base hover:text-black py-2 px-3 mt-3 w-full font-bold rounded-xl">Create Private Lobby</button>
 			</div>
 		</div>
 	</div>
