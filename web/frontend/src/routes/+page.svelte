@@ -39,7 +39,7 @@
 	<div class="flex items-center justify-center h-screen z-10">
 		<div class="bg-mantle rounded-2xl min-w-[30%] shadow-2xl shadow-mantle p-10 {animateOut? 'animate_out': ''}">
 			<div class="pb-8 rounded-xl w-full text-text text-center text-3xl font-bold	">
-				Clash of Chemistry ⚗️				
+				<a href="/about">Clash of Chemistry ⚗️</a> 				
 			</div>
 
 			<div>
