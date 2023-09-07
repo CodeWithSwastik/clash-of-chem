@@ -1,6 +1,10 @@
-# Clash of Chem: Multiplayer Organic Chemistry Game
+# Clash of Chem: The Multiplayer Organic Chemistry Game
 
 Clash of Chem is a thrilling multiplayer game where players compete to convert compounds using reagents in a race to achieve their goals. The game combines strategic thinking, organic chemistry knowledge, and real-time interaction to create an engaging experience.
+
+Try it here: [https://clash-of-chem.vercel.app](https://clash-of-chem.vercel.app/)
+
+![image](https://github.com/CodeWithSwastik/clash-of-chem/assets/61446939/683a3416-48a6-4bbf-b3c1-67e2874d4942)
 
 ## Contributing
 
